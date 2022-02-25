@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hush</title>
+	<meta name="viewport" content="width=device-width, user-scalable=1">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
+	<style type="text/css">
+		
+		body{
+			margin: 0;
+			font-family: 'IBM Plex Sans', sans-serif;
+			min-width: 323px;
+			background-color: black;
+		}
+
+		a{text-decoration: none;}
+
+		.portadamovil{display: none;}
+
+		.botonmovil{display: none;}
+
+		aside{
+			width: 20%;
+			height: 100vh;
+			background-color: black;
+			float: left;
+			border-right: 3px solid #14659E;
+			position: fixed;
+		}
+
+		aside div img{
+			width: 45%;
+		}
+
+		.logo{
+			text-align: center;
+			padding-top: 5vh;
+		}
+
+		.logopelicula{
+			text-align: center;
+			padding-top: 40px
+		}
+
+		.logopelicula img{
+			width: 90%;
+		}
+
+		.boton{
+			width: 70%;
+			height: 60px;
+			text-align: center;
+			line-height: 60px;
+			border-radius: 30px;
+			border: 2.5px solid #14659E;
+			color:white;
+			margin: 0 auto;
+			margin-top: 6vh;
+			transition: 0.5s;
+		}
+		.boton:hover{
+			box-shadow: 0px 0px 50px #14659E;
+			background-color: #14659E;
+			color: black;
+			cursor: pointer;
+		}
+
+		section{
+			width: 80%;
+			height: 100vh;
+			background-color: black;
+			float: right;
+		}
+
+		.portada img{
+			width: 85%;
+			border-radius: 40px;
+		}
+
+		.portada{
+			text-align: center;
+			padding-top: 10vh;
+		}
+
+		#logopeliculados{
+			width: 30%;
+			margin-top: -4vh;
+		}
+
+		hr{
+			width: 80%;
+			border: 2px solid #14659E;
+			margin-top: 8vh;
+			margin-bottom: 0;
+		}
+
+		section h1{
+			font-size: 70px;
+			text-align: center;
+			color: white;
+			margin-top: 4vh;
+		}
+
+		.detalles{
+			margin-left: 5%;
+			margin-top: 4vh;
+		}
+
+		p{
+			width: 90%;
+			color: white;
+			font-size: 12px;
+		}
+
+
+
+
+
+		@media screen and (max-width: 768px){
+
+			aside{display: none;}
+
+			section{
+				width: 100%;
+			}
+			
+			.portada{
+				margin-top: -10%;
+			}
+			
+
+			#logopeliculados{
+				width: 80%;
+				margin-top: 2vh;
+
+			}
+
+			.botonmovil{
+				display: block;
+				
+				
+			}
+
+			section h1{
+				font-size: 40px;
+			}
+
+
+			.boton:hover{
+				box-shadow: none;
+				background-color: black;
+				color: white;
+				cursor: pointer;
+			}
+
+
+
+		}
+
+
+
+
+		@media screen and (max-width: 410px){
+
+			section h1{
+				font-size: 25px;
+			}
+
+			.portada{display: none;}
+
+			.portadamovil{
+				display: block;
+			}
+			.portadamovil img{width: 100%;}
+
+			#informacion{
+				font-size: 10px;
+			}
+
+			#logopeliculados{
+				width: 100%;
+				margin-top: -1vh;
+
+			}
+
+			
+
+			section div p{
+				width: 90%;
+			}
+
+			
+
+
+		}
+
+		
+
+		
+
+
+
+
+	</style>
+</head>
+
+	
+
+
+<body>
+
+
+	<aside>
+
+		<div class="logo">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/DC_Comics_logo.svg">
+		</div>
+
+		<div class="logopelicula">
+			<img src="https://pbs.twimg.com/media/FMb091iXMAcWbA9?format=jpg&name=900x900">
+		</div>
+
+		
+
+		
+
+	</aside>
+
+
+	<section>
+
+	<div class="portada">
+		<img src="https://pbs.twimg.com/media/FMb091kXMAMp6sy?format=jpg&name=medium">
+	</div>
+
+	<div class="portadamovil">
+		<img src="https://pbs.twimg.com/media/FMb091iXMAw9qtS?format=jpg&name=large">
+	</div>
+
+	<div class="logopelicula">
+		<img id="logopeliculados" src="https://pbs.twimg.com/media/FMb091iXMAcWbA9?format=jpg&name=900x900">
+	</div>
+
+	<hr>
+
+	<div class="detalles">
+		<p>PELIGROSIDAD</p> 
+		<progress id="file" max="100" value="50" style="width: 95%"> 70% </progress>
+
+		<p>FUERZA</p> 
+		<progress id="file" max="100" value="15" style="width: 95%"> 70% </progress>
+
+		<p>INTELIGENCIA</p> 
+		<progress id="file" max="100" value="75" style="width: 95%"> 70% </progress>
+
+		<p>VELOCIDAD</p> 
+		<progress id="file" max="100" value="25" style="width: 95%"> 70% </progress>
+
+		
+		
+	</div>
+
+	<hr>
+
+
+	<h1>Información basica</h1>
+	<div class="detalles">
+		<p>Primera aparición: Batman #609</p> 
+
+		<p>Creadores: Jeph Loeb / Jim Lee</p> 
+
+		<p>Nombre original: Thomas Elliot</p> 
+
+		<p>Raza: Humano</p> 
+
+		<p>Peso y Altura: 102kg / 1,91m</p> 
+
+		<p>Residencia: Gotham</p> 
+
+		<p>Ocupaciones: Villano / Cirujano</p> 
+		
+	</div>
+
+	<hr>
+
+	<h1>Habilidades</h1>
+
+	<div class="detalles">
+
+		<p>Intelecto de genio</p> 
+		<p>Médico maestro</p> 
+		<p>Maestro estratega</p> 
+		<p>Maestro tirador</p> 
+		<p>Condicionamiento humano máximo</p> 
+		<p>Gran nivel de fuerza</p> 
+		
+	</div>
+	
+	
+
+	<article>
+
+
+	<hr>
+
+	<h1>Información general</h1>
+
+	<div class="detalles">
+
+		<p>El Dr. Thomas "Tommy" Elliot era amigo de la infancia de Bruce Wayne. Se convierte en un criminal disfrazado que se dirige tanto a Batman como a Bruce Wayne. Elliot, un sociópata de la infancia, intentó matar a sus padres para poder heredar su fortuna. Cuando su plan fracasó, en parte debido a las habilidades quirúrgicas del padre de Bruce, el Dr. Thomas Wayne, Elliot culpó a Bruce. Elliot, un cirujano increíblemente hábil cuando era adulto, planeó un elaborado plan de venganza contra Wayne. Se disfrazó como el villano Hush, con el rostro cubierto de vendas </p> 
+		
+		
+	</div>
+
+
+	<hr>
+
+	<h1>Historia</h1>
+
+	<div class="detalles">
+
+		<p>Nacido en la riqueza y el privilegio, el joven Tommy Elliot se hizo amigo cercano de Bruce Wayne . El padre de Bruce, Thomas, estaba feliz de ver a los niños unirse y sintió que Bruce finalmente había encontrado un amigo con el que podía identificarse. Tommy y Bruce disfrutaban jugando juegos de estrategia, y Tommy siempre parecía superar a su brillante amigo. Sin embargo, mientras Bruce disfrutaba de la compañía de sus padres, Tommy odiaba a su padre, que estaba borracho y siempre maltrataba. Su madre, que originalmente provenía de un entorno de pobreza, no hizo casi nada para ayudar a su hijo, ya que estaba dispuesta a soportar todos los abusos que sufrían ella y su hijo para mantener su lujoso estilo de vida.</p> 
+		
+		
+	</div>
+	
+	
+
+	<article>
+			
+			
+			
+
+	</article>
+
+	<hr>
+
+	</section>
+
+	
+
+	
+
+
+
+
+</body>
+</html>
