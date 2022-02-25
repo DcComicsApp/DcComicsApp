@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Superman</title>
+	<meta name="viewport" content="width=device-width, user-scalable=1">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
+	<style type="text/css">
+		
+		body{
+			margin: 0;
+			font-family: 'IBM Plex Sans', sans-serif;
+			min-width: 323px;
+			background-color: black;
+		}
+
+		a{text-decoration: none;}
+
+		.portadamovil{display: none;}
+
+		.botonmovil{display: none;}
+
+		aside{
+			width: 20%;
+			height: 100vh;
+			background-color: black;
+			float: left;
+			border-right: 3px solid #14659E;
+			position: fixed;
+		}
+
+		aside div img{
+			width: 45%;
+		}
+
+		.logo{
+			text-align: center;
+			padding-top: 5vh;
+		}
+
+		.logopelicula{
+			text-align: center;
+			padding-top: 40px
+		}
+
+		.logopelicula img{
+			width: 90%;
+		}
+
+		.boton{
+			width: 70%;
+			height: 60px;
+			text-align: center;
+			line-height: 60px;
+			border-radius: 30px;
+			border: 2.5px solid #14659E;
+			color:white;
+			margin: 0 auto;
+			margin-top: 6vh;
+			transition: 0.5s;
+		}
+		.boton:hover{
+			box-shadow: 0px 0px 50px #14659E;
+			background-color: #14659E;
+			color: black;
+			cursor: pointer;
+		}
+
+		section{
+			width: 80%;
+			height: 100vh;
+			background-color: black;
+			float: right;
+		}
+
+		.portada img{
+			width: 85%;
+			border-radius: 40px;
+		}
+
+		.portada{
+			text-align: center;
+			padding-top: 10vh;
+		}
+
+		#logopeliculados{
+			width: 30%;
+			margin-top: -4vh;
+		}
+
+		hr{
+			width: 80%;
+			border: 2px solid #14659E;
+			margin-top: 8vh;
+			margin-bottom: 0;
+		}
+
+		section h1{
+			font-size: 70px;
+			text-align: center;
+			color: white;
+			margin-top: 4vh;
+		}
+
+		.detalles{
+			margin-left: 5%;
+			margin-top: 4vh;
+		}
+
+		p{
+			width: 90%;
+			color: white;
+			font-size: 12px;
+		}
+
+
+
+
+
+		@media screen and (max-width: 768px){
+
+			aside{display: none;}
+
+			section{
+				width: 100%;
+			}
+			
+			.portada{
+				margin-top: -10%;
+			}
+			
+
+			#logopeliculados{
+				width: 80%;
+				margin-top: 2vh;
+
+			}
+
+			.botonmovil{
+				display: block;
+				
+				
+			}
+
+			section h1{
+				font-size: 40px;
+			}
+
+
+			.boton:hover{
+				box-shadow: none;
+				background-color: black;
+				color: white;
+				cursor: pointer;
+			}
+
+
+
+		}
+
+
+
+
+		@media screen and (max-width: 410px){
+
+			section h1{
+				font-size: 25px;
+			}
+
+			.portada{display: none;}
+
+			.portadamovil{
+				display: block;
+			}
+			.portadamovil img{width: 100%;}
+
+			#informacion{
+				font-size: 10px;
+			}
+
+			#logopeliculados{
+				width: 100%;
+				margin-top: -1vh;
+
+			}
+
+			
+
+			section div p{
+				width: 90%;
+			}
+			
+
+
+		}
+
+		
+
+		
+
+
+
+
+	</style>
+</head>
+
+	
+
+
+<body>
+
+
+	<aside>
+
+		<div class="logo">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/DC_Comics_logo.svg">
+		</div>
+
+		<div class="logopelicula">
+			<img src="https://pbs.twimg.com/media/FMcGqBOWQAQmRHw?format=jpg&name=900x900">
+		</div>
+
+		
+
+		
+
+	</aside>
+
+
+	<section>
+
+	<div class="portada">
+		<img src="https://pbs.twimg.com/media/FMcGqBOXEAALn6o?format=jpg&name=large">
+	</div>
+
+	<div class="portadamovil">
+		<img src="https://pbs.twimg.com/media/FMcGqBPXMAAlXpb?format=jpg&name=medium">
+	</div>
+
+	<div class="logopelicula">
+		<img id="logopeliculados" src="https://pbs.twimg.com/media/FMcGqBOWQAQmRHw?format=jpg&name=900x900">
+	</div>
+
+	<hr>
+
+	<div class="detalles">
+		<p>PELIGROSIDAD</p> 
+		<progress id="file" max="100" value="98" style="width: 95%"> 70% </progress>
+
+		<p>FUERZA</p> 
+		<progress id="file" max="100" value="98" style="width: 95%"> 70% </progress>
+
+		<p>INTELIGENCIA</p> 
+		<progress id="file" max="100" value="80" style="width: 95%"> 70% </progress>
+
+		<p>VELOCIDAD</p> 
+		<progress id="file" max="100" value="95" style="width: 95%"> 70% </progress>
+
+		
+		
+	</div>
+
+	<hr>
+
+
+	<h1>Información basica</h1>
+	<div class="detalles">
+		<p>Primera aparición: Action Comics #1 (1938)</p> 
+
+		<p>Creadores: Joe Shuster y Jerry Siegel</p> 
+
+		<p>Nombre original: Crark Kent</p> 
+
+		<p>Raza: Alienigena (Kryptoniano)</p> 
+
+		<p>Peso y Altura: 102kg / 1,92m</p> 
+
+		<p>Residencia: Metropolis</p> 
+
+		<p>Ocupaciones: Héroe / Reportero</p> 
+		
+	</div>
+
+	<hr>
+
+	<h1>Habilidades</h1>
+
+	<div class="detalles">
+
+		<p>Fisiología Kryptoniana</p> 
+		<p>Absorción de energía solar</p> 
+		<p>Super fuerza</p> 
+		<p>Super velocidad</p> 
+		<p>Invulnerabilidad</p> 
+		<p>Vuelo</p> 
+		<p>Super resistencia</p> 
+		<p>Super oido</p> 
+		<p>Visión de calor</p> 
+		<p>Super llamarada</p> 
+		<p>Super visión</p> 
+		<p>Visión de espectro electromagnético</p> 
+		<p>Visión telescópica</p> 
+		<p>Visión de rayos x</p> 
+		<p>Visión microscópica</p> 
+		<p>Visión infrarroja</p> 
+		<p>Visión nocturna</p> 
+		<p>Super olfato</p> 
+		<p>Super grito</p> 
+		<p>Super aliento</p> 
+		<p>Factor curativo</p> 
+		<p>Super inteligencia</p> 
+		<p>Super memoria</p> 
+		<p>Experto en artes marciales</p> 
+		
+	</div>
+	
+	
+
+	<article>
+
+
+	<hr>
+
+	<h1>Información general</h1>
+
+	<div class="detalles">
+
+		<p>Kal-El nació originalmente en la ciudad de Kryptonopolis, en el planeta Krypton. Su padre, el mejor científico del planeta, hizo muchos estudios desde antes que Kal-El naciera, que probaba que el planeta estaba alcanzando altas temperaturas en su núcleo y que con el paso del tiempo destruiría a Krypton. Debido a que el consejo no le creía, desde el nacimiento de Kal empezó a construir cohetes especiales para evacuar a la gente cuando ese día ocurriera. Siete meses después cuando el planeta estaba colapsando y estaba siendo atacado por un ser que se hacia llamar El coleccionista, la primera opción de Jor-El es tomar el proyector de la Zona Fanstasma y refugiarse alli por un tiempo, pero casi son atacados por unos de los criminales que Jor-El había encerrado llamado Xa-Du. Cuando Xa-Du intenta escapar, Krypto le muerde la mano y es atrapado en la zona. Después, Lara le pide a su esposo que lo ponga en el prototipo del cohete que ha estado construyendo; como no queda tiempo ponen a Kal-El en el cohete y lo lanzan con las hacia el planeta Tierra. El cohete cae en una ruta de Kansas, donde es encontrado por Jonathan y Martha Kent, una pareja de humildes granjeros que la adoptan debido a que no han podido tener hijos propios. La pareja lo lleva al pueblo de Smallvile y lo crían bajo el nombre de "Clark Kent" </p> 
+		
+		
+	</div>
+
+
+	<hr>
+
+	<h1>Personalidad</h1>
+
+	<div class="detalles">
+
+		<p>Actualmente Superman adhiere a un código moral estricto generalmente atribuido a los valores occidentales en los que fue educado. Su compromiso con la ley fue un ejemplo para muchos otros héroes, pero generó resentimiento en otros, que se refieren a él como ‘el gran niño explorador azul’. Al perder su hogar en Krypton, Superman se volvió muy protector de la Tierra y especialmente de su familia y amigos. La primera pérdida combinada con la presión de tener que usar sus poderes responsablemente causó que se sintiera solo en la Tierra a pesar de sus muchos amigos, su esposa y sus padres.</p> 
+		
+		
+	</div>
+	
+	
+
+	<article>
+			
+			
+			
+
+	</article>
+
+	<hr>
+
+	</section>
+
+	
+
+	
+
+
+
+
+</body>
+</html>
