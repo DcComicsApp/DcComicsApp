@@ -1,26 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Episodios</title>
+	<title>Wonder Woman</title>
+	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, user-scalable=1">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap" rel="stylesheet">
-	<meta charset="utf-8">
 	<style type="text/css">
-		
+
 		body{
-			margin: 0;
 			font-family: 'IBM Plex Sans', sans-serif;
-			min-width: 323px;
+			margin: 0;
 			background-color: black;
 		}
 
 		a{text-decoration: none;}
 
-		.portadamovil{display: none;}
-
-		.botonmovil{display: none;}
-
+		header{display: none;}
+		
 		aside{
 			width: 20%;
 			height: 100vh;
@@ -30,7 +27,7 @@
 			position: fixed;
 		}
 
-		aside div img{
+		aside img{
 			width: 45%;
 		}
 
@@ -39,60 +36,10 @@
 			padding-top: 5vh;
 		}
 
-		.logopelicula{
-			text-align: center;
-			padding-top: 40px
-		}
-
-		.logopelicula img{
-			width: 90%;
-		}
-
-		.boton{
-			width: 70%;
-			height: 60px;
-			text-align: center;
-			line-height: 60px;
-			border-radius: 30px;
-			border: 2.5px solid #14659E;
-			color:white;
-			margin: 0 auto;
-			margin-top: 6vh;
-			transition: 0.5s;
-		}
-		.boton:hover{
-			box-shadow: 0px 0px 50px #14659E;
-			background-color: #14659E;
-			color: black;
-			cursor: pointer;
-		}
-
-		.posteraside{
-			text-align: center;
-			margin-top: 7vh;
-		}
-		.posteraside img{border-radius: 20px;}
-
 		section{
 			width: 80%;
-			height: 100vh;
 			background-color: black;
 			float: right;
-		}
-
-		.portada img{
-			width: 85%;
-			border-radius: 40px;
-		}
-
-		.portada{
-			text-align: center;
-			padding-top: 10vh;
-		}
-
-		#logopeliculados{
-			width: 30%;
-			margin-top: -4vh;
 		}
 
 		hr{
@@ -102,423 +49,169 @@
 			margin-bottom: 0;
 		}
 
-		section h1{
+		section article h1{
 			font-size: 70px;
 			text-align: center;
 			color: white;
 		}
 
-		.detalles{
-			margin-left: 20%;
-		}
-
-		p{
-			width: 80%;
-			color: white;
-			font-size: 20px;
-		}
-
-		
-
-		.episodios{
+		section article img{
 			display: inline-block;
-			width: 24%;
+			text-align: center;
+			width: 40%;
 			margin-top: 50px;
 			margin-right: 2%;
 			margin-bottom: 0;
 			margin-left: 5.5%;
-			
-		}
-
-		.episodios img{
-			width: 35%;
-			border-radius: 40px;
+			border-radius: 10px;
 			transition: 0.5s;
 			border:2.5px solid #1F4A69;
 			box-shadow: 0px 0px 0px black;
-			left: 20%
 		}
-		.episodios img:hover{
+
+		section article img:hover{
 			cursor: pointer;
 			border:2.5px solid #1F4A69;
 			box-shadow: 0px 0px 80px #14659E;
-
 		}
 
-		.episodios p{
-			text-align: left;
-			color: #B3B3B3;
-			float: right;
-
-		}
-
-
-
+		#fotoswiki{
+			width: 8%;
+		}	
 
 
 
 
 		@media screen and (max-width: 768px){
 
-			aside{display: none;}
+			aside{
+				display: none;
+			}
+
+			header{display: block;}
+
+			.logoheader{
+				text-align: center;
+				
+			}
+			
+			header div img{
+				width: 80%;
+				margin-bottom: 20px;
+			}
 
 			section{
 				width: 100%;
 			}
-			
-			.portada{
-				margin-top: -10%;
-			}
-			
 
-			#logopeliculados{
-				width: 80%;
-				margin-top: 2vh;
-
+			section article img{				
+				border-radius: 10px;
+				margin-top: 7%;
 			}
 
-			.botonmovil{
-				display: block;
-				
-				
+			section article h1{
+				font-size: 30px;
+				text-align: center;
+				color: white;
 			}
 
-			section h1{
-				font-size: 40px;
+			#fotoswiki{
+			width: 16%;
 			}
 
-
-			.boton:hover{
+			section article img:hover{
 				box-shadow: none;
 				background-color: black;
 				color: white;
 				cursor: pointer;
+				border:2.5px solid #1F4A69;	
 			}
+		}	
 
-			.episodios{
-				text-align: center;
-				width: 40%;	
-			}
-
-			.episodios img{
-				width: 40%;
-				border-radius: 30px;
-				
-			}
-			
-
-			
-
-
-
-		}
 
 
 
 
 		@media screen and (max-width: 410px){
 
-			section h1{
-				font-size: 30px;
-			}
+			#fotoswiki{
+				width: 22.5%;
+			}	
 
-			.portada{display: none;}
-
-			.portadamovil{
-				display: block;
-			}
-			.portadamovil img{width: 100%;}
-
-			#informacion{
-				font-size: 15px;
-			}
-
-			#logopeliculados{
-				width: 85%;
-			}
-
-			.botonmovil{
-				margin-top: -10%;
-			}
-
-
-			section div p{
-				width: 90%;
-			}
-
-			.episodios{	
-				text-align: center;
-				width: 40%;
-				margin-top: 30px;	
-			}
-
-			.episodios img{
-				width: 45%;
-				border-radius: 20px;
-				transition: 0.5s;
-				border:2.5px solid #1F4A69;
-				box-shadow: 0px 0px 0px black;
-				left: 20%
+			section article img{				
+				border-radius: 5px;
+				margin-top: 7%;
+				
 			}
 			
-
-			.episodios p{
-				float: right;
-				font-size: 15px;
-			}
-
-
-			
-
 
 		}
-
-		
-
-		
-
-
 
 
 	</style>
 </head>
 
-	
+
+
 
 
 <body>
 
+	<header>
+		<div class="logoheader">
+			<img src="https://pbs.twimg.com/media/FSEJxMkXEAAhkW0?format=jpg&name=medium">
+		</div>
+
+	</header>
+
 
 	<aside>
-
 		<div class="logo">
 			<img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/DC_Comics_logo.svg">
 		</div>
 
-		<div class="logopelicula">
-			<img src="https://pbs.twimg.com/media/FUkH_FqXsAM-obk?format=jpg&name=900x900">
-		</div>
-
-		<div class="posteraside">
-			<img src="https://pbs.twimg.com/media/FUkH_FpWIAMm2we?format=jpg&name=large">
-		</div>
-
-		
+		<div class="contenedorcajon">
+			
+		</div>	
 
 	</aside>
 
 
+
+
 	<section>
-
-	<div class="portada">
-		<img src="https://pbs.twimg.com/media/FUkIHdOWYAI4c5L?format=jpg&name=large">
-	</div>
-
-	<div class="portadamovil">
-		<img src="https://pbs.twimg.com/media/FUl_LmeWYAAJOtj?format=jpg&name=medium">
-	</div>
-
-	
-
-	
-
-
-	<article>
-
 		
-			<h1>Episodios</h1>
+
+		<article>
+			<h1>Historias</h1>
+			<a href="https://cloud.degoo.com/share/yW5ndvGwc7gwriaDjOlPtw">
+				<img id="fotoswiki" src="https://pbs.twimg.com/media/FSVA-m8XsAExq1O?format=jpg&name=small">
+			</a>
 			
-			<div class="episodios">
-				<a href="https://youtu.be/F60yZ4EN27k">
-					<img id="fotoswiki" src="https://pbs.twimg.com/media/FUl_Ll0XEAA5Pj0?format=jpg&name=small">
-					<p>(1) Temed mi poder [1/2]</p>
-				</a>
-			</div>
+			<a href="https://cloud.degoo.com/share/epqDTYlv0L5yTHZcrvCGng">
+				<img id="fotoswiki" src="https://pbs.twimg.com/media/FSEPE7-XoAEyOL0?format=jpg&name=small">
+			</a>
 
-			<div class="episodios">
-				<a href="">
-					<img id="fotoswiki" src="https://pbs.twimg.com/media/FUl_Ll0XEAA5Pj0?format=jpg&name=small">
-					<p>() </p>
-				</a>
-			</div>
+			<a href="https://cloud.degoo.com/share/wWzTV_lqyKn0sAvfWqF-Mg">
+				<img id="fotoswiki" src="https://pbs.twimg.com/media/FSU__cVXEAEUQT0?format=jpg&name=small">
+			</a>
 
-			<div class="episodios">
-				<a href="https://youtu.be/0Y_WrdiPH0U">
-					<img id="fotoswiki" src="https://pbs.twimg.com/media/FUl_Ll0XEAA5Pj0?format=jpg&name=small">
-					<p>(3) El limite de Razer</p>
-				</a>
-			</div>
+			<a href="https://cloud.degoo.com/share/fZRkYEamziDx0ipfmiFQyQ">
+				<img id="fotoswiki" src="https://pbs.twimg.com/media/FTq9NYVXEAEnNbD?format=jpg&name=small">
+			</a>
 
-			<div class="episodios">
-				<a href="https://youtu.be/sJVNdUa1rIA">
-					<img id="fotoswiki" src="https://pbs.twimg.com/media/FUl_Ll0XEAA5Pj0?format=jpg&name=small">
-					<p>(4) Hacia el abismo</p>
-				</a>
-			</div>
+			<a href="https://cloud.degoo.com/share/lDZqSOiLowuGRpCd62WbKA">
+				<img id="fotoswiki" src="https://pbs.twimg.com/media/FTq7e4oWIAIAEng?format=jpg&name=small">
+			</a>
+				
+		</article>
 
-			<div class="episodios">
-				<a href="https://youtu.be/eMW0iYdSFFs">
-					<img id="fotoswiki" src="https://pbs.twimg.com/media/FUl_Ll0XEAA5Pj0?format=jpg&name=small">
-					<p>(5) Princesa heredera</p>
-				</a>
-			</div>
-
-			<div class="episodios">
-				<a href="https://youtu.be/3fyLkPn5X1k">
-					<img id="fotoswiki" src="https://pbs.twimg.com/media/FUl_Ll0XEAA5Pj0?format=jpg&name=small">
-					<p>(6) Planeta perdido</p>
-				</a>
-			</div>
-
-			<div class="episodios">
-				<a href="https://youtu.be/fpOg-tdpMRk">
-					<img id="fotoswiki" src="https://pbs.twimg.com/media/FUl_Ll0XEAA5Pj0?format=jpg&name=small">
-					<p>(7) La venganza</p>
-				</a>
-			</div>
-
-			<div class="episodios">
-				<a href="https://youtu.be/nc0czeQbz2E">
-					<img id="fotoswiki" src="https://pbs.twimg.com/media/FUl_Ll0XEAA5Pj0?format=jpg&name=small">
-					<p>(8) El miedo en si mismo</p>
-				</a>
-			</div>
-
-			<div class="episodios">
-				<a href="https://youtu.be/0DC6Rk7tF4E">
-					<img id="fotoswiki" src="https://pbs.twimg.com/media/FUl_Ll0XEAA5Pj0?format=jpg&name=small">
-					<p>(9) En el amor y la guerra</p>
-				</a>
-			</div>
-
-			<div class="episodios">
-				<a href="https://youtu.be/0mjz0kLB-ZU">
-					<img id="fotoswiki" src="https://pbs.twimg.com/media/FUl_Ll0XEAA5Pj0?format=jpg&name=small">
-					<p>(10) Cambio de regimen</p>
-				</a>
-			</div>
-
-			<div class="episodios">
-				<a href="https://youtu.be/MjyxPowRGLQ">
-					<img id="fotoswiki" src="https://pbs.twimg.com/media/FUl_Ll0XEAA5Pj0?format=jpg&name=small">
-					<p>(11) Los hombres halcon</p>
-				</a>
-			</div>
-
-			<div class="episodios">
-				<a href="https://youtu.be/bXQNI_z3VZc">
-					<img id="fotoswiki" src="https://pbs.twimg.com/media/FUl_Ll0XEAA5Pj0?format=jpg&name=small">
-					<p>(12) Invasion</p>
-				</a>
-			</div>
-
-			<div class="episodios">
-				<a href="https://youtu.be/RM7ViwSJj5k">
-					<img id="fotoswiki" src="https://pbs.twimg.com/media/FUl_Ll0XEAA5Pj0?format=jpg&name=small">
-					<p>(13) Vuelta a casa</p>
-				</a>
-			</div>
-
-			<div class="episodios">
-				<a href="https://youtu.be/FfeBqhalg7w">
-					<img id="fotoswiki" src="https://pbs.twimg.com/media/FUl_Ll0XEAA5Pj0?format=jpg&name=small">
-					<p>(14) El nuevo</p>
-				</a>
-			</div>
-
-			<div class="episodios">
-				<a href="https://youtu.be/8qdfKYW4kOg">
-					<img id="fotoswiki" src="https://pbs.twimg.com/media/FUl_Ll0XEAA5Pj0?format=jpg&name=small">
-					<p>(15) Reinicio</p>
-				</a>
-			</div>
-
-			<div class="episodios">
-				<a href="https://youtu.be/ZPiGdfg5Eyo">
-					<img id="fotoswiki" src="https://pbs.twimg.com/media/FUl_Ll0XEAA5Pj0?format=jpg&name=small">
-					<p>(16) Lantern a vapor</p>
-				</a>
-			</div>
-
-			<div class="episodios">
-				<a href="https://youtu.be/rBCZCsIXRYM">
-					<img id="fotoswiki" src="https://pbs.twimg.com/media/FUl_Ll0XEAA5Pj0?format=jpg&name=small">
-					<p>(17) Esperanza azul</p>
-				</a>
-			</div>
-
-			<div class="episodios">
-				<a href="https://youtu.be/-XBBC2nDuFY">
-					<img id="fotoswiki" src="https://pbs.twimg.com/media/FUl_Ll0XEAA5Pj0?format=jpg&name=small">
-					<p>(18) Prisionero de Sinestro</p>
-				</a>
-			</div>
-
-			<div class="episodios">
-				<a href="https://youtu.be/WZDL_PkBs6A">
-					<img id="fotoswiki" src="https://pbs.twimg.com/media/FUl_Ll0XEAA5Pj0?format=jpg&name=small">
-					<p>(19) Perdida</p>
-				</a>
-			</div>
-
-			<div class="episodios">
-				<a href="https://youtu.be/ABN_NmMyscs">
-					<img id="fotoswiki" src="https://pbs.twimg.com/media/FUl_Ll0XEAA5Pj0?format=jpg&name=small">
-					<p>(20) Fria furia</p>
-				</a>
-			</div>
-
-			<div class="episodios">
-				<a href="https://youtu.be/zOOwp495o38">
-					<img id="fotoswiki" src="https://pbs.twimg.com/media/FUl_Ll0XEAA5Pj0?format=jpg&name=small">
-					<p>(21) Babel</p>
-				</a>
-			</div>
-
-			<div class="episodios">
-				<a href="https://youtu.be/f-AOfpwiYhY">
-					<img id="fotoswiki" src="https://pbs.twimg.com/media/FUl_Ll0XEAA5Pj0?format=jpg&name=small">
-					<p>(22) El amor es un campo de batalla</p>
-				</a>
-			</div>
-
-			<div class="episodios">
-				<a href="https://youtu.be/CrnDTphDVBQ">
-					<img id="fotoswiki" src="https://pbs.twimg.com/media/FUl_Ll0XEAA5Pj0?format=jpg&name=small">
-					<p>(23) Larfleeze</p>
-				</a>
-			</div>
-
-			<div class="episodios">
-				<a href="https://youtu.be/O6vqV4GR-Qs">
-					<img id="fotoswiki" src="https://pbs.twimg.com/media/FUl_Ll0XEAA5Pj0?format=jpg&name=small">
-					<p>(24) Marcada</p>
-				</a>
-			</div>
-
-			<div class="episodios">
-				<a href="https://youtu.be/OoSELDOtNFE">
-					<img id="fotoswiki" src="https://pbs.twimg.com/media/FUl_Ll0XEAA5Pj0?format=jpg&name=small">
-					<p>(25) Ranx</p>
-				</a>
-			</div>
-
-			<div class="episodios">
-				<a href="https://youtu.be/TVizX-DOau8">
-					<img id="fotoswiki" src="https://pbs.twimg.com/media/FUl_Ll0XEAA5Pj0?format=jpg&name=small">
-					<p>(26) Materia oscura</p>
-				</a>
-			</div>
+		<hr>
 
 
-			
 
-			
+	</section>
 
-	</article>
-
-	<hr>
-	
 
 </body>
 </html>
