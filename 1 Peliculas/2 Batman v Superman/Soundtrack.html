@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Soundtrack</title>
+	<meta name="viewport" content="width=device-width, user-scalable=1">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
+	<style type="text/css">
+		
+		body{
+			margin: 0;
+			font-family: 'IBM Plex Sans', sans-serif;
+			min-width: 323px;
+			background-color: black;
+		}
+
+		a{text-decoration: none;}
+
+		.portadamovil{display: none;}
+
+		.botonmovil{display: none;}
+
+		aside{
+			width: 20%;
+			height: 100vh;
+			background-color: black;
+			float: left;
+			border-right: 3px solid #14659E;
+			position: fixed;
+		}
+
+		aside div img{
+			width: 45%;
+		}
+
+		.logo{
+			text-align: center;
+			padding-top: 5vh;
+		}
+
+		.logopelicula{
+			text-align: center;
+			padding-top: 40px
+		}
+
+		.logopelicula img{
+			width: 90%;
+		}
+
+		.boton{
+			width: 70%;
+			height: 60px;
+			text-align: center;
+			line-height: 60px;
+			border-radius: 30px;
+			border: 2.5px solid #14659E;
+			color:white;
+			margin: 0 auto;
+			margin-top: 6vh;
+			transition: 0.5s;
+		}
+		.boton:hover{
+			box-shadow: 0px 0px 50px #14659E;
+			background-color: #14659E;
+			color: black;
+			cursor: pointer;
+		}
+
+		.posteraside{
+			text-align: center;
+			margin-top: 7vh;
+		}
+		.posteraside img{border-radius: 20px;}
+
+		section{
+			width: 80%;
+			height: 100vh;
+			background-color: black;
+			float: right;
+		}
+
+		.portada img{
+			width: 85%;
+			border-radius: 40px;
+		}
+
+		.portada{
+			text-align: center;
+			padding-top: 10vh;
+		}
+
+		#logopeliculados{
+			width: 30%;
+			margin-top: -4vh;
+		}
+
+		hr{
+			width: 80%;
+			border: 2px solid #14659E;
+			margin-top: 8vh;
+			margin-bottom: 0;
+		}
+
+		section h1{
+			font-size: 70px;
+			text-align: center;
+			color: white;
+		}
+
+		.detalles{
+			margin-left: 20%;
+		}
+
+		p{
+			width: 80%;
+			color: white;
+			font-size: 20px;
+		}
+
+		
+
+		.episodios{
+			display: inline-block;
+			width: 24%;
+			margin-top: 50px;
+			margin-right: 2%;
+			margin-bottom: 0;
+			margin-left: 5.5%;
+			
+		}
+
+		.episodios img{
+			width: 35%;
+			border-radius: 40px;
+			transition: 0.5s;
+			border:2.5px solid #1F4A69;
+			box-shadow: 0px 0px 0px black;
+			left: 20%
+		}
+		.episodios img:hover{
+			cursor: pointer;
+			border:2.5px solid #1F4A69;
+			box-shadow: 0px 0px 80px #14659E;
+
+		}
+
+		.episodios p{
+			text-align: left;
+			color: #B3B3B3;
+			float: right;
+
+		}
+
+
+
+
+
+
+
+		@media screen and (max-width: 768px){
+
+			aside{display: none;}
+
+			section{
+				width: 100%;
+			}
+			
+			.portada{
+				margin-top: -10%;
+			}
+			
+
+			#logopeliculados{
+				width: 80%;
+				margin-top: 2vh;
+
+			}
+
+			.botonmovil{
+				display: block;
+				
+				
+			}
+
+			section h1{
+				font-size: 40px;
+			}
+
+
+			.boton:hover{
+				box-shadow: none;
+				background-color: black;
+				color: white;
+				cursor: pointer;
+			}
+
+			.episodios{
+				text-align: center;
+				width: 40%;	
+			}
+
+			.episodios img{
+				width: 40%;
+				border-radius: 30px;
+				
+			}
+			
+
+			
+
+
+
+		}
+
+
+
+
+		@media screen and (max-width: 410px){
+
+			section h1{
+				font-size: 30px;
+			}
+
+			.portada{display: none;}
+
+			.portadamovil{
+				display: block;
+			}
+			.portadamovil img{width: 100%;}
+
+			#informacion{
+				font-size: 15px;
+			}
+
+			#logopeliculados{
+				width: 85%;
+			}
+
+			.botonmovil{
+				margin-top: -10%;
+			}
+
+
+			section div p{
+				width: 90%;
+			}
+
+			.episodios{	
+				text-align: center;
+				width: 40%;
+				margin-top: 21px;	
+			}
+
+			.episodios img{
+				width: 45%;
+				border-radius: 20px;
+				transition: 0.5s;
+				border:2.5px solid #1F4A69;
+				box-shadow: 0px 0px 0px black;
+				left: 20%
+			}
+			
+
+			.episodios p{
+				float: right;
+				font-size: 15px;
+			}
+
+
+			
+
+
+		}
+
+		
+
+		
+
+
+
+
+	</style>
+</head>
+
+	
+
+
+<body>
+
+
+	<aside>
+
+		<div class="logo">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/DC_Comics_logo.svg">
+		</div>
+
+		
+
+	</aside>
+
+
+	<section>
+
+	<div class="portada">
+		<img src="https://pbs.twimg.com/media/FiKRTXcXwAUhHAN?format=jpg&name=4096x4096">
+	</div>
+
+	<div class="portadamovil">
+		<img src="https://pbs.twimg.com/media/FiKRTXWWAAIypTJ?format=jpg&name=4096x4096">
+	</div>
+
+	
+
+	
+
+
+	<article>
+
+		
+			<h1>Soundtrack</h1>
+			
+			<div class="episodios">
+				<a href="https://open.spotify.com/track/4G3DXzZf0J3EFWgY1jfFbJ?si=3ee17166647f41d2">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/FiKRTXaXgAAbtok?format=jpg&name=large">
+					<p>(1) Beautiful Lie</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/track/15xFPuokj4Lg8if76rlOXG?si=d9ac161e2ffb4eb3">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/FiKRTXaXgAAbtok?format=jpg&name=large">
+					<p>(2) BvS Their Was Here</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/track/2I4fmmJB8TieUwxEetZrwg?si=8f94d75f177b4509">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/FiKRTXaXgAAbtok?format=jpg&name=large">
+					<p>(3) The Red Capes Are Coming</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/track/40MgL1IGANBuja0zXPbN0W?si=a70ef99604bf4604">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/FiKRTXaXgAAbtok?format=jpg&name=large">
+					<p>(4) Day of the Dead</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/track/1Xs09PSwcpXDgHrlmJIkps?si=6543567b93d04730">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/FiKRTXaXgAAbtok?format=jpg&name=large">
+					<p>(5) Must There be a Superman?</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/track/23ubrUpqmJiBAhcIDvm5JY?si=e78900284d5c4dcb">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/FiKRTXaXgAAbtok?format=jpg&name=large">
+					<p>(6) Do You Bleed?</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/track/10oUjg1uWR4qqQRiXeXhXB?si=7657064f549c4c08">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/FiKRTXaXgAAbtok?format=jpg&name=large">
+					<p>(7) New Rules</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/track/4YerM7ZIEEOfAYmJTbfJ0a?si=085958fbd977426a">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/FiKRTXaXgAAbtok?format=jpg&name=large">
+					<p>(8) Problems Up Here</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/track/4QUpCdgZn2PQVqAuGMbFVP?si=c5ba2cce3d0948e6">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/FiKRTXaXgAAbtok?format=jpg&name=large">
+					<p>(9) Black and Blue</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/track/6RqauAqIyCunH7NZnDZdKg?si=136bb912525b402d">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/FiKRTXaXgAAbtok?format=jpg&name=large">
+					<p>(10) Tuesday</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/track/47q8TxNygd1EV89Kq7uwe2?si=8f47420369784674">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/FiKRTXaXgAAbtok?format=jpg&name=large">
+					<p>(11) Is She With You?</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/track/2DshCXVPORYnlGgLrU48hj?si=c9a605b6cb304c3e">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/FiKRTXaXgAAbtok?format=jpg&name=large">
+					<p>(12) This is my World</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/track/6PHs9Kit8T9gNCsmR7ovFw?si=a1f87df724464697">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/FiKRTXaXgAAbtok?format=jpg&name=large">
+					<p>(13) Men are still good</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/track/5bKLmtMkltWkJrKBCTUVSs?si=61d2a7c50bc64aa1">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/FiKRTXaXgAAbtok?format=jpg&name=large">
+					<p>(14) Blood of muy Blood</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/track/6vmiq6D7LgucobUYTCtNOs?si=5e5ebdb0eaa14e73">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/FiKRTXaXgAAbtok?format=jpg&name=large">
+					<p>(15) Vigilante</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/track/3tO9trCcWrxwJnzagZ9rVD?si=04501170d63a4e1b">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/FiKRTXaXgAAbtok?format=jpg&name=large">
+					<p>(16) May I Help you Mr Wayne</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/track/1N6FezUuYhn9r8eGg5A888?si=975174fe62894e3e">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/FiKRTXaXgAAbtok?format=jpg&name=large">
+					<p>(17) They Were Hunters</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/track/0LbuLWD6WeJIQc93zhKi2p?si=37e3e64d1bdf48a3">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/FiKRTXaXgAAbtok?format=jpg&name=large">
+					<p>(18) Fight Night</p>
+				</a>
+			</div>		
+			
+
+			
+
+	</article>
+
+	<hr>
+	
+
+</body>
+</html>
