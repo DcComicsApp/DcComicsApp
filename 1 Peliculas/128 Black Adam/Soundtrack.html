@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Soundtrack</title>
+	<meta name="viewport" content="width=device-width, user-scalable=1">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
+	<style type="text/css">
+		
+		body{
+			margin: 0;
+			font-family: 'IBM Plex Sans', sans-serif;
+			min-width: 323px;
+			background-color: black;
+		}
+
+		a{text-decoration: none;}
+
+		.portadamovil{display: none;}
+
+		.botonmovil{display: none;}
+
+		aside{
+			width: 20%;
+			height: 100vh;
+			background-color: black;
+			float: left;
+			border-right: 3px solid #14659E;
+			position: fixed;
+		}
+
+		aside div img{
+			width: 45%;
+		}
+
+		.logo{
+			text-align: center;
+			padding-top: 5vh;
+		}
+
+		.logopelicula{
+			text-align: center;
+			padding-top: 40px
+		}
+
+		.logopelicula img{
+			width: 90%;
+		}
+
+		.boton{
+			width: 70%;
+			height: 60px;
+			text-align: center;
+			line-height: 60px;
+			border-radius: 30px;
+			border: 2.5px solid #14659E;
+			color:white;
+			margin: 0 auto;
+			margin-top: 6vh;
+			transition: 0.5s;
+		}
+		.boton:hover{
+			box-shadow: 0px 0px 50px #14659E;
+			background-color: #14659E;
+			color: black;
+			cursor: pointer;
+		}
+
+		.posteraside{
+			text-align: center;
+			margin-top: 7vh;
+		}
+		.posteraside img{border-radius: 20px;}
+
+		section{
+			width: 80%;
+			height: 100vh;
+			background-color: black;
+			float: right;
+		}
+
+		.portada img{
+			width: 85%;
+			border-radius: 40px;
+		}
+
+		.portada{
+			text-align: center;
+			padding-top: 10vh;
+		}
+
+		#logopeliculados{
+			width: 30%;
+			margin-top: -4vh;
+		}
+
+		hr{
+			width: 80%;
+			border: 2px solid #14659E;
+			margin-top: 8vh;
+			margin-bottom: 0;
+		}
+
+		section h1{
+			font-size: 70px;
+			text-align: center;
+			color: white;
+		}
+
+		.detalles{
+			margin-left: 20%;
+		}
+
+		p{
+			width: 80%;
+			color: white;
+			font-size: 20px;
+		}
+
+		
+
+		.episodios{
+			display: inline-block;
+			width: 24%;
+			margin-top: 50px;
+			margin-right: 2%;
+			margin-bottom: 0;
+			margin-left: 5.5%;
+			
+		}
+
+		.episodios img{
+			width: 35%;
+			border-radius: 40px;
+			transition: 0.5s;
+			border:2.5px solid #1F4A69;
+			box-shadow: 0px 0px 0px black;
+			left: 20%
+		}
+		.episodios img:hover{
+			cursor: pointer;
+			border:2.5px solid #1F4A69;
+			box-shadow: 0px 0px 80px #14659E;
+
+		}
+
+		.episodios p{
+			text-align: left;
+			color: #B3B3B3;
+			float: right;
+
+		}
+
+
+
+
+
+
+
+		@media screen and (max-width: 768px){
+
+			aside{display: none;}
+
+			section{
+				width: 100%;
+			}
+			
+			.portada{
+				margin-top: -10%;
+			}
+			
+
+			#logopeliculados{
+				width: 80%;
+				margin-top: 2vh;
+
+			}
+
+			.botonmovil{
+				display: block;
+				
+				
+			}
+
+			section h1{
+				font-size: 40px;
+			}
+
+
+			.boton:hover{
+				box-shadow: none;
+				background-color: black;
+				color: white;
+				cursor: pointer;
+			}
+
+			.episodios{
+				text-align: center;
+				width: 40%;	
+			}
+
+			.episodios img{
+				width: 40%;
+				border-radius: 30px;
+				
+			}
+			
+
+			
+
+
+
+		}
+
+
+
+
+		@media screen and (max-width: 410px){
+
+			section h1{
+				font-size: 30px;
+			}
+
+			.portada{display: none;}
+
+			.portadamovil{
+				display: block;
+			}
+			.portadamovil img{width: 100%;}
+
+			#informacion{
+				font-size: 15px;
+			}
+
+			#logopeliculados{
+				width: 85%;
+			}
+
+			.botonmovil{
+				margin-top: -10%;
+			}
+
+
+			section div p{
+				width: 90%;
+			}
+
+			.episodios{	
+				text-align: center;
+				width: 40%;
+				margin-top: 21px;	
+			}
+
+			.episodios img{
+				width: 45%;
+				border-radius: 20px;
+				transition: 0.5s;
+				border:2.5px solid #1F4A69;
+				box-shadow: 0px 0px 0px black;
+				left: 20%
+			}
+			
+
+			.episodios p{
+				float: right;
+				font-size: 15px;
+			}
+
+
+			
+
+
+		}
+
+		
+
+		
+
+
+
+
+	</style>
+</head>
+
+	
+
+
+<body>
+
+
+	<aside>
+
+		<div class="logo">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/DC_Comics_logo.svg">
+		</div>
+
+		
+
+	</aside>
+
+
+	<section>
+
+	<div class="portada">
+		<img src="https://pbs.twimg.com/media/FfVwpM0WQAITFU9?format=jpg&name=4096x4096">
+	</div>
+
+	<div class="portadamovil">
+		<img src="https://pbs.twimg.com/media/FiFiVOyWQAMWi7K?format=jpg&name=4096x4096">
+	</div>
+
+	
+
+	
+
+
+	<article>
+
+		
+			<h1>Soundtrack</h1>
+			
+			<div class="episodios">
+				<a href="https://open.spotify.com/track/3nxxR3CvH5MRGdbqFtzCUe?si=59efb2baa6914130">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/FiFiVO4XwAISkOH?format=jpg&name=small">
+					<p>(1) Black Adam Teth-Adam</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/track/4gTOtQsamRGW0dIjQ3bXMH?si=f9cc6b6e7caa45c0">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/FiFiVO4XwAISkOH?format=jpg&name=small">
+					<p>(2) Kahndaq</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/track/6CbXea4eHR0QEsYeFA181m?si=09c171b401184667">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/FiFiVO4XwAISkOH?format=jpg&name=small">
+					<p>(3) The Awakening</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/track/6I1Zc6Q2LN8bDI6qFEtdEG?si=c24db341ecf34ec1">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/FiFiVO4XwAISkOH?format=jpg&name=small">
+					<p>(4) The Revolution Starts</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/track/26saH7Fx8bnlx00ci1Pbd1?si=0e1958eded344464">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/FiFiVO4XwAISkOH?format=jpg&name=small">
+					<p>(5) Introducing JSA</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/track/6uT1owSifzpODNW2dZgrCC?si=8a0df1ce95b245a0">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/FiFiVO4XwAISkOH?format=jpg&name=small">
+					<p>(6) Shaza-Superman</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/track/48Nq7BbtkLJmK7gkD2ToK4?si=fe6bfd6b2f784d20">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/FiFiVO4XwAISkOH?format=jpg&name=small">
+					<p>(7) Our Only Hope</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/track/6t8KaS3xvkVabmqlZ2HOae?si=52c790372f784d2e">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/FiFiVO4XwAISkOH?format=jpg&name=small">
+					<p>(8) Change Your Name</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/track/7GtzkR8wcfp0hTGAitVTSF?si=ab13ed6ceef84cbe">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/FiFiVO4XwAISkOH?format=jpg&name=small">
+					<p>(9) What Kind of Magic</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/track/6eWcv0TQcDXUZIpbJJTj6S?si=0fd4260368374866">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/FiFiVO4XwAISkOH?format=jpg&name=small">
+					<p>(10) Is it the Champion</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/track/7jBSmE3lSyHdhdnAckFMdf?si=de9dc1c1dffe472e">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/FiFiVO4XwAISkOH?format=jpg&name=small">
+					<p>(11) Your Enemies</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/track/2JredID6iVWdzvDuXwc5g4?si=3c02de9d29bd483a">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/FiFiVO4XwAISkOH?format=jpg&name=small">
+					<p>(12) Black Adam Spotted</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/track/7gbmUtpJjuYBEGQGvP06RC?si=68a109fe255847e8">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/FiFiVO4XwAISkOH?format=jpg&name=small">
+					<p>(13) Not Interested</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/track/2xnOnUqjpmr19BeO8YQxDe?si=f83be8a0c4504162">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/FiFiVO4XwAISkOH?format=jpg&name=small">
+					<p>(14) Just Say Shazam</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/track/7bAhh7qXIGu3l3bHhbyb10?si=15099f54e00c4220">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/FiFiVO4XwAISkOH?format=jpg&name=small">
+					<p>(15) Ancient Palace</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/track/1cq2G1mb3VoF5MNDzcnWLW?si=83376ae2b3de44b0">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/FiFiVO4XwAISkOH?format=jpg&name=small">
+					<p>(16) Little Man</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/track/55Jijs1LfWTF2fIntcfRKq?si=8091bc9a59c64d5a">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/FiFiVO4XwAISkOH?format=jpg&name=small">
+					<p>(17) Time to Go</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/track/6CvXxx7gVtsN5UieONpAcq?si=3ed162970ea64ab9">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/FiFiVO4XwAISkOH?format=jpg&name=small">
+					<p>(18) Release Him</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/track/5GqaFsy2PcaHelv3Dzf2YT?si=9e07fa3de38f40bc">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/FiFiVO4XwAISkOH?format=jpg&name=small">
+					<p>(19) Father & Spm</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/track/1YcqFdl5MQIfN4f8ulc73l?si=7752bc08c7eb4f75">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/FiFiVO4XwAISkOH?format=jpg&name=small">
+					<p>(20) Black Adam Theme</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/track/2GHUhkzu7njKj2W7DNUdJq?si=4d3a08cafc5346c0">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/FiFiVO4XwAISkOH?format=jpg&name=small">
+					<p>(21) Fly Bikes</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/track/2hXf3fSrjRukABi6Zc5RCw?si=d96ef9a458fa4e61">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/FiFiVO4XwAISkOH?format=jpg&name=small">
+					<p>(22) Nanobots</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/track/0VFROdgOvRg8gTMcstkv7C?si=0b283db5b9a44e5c">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/FiFiVO4XwAISkOH?format=jpg&name=small">
+					<p>(23) Through the Wall</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/track/2qjc4QoFYMK2I03zM01F1G?si=70d4475563154e22">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/FiFiVO4XwAISkOH?format=jpg&name=small">
+					<p>(24) 23libs of Eternium</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/track/31S08C5kWRfqHrhEdx45UB?si=ee6e75a97dd84531">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/FiFiVO4XwAISkOH?format=jpg&name=small">
+					<p>(25) Is This the End?</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/track/5gJLJV3pZRv6bLkh7h39th?si=1d721637e2614174">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/FiFiVO4XwAISkOH?format=jpg&name=small">
+					<p>(26) It Was Him</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/track/3vIkorlCWi4AYVKn2fKHOc?si=5ffaaaeb4bca47dd">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/FiFiVO4XwAISkOH?format=jpg&name=small">
+					<p>(27) Lake Baikal</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/track/073LCQ2Gpw0knENmtxrSnM?si=3774b6fcefa94784">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/FiFiVO4XwAISkOH?format=jpg&name=small">
+					<p>(28) Capes and Corpses</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/track/4cVgPYagnhUmXgto3bmFsc?si=0a14223f8b954a94">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/FiFiVO4XwAISkOH?format=jpg&name=small">
+					<p>(29) Hawkmans Fate</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/track/2JHDQniFoDEKADCmnF4ntb?si=bc42469a6e1c4145">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/FiFiVO4XwAISkOH?format=jpg&name=small">
+					<p>(30) The JSA Fights Back</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/track/0SR4CMLXoTqG4vcfjCrsl2?si=1a373b5dc04745fc">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/FiFiVO4XwAISkOH?format=jpg&name=small">
+					<p>(31) A Bad Plan is a Good Plan</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/track/1ENWStJJiXUhAnoREZJdSp?si=1f74972848a941a5">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/FiFiVO4XwAISkOH?format=jpg&name=small">
+					<p>(32) DR. Fate</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/track/3P3G0U8MtHjUX8b1y1P32L?si=f4a108209f9646e6">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/FiFiVO4XwAISkOH?format=jpg&name=small">
+					<p>(33) Prison Break</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/track/6kUeO6JafsyfYO6hdGDOE6?si=5139de1d93a84370">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/FiFiVO4XwAISkOH?format=jpg&name=small">
+					<p>(34) Wet Rocks</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/track/0bdqcSVL7vLWhaH21yjrqY?si=74c3a566730647e7">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/FiFiVO4XwAISkOH?format=jpg&name=small">
+					<p>(35) Not a Hero</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/track/5UBFWcR73aGqeHHfoNRF6t?si=c3784231283949f3">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/FiFiVO4XwAISkOH?format=jpg&name=small">
+					<p>(36) The Doctors Destiny</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/track/1gW1dNh3fFa3n9Olk9Hl0Z?si=69c674d068de4243">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/FiFiVO4XwAISkOH?format=jpg&name=small">
+					<p>(37) Slave Champion</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/track/3W3YqIHIV3tbAl4rdb9Kep?si=7a7f3e7cb1ac4401">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/FiFiVO4XwAISkOH?format=jpg&name=small">
+					<p>(38) Legions of Hell</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/track/0PLrdx4qVqhmLUvv6I6RCK?si=4178b06cbd2f411c">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/FiFiVO4XwAISkOH?format=jpg&name=small">
+					<p>(39) The Man in Black</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/track/6VHJ0ACpYnWsgPz2QbHEod?si=b490716cab874f3f">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/FiFiVO4XwAISkOH?format=jpg&name=small">
+					<p>(40) Adams Journey</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/track/7ddtBXvBX8yBTkGf8WcUvF?si=a1faef193faa4106">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/FiFiVO4XwAISkOH?format=jpg&name=small">
+					<p>(41) JSA Theme</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/track/2u4DnKhSeF4MpOuTkzx2tf?si=41d50728ebad49ec">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/FiFiVO4XwAISkOH?format=jpg&name=small">
+					<p>(42) Black Adam Theme Remix</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/track/5x7Ugf45t28YoJ8fbXPJ6C?si=99a11270cfa84c94">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/FiFiVO4XwAISkOH?format=jpg&name=small">
+					<p>(43) JSA Theme Remix</p>
+				</a>
+			</div>
+
+			
+			
+
+			
+
+	</article>
+
+	<hr>
+	
+
+</body>
+</html>
