@@ -621,7 +621,7 @@
 			<p style="color: white; margin-left: 5%; margin-top: 2vh; margin-bottom: -2vh; font-size: 7px; color: #1084C7" >Shazam II </p>
 
 			<a href="1 Peliculas/131 Shazam 2/Shazam 2.html" style="filter: contrast(1.06);">
-				<img id="mi-imagen" src="https://pbs.twimg.com/media/FtGrJZhWAAI-WM0?format=jpg&name=medium" alt="Descripción de la imagen">	
+				<img id="mi-imagen" src="https://pbs.twimg.com/media/FtGrJZhWAAI-WM0?format=jpg&name=medium">	
 			</a>
 
 			<a href="1 Peliculas/130 Batman Doom of Gotham/Batman Doom of Gotham.html" style="filter: contrast(1.06);">
@@ -805,9 +805,15 @@
 
 
 		<script>
-	 		 setTimeout(function(){
-	  		  document.getElementById('mi-imagen').src = 'https://media0.giphy.com/media/cfp76QbIAL3qevAPZx/giphy.gif';
-	 		 }, 9000); // 5000 milisegundos = 5 segundos
+		  setTimeout(function(){
+		    var miImagen = document.getElementById('mi-imagen');
+		    miImagen.src = 'https://media4.giphy.com/media/jZ4Ah9cZapyYL2jh3O/giphy.gif';
+		    miImagen.onload = function() {
+		      setTimeout(function() {
+		        miImagen.src = 'https://pbs.twimg.com/media/FtGrJZhWAAI-WM0?format=jpg&name=medium';
+		      }, 27000); 
+		    };
+		  }, 8000); // 5000 milisegundos = 5 segundos
 		</script>
 
 
