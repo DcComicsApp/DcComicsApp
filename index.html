@@ -680,7 +680,7 @@
 			<p style="color: white; margin-left: 5%; margin-top: 2vh; margin-bottom: -2vh; font-size: 7px; color: #1084C7" >Justice League Heroes</p>
 
 			<a href="3 Otros/41 Justice League Heroes/Justice League Heroes.html" style="filter: contrast(1.06);">
-				<img src="https://pbs.twimg.com/media/FkVXGV7X0AAtZND?format=jpg&name=medium">
+				<img id="mi-imagen3" src="https://pbs.twimg.com/media/FkVXGV7X0AAtZND?format=jpg&name=medium">
 			</a>
 
 			<a href="3 Otros/39 Yule Log/Yule Log.html" style="filter: contrast(1.06);">
@@ -825,6 +825,19 @@
 		      setTimeout(function() {
 		        miImagen.src = 'https://pbs.twimg.com/media/FiKaem3WYA0RY_C?format=jpg&name=medium';
 		      }, 26070); 
+		    };
+		  }, 6500); // 5000 milisegundos = 5 segundos
+		</script>
+
+
+		<script>
+		  setTimeout(function(){
+		    var miImagen = document.getElementById('mi-imagen3');
+		    miImagen.src = 'https://media0.giphy.com/media/ZLUYlZWHdj79AVC09k/giphy.gif';
+		    miImagen.onload = function() {
+		      setTimeout(function() {
+		        miImagen.src = 'https://pbs.twimg.com/media/FkVXGV7X0AAtZND?format=jpg&name=medium';
+		      }, 28020); 
 		    };
 		  }, 6500); // 5000 milisegundos = 5 segundos
 		</script>
