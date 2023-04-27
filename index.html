@@ -651,7 +651,7 @@
 			<p style="color: white; margin-left: 5%; margin-top: 2vh; margin-bottom: -2vh; font-size: 7px; color: #1084C7" >King of Atlantis (Subtitulado)</p>
 
 			<a href="2 Series/37 Aquaman KoA/Aquaman KoA.html" style="filter: contrast(1.06);">
-				<img src="https://pbs.twimg.com/media/FiKaem3WYA0RY_C?format=jpg&name=medium">
+				<img id="mi-imagen2" src="https://pbs.twimg.com/media/FiKaem3WYA0RY_C?format=jpg&name=medium">
 			</a>
 
 			<a href="2 Series/35 The Sandman/The Sandman.html" style="filter: contrast(1.06);">
@@ -814,6 +814,19 @@
 		      }, 27000); 
 		    };
 		  }, 6500); // 5000 milisegundos = 5 segundos
+		</script>
+
+
+		<script>
+		  setTimeout(function(){
+		    var miImagen = document.getElementById('mi-imagen2');
+		    miImagen.src = 'https://media1.giphy.com/media/EnSwONXCnUkN5ry8kp/giphy.gif';
+		    miImagen.onload = function() {
+		      setTimeout(function() {
+		        miImagen.src = 'https://pbs.twimg.com/media/FiKaem3WYA0RY_C?format=jpg&name=medium';
+		      }, 27000); 
+		    };
+		  }, 1000); // 5000 milisegundos = 5 segundos
 		</script>
 
 
