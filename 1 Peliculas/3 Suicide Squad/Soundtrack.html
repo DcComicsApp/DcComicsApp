@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Soundtrack</title>
+	<meta name="viewport" content="width=device-width, user-scalable=1">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
+	<style type="text/css">
+		
+		body{
+			margin: 0;
+			font-family: 'IBM Plex Sans', sans-serif;
+			min-width: 323px;
+			background-color: black;
+		}
+
+		a{text-decoration: none;}
+
+		.portadamovil{display: none;}
+
+		.botonmovil{display: none;}
+
+		aside{
+			width: 20%;
+			height: 100vh;
+			background-color: black;
+			float: left;
+			border-right: 3px solid #14659E;
+			position: fixed;
+		}
+
+		aside div img{
+			width: 45%;
+		}
+
+		.logo{
+			text-align: center;
+			padding-top: 5vh;
+		}
+
+		.logopelicula{
+			text-align: center;
+			padding-top: 40px
+		}
+
+		.logopelicula img{
+			width: 90%;
+		}
+
+		.boton{
+			width: 70%;
+			height: 60px;
+			text-align: center;
+			line-height: 60px;
+			border-radius: 30px;
+			border: 2.5px solid #14659E;
+			color:white;
+			margin: 0 auto;
+			margin-top: 6vh;
+			transition: 0.5s;
+		}
+		.boton:hover{
+			box-shadow: 0px 0px 50px #14659E;
+			background-color: #14659E;
+			color: black;
+			cursor: pointer;
+		}
+
+		.posteraside{
+			text-align: center;
+			margin-top: 7vh;
+		}
+		.posteraside img{border-radius: 20px;}
+
+		section{
+			width: 80%;
+			height: 100vh;
+			background-color: black;
+			float: right;
+		}
+
+		.portada img{
+			width: 85%;
+			border-radius: 40px;
+		}
+
+		.portada{
+			text-align: center;
+			padding-top: 10vh;
+		}
+
+		#logopeliculados{
+			width: 30%;
+			margin-top: -4vh;
+		}
+
+		hr{
+			width: 80%;
+			border: 2px solid #14659E;
+			margin-top: 8vh;
+			margin-bottom: 0;
+		}
+
+		section h1{
+			font-size: 70px;
+			text-align: center;
+			color: white;
+		}
+
+		.detalles{
+			margin-left: 20%;
+		}
+
+		p{
+			width: 80%;
+			color: white;
+			font-size: 20px;
+		}
+
+		
+
+		.episodios{
+			display: inline-block;
+			width: 24%;
+			margin-top: 50px;
+			margin-right: 2%;
+			margin-bottom: 0;
+			margin-left: 5.5%;
+			
+		}
+
+		.episodios img{
+			width: 35%;
+			border-radius: 40px;
+			transition: 0.5s;
+			border:0px solid #1F4A69;
+			box-shadow: 0px 0px 80px #14659E;
+			left: 20%
+		}
+		
+
+		.episodios p{
+			text-align: left;
+			color: #B3B3B3;
+			float: right;
+
+		}
+
+		#fotoswiki2{
+			width: 8%;
+			display: inline-block;
+			text-align: center;
+			margin-top: 50px;
+			margin-right: 2%;
+			margin-bottom: 0;
+			margin-left: 5.5%;
+			border-radius: 20px;
+			transition: 0.5s;
+			border:0px solid #1F4A69;
+			box-shadow: 0px 0px 80px #14659E;
+		}
+
+
+
+
+
+
+
+		@media screen and (max-width: 768px){
+
+			aside{display: none;}
+
+			section{
+				width: 100%;
+			}
+			
+			.portada{
+				margin-top: -10%;
+			}
+			
+
+			#logopeliculados{
+				width: 80%;
+				margin-top: 2vh;
+
+			}
+
+			.botonmovil{
+				display: block;
+				
+				
+			}
+
+			section h1{
+				font-size: 40px;
+			}
+
+
+			.boton:hover{
+				box-shadow: none;
+				background-color: black;
+				color: white;
+				cursor: pointer;
+			}
+
+			.episodios{
+				text-align: center;
+				width: 40%;	
+			}
+
+			.episodios img{
+				width: 40%;
+				border-radius: 30px;
+				box-shadow: 0px 0px 50px #14659E;
+				
+			}
+
+			#fotoswiki2{
+			width: 11%;
+			box-shadow: 0px 0px 50px #14659E;
+
+			}
+			
+
+			
+
+
+
+		}
+
+
+
+
+		@media screen and (max-width: 410px){
+
+			section h1{
+				font-size: 30px;
+			}
+
+			.portada{display: none;}
+
+			.portadamovil{
+				display: block;
+			}
+			.portadamovil img{width: 100%;}
+
+			#informacion{
+				font-size: 15px;
+			}
+
+			#logopeliculados{
+				width: 85%;
+			}
+
+			.botonmovil{
+				margin-top: -10%;
+			}
+
+
+			section div p{
+				width: 90%;
+			}
+
+			.episodios{	
+				text-align: center;
+				width: 40%;
+				margin-top: 31px;	
+			}
+
+			.episodios img{
+				width: 45%;
+				border-radius: 20px;
+				transition: 0.5s;
+				border:0px solid #1F4A69;
+				box-shadow: 0px 0px 50px #14659E;
+				left: 20%
+			}
+			
+
+			.episodios p{
+				float: right;
+				font-size: 15px;
+			}
+
+			#fotoswiki2{
+				width: 20%;
+				margin-top: 4vh;
+				margin-right: 5%;
+				margin-bottom: 0;
+				margin-left: 6%;
+				box-shadow: 0px 0px 50px #14659E;
+			}
+
+
+
+
+			
+
+
+		}
+
+		
+
+		
+
+
+
+
+	</style>
+</head>
+
+	
+
+
+<body>
+
+
+	<aside>
+
+		<div class="logo">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/DC_Comics_logo.svg">
+		</div>
+
+		
+
+	</aside>
+
+
+	<section>
+
+	<div class="portada">
+		<img src="https://images5.alphacoders.com/794/thumb-1920-794142.jpg">
+	</div>
+
+	<div class="portadamovil">
+		<img src="https://pbs.twimg.com/media/GC1OXAOW4AIs8hp?format=jpg&name=medium">
+	</div>
+
+	
+
+	
+
+
+	<article>
+
+		
+			<h1>Soundtrack</h1>
+			
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/5cbLjpz9mPdlWzukPaxn6N?si=253f87666db2428b">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GC1OXAOWUAEwoUP?format=jpg&name=small">
+					<p>(1) Task Force X</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/3aJNUCGcXTZiGvtuJNx3DN?si=d3cb7b6f52c24e27">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GC1OXAOWUAEwoUP?format=jpg&name=small">
+					<p>(2) Arkham Asylum</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/1Mgn577XFMfaHFjv37r5D3?si=a88889d2791f4e54">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GC1OXAOWUAEwoUP?format=jpg&name=small">
+					<p>(3) I´m Going to Figure This Out</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/1HCTxH62Tih39xlLz5X805?si=1e32131e0a394d81">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GC1OXAOWUAEwoUP?format=jpg&name=small">
+					<p>(4) You Make My Teeth Hurt</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/4stB72yJJ12OYAFFxu8anl?si=c57775f1c3c8423a">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GC1OXAOWUAEwoUP?format=jpg&name=small">
+					<p>(5) I Want to Assemble a Task Force</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/6U69jCa3A1aAobe9bDS93K?si=cc717d206c5c4290">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GC1OXAOWUAEwoUP?format=jpg&name=small">
+					<p>(6) Brother Our Time Has Come</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/2CgdgDnyT4W5l3gHW44WE6?si=58c9394336794c28">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GC1OXAOWUAEwoUP?format=jpg&name=small">
+					<p>(7) A Serial Killer Who Takes Credit Cards</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/0wMerNykXWEZNmZmaAoqF0?si=9de3e284ad554123">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GC1OXAOWUAEwoUP?format=jpg&name=small">
+					<p>(8) A Killer App</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/0yyDQggArjjJm7ZMyBp2KP?si=7eca29314c1147aa">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GC1OXAOWUAEwoUP?format=jpg&name=small">
+					<p>(9) That´s How I Cut and Run</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/71mhjx7ukJT6kDL0Be2p06?si=430bbfcf2b5740f6">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GC1OXAOWUAEwoUP?format=jpg&name=small">
+					<p>(10) We Got a Job to Do</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/67g4Zbw5QMVWbNI3zdEhr9?si=4a57deebc50c44b7">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GC1OXAOWUAEwoUP?format=jpg&name=small">
+					<p>(11) You Die We Die</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/12ktb4MEciZeyYdfYPZt47?si=b7265c1ae193423a">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GC1OXAOWUAEwoUP?format=jpg&name=small">
+					<p>(12) Harley and Joker</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/1PPSLLACatk1FdGwiJGKGb?si=11575b003cc74061">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GC1OXAOWUAEwoUP?format=jpg&name=small">
+					<p>(13) This Bird Is Baked</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/3Hw1AfIrkXTk1UqCAduKln?si=25960652353a41d8">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GC1OXAOWUAEwoUP?format=jpg&name=small">
+					<p>(14) Hey Craziness</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/0riOP05gvUXUl0Kt9TXcQD?si=ba1572edc7db46cc">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GC1OXAOWUAEwoUP?format=jpg&name=small">
+					<p>(15) You Need a Miracle</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/6t4ro5z3cF24fzIP1t2sJq?si=ab2a0355857445e8">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GC1OXAOWUAEwoUP?format=jpg&name=small">
+					<p>(16) Diablo´s Story</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/1byDmOVWoH3YH6v1Owvh9z?si=bed0ff69258b46dc">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GC1OXAOWUAEwoUP?format=jpg&name=small">
+					<p>(17) The Squad</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/1XauC3XvdjQAJjSiHC1KCY?si=64e9942ce6464a71">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GC1OXAOWUAEwoUP?format=jpg&name=small">
+					<p>(18) Are We Friends or Foes</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/6Q3d9AQMyxTz1ekFfws5Ah?si=760964d91e594ef1">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GC1OXAOWUAEwoUP?format=jpg&name=small">
+					<p>(19) She´s Behind You</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/31lH8BnWbB1Q5jW4m8Rxjb?si=3a46e7f99ccf4d92">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GC1OXAOWUAEwoUP?format=jpg&name=small">
+					<p>(20) One Bullet Is All I Need</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/5pA1S43ulokPp9rRwyd7Iv?si=c54e5b75b09a4bbf">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GC1OXAOWUAEwoUP?format=jpg&name=small">
+					<p>(21) I Thought Killed You</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/5UOiyIv5YTpiraeXlnPGqz?si=91d375996b214994">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GC1OXAOWUAEwoUP?format=jpg&name=small">
+					<p>(22) The Worst of the Worst</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/56TEmyyKzfnKmf9YxDjRmg?si=23150307f5e64f4e">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GC1OXAOWUAEwoUP?format=jpg&name=small">
+					<p>(23) June Moone</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/6vogt7jPfrBNm3IUx4EGGV?si=4011cf3fad4149b1">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GC1OXAOWUAEwoUP?format=jpg&name=small">
+					<p>(24) Did That Tickle?</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/2jPdcRi9QNBoDEvpAzvW5W?si=ee829af393b74709">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GC1OXAOWUAEwoUP?format=jpg&name=small">
+					<p>(25) You Know The Rules</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/0lhK6AD31xSheUSnYFnwkA?si=68a7fa6aff8a4405">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GC1OXAOWUAEwoUP?format=jpg&name=small">
+					<p>(26) Enchantress in War Room</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/1fyLmvWyuJExmxDOG5nodC?si=e0c8f2a9b2334183">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GC1OXAOWUAEwoUP?format=jpg&name=small">
+					<p>(27) Introducing Diablo and Croc</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/6hPnsRnZnwFe9JIxlJ6FhX?si=5c315834bb174211">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GC1OXAOWUAEwoUP?format=jpg&name=small">
+					<p>(28) Task Force X Activated</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/4bIXIkPCZy7ExnZsM8KI5x?si=35f6839aa3924209">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GC1OXAOWUAEwoUP?format=jpg&name=small">
+					<p>(29) Can Everyone See</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/1L9ziva6mBf3E2UU822ZNK?si=419cc467293343bf">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GC1OXAOWUAEwoUP?format=jpg&name=small">
+					<p>(30) I Promised My Friends</p>
+				</a>
+			</div>	
+						
+
+	</article>
+
+	<hr>
+
+	<article>
+
+		
+			<h1>Canciones</h1>
+			
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/0uB0a0FmuW3DZmfzG0ORlT?si=7f5bc49c06d746ee">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GC1OXAOWUAEwoUP?format=jpg&name=small">
+					<p>(31) Heathens</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/7qUJQSNX9QNf46CC6FgH66?si=046dcdf319e04861">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GC1OXAOWUAEwoUP?format=jpg&name=small">
+					<p>(32) Sucker for Pain</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/1dWXQWIjjYWafYgw0zVGnG?si=53d3574482b74817">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GC1OXAOWUAEwoUP?format=jpg&name=small">
+					<p>(33) Without Me</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/50prNXlssUmo8p5Agh0gHJ?si=c662676c3c624864">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GC1OXAOWUAEwoUP?format=jpg&name=small">
+					<p>(34) Know Better</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/1W7zkKgRv9mrLbfdQ8XyH3?si=ad70493a815d4e9d">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GC1OXAOWUAEwoUP?format=jpg&name=small">
+					<p>(35) Gangsta</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/0xQvrfyrolYl97XYPwzvgp?si=f43fd0a9c097462e">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GC1OXAOWUAEwoUP?format=jpg&name=small">
+					<p>(36) Fortunate Son</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/5IDmJ2xMwIUkSTPgGcgi3D?si=06fa660cb84942ad">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GC1OXAOWUAEwoUP?format=jpg&name=small">
+					<p>(37) Slippin Into Darkness</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/1dDh5CNFdRHvkZxxy3CHAI?si=cd737892da1245c8">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GC1OXAOWUAEwoUP?format=jpg&name=small">
+					<p>(38) Purple Lamborghini</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/6p586xRu0OuyR1ftsTvFoz?si=2456585b393540d9">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GC1OXAOWUAEwoUP?format=jpg&name=small">
+					<p>(39) Standing in the Rain</p>
+				</a>
+			</div>	
+
+			
+						
+
+	</article>
+
+	<hr>
+	
+
+</body>
+</html>
