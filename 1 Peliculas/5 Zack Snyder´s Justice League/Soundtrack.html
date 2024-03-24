@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Soundtrack</title>
+	<meta name="viewport" content="width=device-width, user-scalable=1">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
+	<style type="text/css">
+		
+		body{
+			margin: 0;
+			font-family: 'IBM Plex Sans', sans-serif;
+			min-width: 323px;
+			background-color: black;
+		}
+
+		a{text-decoration: none;}
+
+		.portadamovil{display: none;}
+
+		.botonmovil{display: none;}
+
+		aside{
+			width: 20%;
+			height: 100vh;
+			background-color: black;
+			float: left;
+			border-right: 3px solid #14659E;
+			position: fixed;
+		}
+
+		aside div img{
+			width: 45%;
+		}
+
+		.logo{
+			text-align: center;
+			padding-top: 5vh;
+		}
+
+		.logopelicula{
+			text-align: center;
+			padding-top: 40px
+		}
+
+		.logopelicula img{
+			width: 90%;
+		}
+
+		.boton{
+			width: 70%;
+			height: 60px;
+			text-align: center;
+			line-height: 60px;
+			border-radius: 30px;
+			border: 2.5px solid #14659E;
+			color:white;
+			margin: 0 auto;
+			margin-top: 6vh;
+			transition: 0.5s;
+		}
+		.boton:hover{
+			box-shadow: 0px 0px 50px #14659E;
+			background-color: #14659E;
+			color: black;
+			cursor: pointer;
+		}
+
+		.posteraside{
+			text-align: center;
+			margin-top: 7vh;
+		}
+		.posteraside img{border-radius: 20px;}
+
+		section{
+			width: 80%;
+			height: 100vh;
+			background-color: black;
+			float: right;
+		}
+
+		.portada img{
+			width: 85%;
+			border-radius: 40px;
+		}
+
+		.portada{
+			text-align: center;
+			padding-top: 10vh;
+		}
+
+		#logopeliculados{
+			width: 30%;
+			margin-top: -4vh;
+		}
+
+		hr{
+			width: 80%;
+			border: 2px solid #14659E;
+			margin-top: 8vh;
+			margin-bottom: 0;
+		}
+
+		section h1{
+			font-size: 70px;
+			text-align: center;
+			color: white;
+		}
+
+		.detalles{
+			margin-left: 20%;
+		}
+
+		p{
+			width: 80%;
+			color: white;
+			font-size: 20px;
+		}
+
+		
+
+		.episodios{
+			display: inline-block;
+			width: 24%;
+			margin-top: 50px;
+			margin-right: 2%;
+			margin-bottom: 0;
+			margin-left: 5.5%;
+			
+		}
+
+		.episodios img{
+			width: 35%;
+			border-radius: 40px;
+			transition: 0.5s;
+			border:0px solid #1F4A69;
+			box-shadow: 0px 0px 80px #14659E;
+			left: 20%
+		}
+		
+
+		.episodios p{
+			text-align: left;
+			color: #B3B3B3;
+			float: right;
+
+		}
+
+		#fotoswiki2{
+			width: 8%;
+			display: inline-block;
+			text-align: center;
+			margin-top: 50px;
+			margin-right: 2%;
+			margin-bottom: 0;
+			margin-left: 5.5%;
+			border-radius: 20px;
+			transition: 0.5s;
+			border:0px solid #1F4A69;
+			box-shadow: 0px 0px 80px #14659E;
+		}
+
+
+
+
+
+
+
+		@media screen and (max-width: 768px){
+
+			aside{display: none;}
+
+			section{
+				width: 100%;
+			}
+			
+			.portada{
+				margin-top: -10%;
+			}
+			
+
+			#logopeliculados{
+				width: 80%;
+				margin-top: 2vh;
+
+			}
+
+			.botonmovil{
+				display: block;
+				
+				
+			}
+
+			section h1{
+				font-size: 40px;
+			}
+
+
+			.boton:hover{
+				box-shadow: none;
+				background-color: black;
+				color: white;
+				cursor: pointer;
+			}
+
+			.episodios{
+				text-align: center;
+				width: 40%;	
+			}
+
+			.episodios img{
+				width: 40%;
+				border-radius: 30px;
+				box-shadow: 0px 0px 50px #14659E;
+				
+			}
+
+			#fotoswiki2{
+			width: 11%;
+			box-shadow: 0px 0px 50px #14659E;
+
+			}
+			
+
+			
+
+
+
+		}
+
+
+
+
+		@media screen and (max-width: 410px){
+
+			section h1{
+				font-size: 30px;
+			}
+
+			.portada{display: none;}
+
+			.portadamovil{
+				display: block;
+			}
+			.portadamovil img{width: 100%;}
+
+			#informacion{
+				font-size: 15px;
+			}
+
+			#logopeliculados{
+				width: 85%;
+			}
+
+			.botonmovil{
+				margin-top: -10%;
+			}
+
+
+			section div p{
+				width: 90%;
+			}
+
+			.episodios{	
+				text-align: center;
+				width: 40%;
+				margin-top: 31px;	
+			}
+
+			.episodios img{
+				width: 45%;
+				border-radius: 20px;
+				transition: 0.5s;
+				border:0px solid #1F4A69;
+				box-shadow: 0px 0px 50px #14659E;
+				left: 20%
+			}
+			
+
+			.episodios p{
+				float: right;
+				font-size: 15px;
+			}
+
+			#fotoswiki2{
+				width: 20%;
+				margin-top: 4vh;
+				margin-right: 5%;
+				margin-bottom: 0;
+				margin-left: 6%;
+				box-shadow: 0px 0px 50px #14659E;
+			}
+
+
+
+
+			
+
+
+		}
+
+		
+
+		
+
+
+
+
+	</style>
+</head>
+
+	
+
+
+<body>
+
+
+	<aside>
+
+		<div class="logo">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/DC_Comics_logo.svg">
+		</div>
+
+		
+
+	</aside>
+
+
+	<section>
+
+	<div class="portada">
+		<img src="https://observer.com/wp-content/uploads/sites/2/2020/10/justice_league_hero.jpg?quality=80">
+	</div>
+
+	<div class="portadamovil">
+		<img src="https://pbs.twimg.com/media/GJbgJ4fWUAAv23x?format=jpg&name=900x900">
+	</div>
+
+	
+
+	
+
+
+	<article>
+
+		
+			<h1>Soundtrack</h1>
+			
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/4YxIyXvnKWvkQ9BXt4qvRx?si=9e499739915a4be5">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GJbgJ4hXEAA34pb?format=jpg&name=900x900">
+					<p>(1) A hunter gathers</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/1JKk3OsQaVQZ9RDyqJ2nNb?si=dc083af3a5b34e1b">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GJbgJ4hXEAA34pb?format=jpg&name=900x900">
+					<p>(2) Migratory</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/4z6W9mY8lwc8toQCIK5MsR?si=0c1b3ee46945422f">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GJbgJ4hXEAA34pb?format=jpg&name=900x900">
+					<p>(3) Things fall apart</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/0hTncyBNThWmNJ6uXuWdgu?si=cfbfdb96e5a04b5a">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GJbgJ4hXEAA34pb?format=jpg&name=900x900">
+					<p>(4) Wonder Woman defending</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/73vbiXjcvBlSG19DV7NooH?si=81420e550f284fb6">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GJbgJ4hXEAA34pb?format=jpg&name=900x900">
+					<p>(5) World ending fire</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/03TX2TN5QalPtYxyWt0kKS?si=28c1932e42904ab2">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GJbgJ4hXEAA34pb?format=jpg&name=900x900">
+					<p>(6) Middle mass</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/4NxhSw3hlLiBe6z1SKGwJw?si=0e127d7578184132">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GJbgJ4hXEAA34pb?format=jpg&name=900x900">
+					<p>(7) Long division</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/1WqpvteoEnBLqwSjDGdMZc?si=d3901c29aa93400b">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GJbgJ4hXEAA34pb?format=jpg&name=900x900">
+					<p>(8) No paradise, no fall</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/0Uw5prQ53pdgNpeDTtiq4w?si=901c23c4a95344eb">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GJbgJ4hXEAA34pb?format=jpg&name=900x900">
+					<p>(9) The center will not hold</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/73N4v2ayTQsLlCopd5XOXp?si=b0c8d568eeae49f1">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GJbgJ4hXEAA34pb?format=jpg&name=900x900">
+					<p>(10) As above, so below</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/2wwxuXEC7UnRUgTY487XOc?si=b6b0e38daecf42d0">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GJbgJ4hXEAA34pb?format=jpg&name=900x900">
+					<p>(11) No dog, no master</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/5KAgCHoWOCZQGtRksa4SfG?si=ea3bd7a4fc6b4b94">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GJbgJ4hXEAA34pb?format=jpg&name=900x900">
+					<p>(12) Take this kingdom by force</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/69106iNfxXrEdW72oKMIIq?si=cbb38c3cc27848e3">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GJbgJ4hXEAA34pb?format=jpg&name=900x900">
+					<p>(13) A splinter</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/278EPBO5wKsk8M0rFMF0q5?si=7208c6e20e0d4a5b">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GJbgJ4hXEAA34pb?format=jpg&name=900x900">
+					<p>(14) Cyborg becoming</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/3dgAjukNAmnRkF0PhDn3ic?si=43f4af9297284407">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GJbgJ4hXEAA34pb?format=jpg&name=900x900">
+					<p>(15) The path chooses you</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/42MUdkJNMixMGW442eb5Iq?si=6e7b4b4bf1ae45ed">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GJbgJ4hXEAA34pb?format=jpg&name=900x900">
+					<p>(16) Aquaman returning</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/7MEs4dwFKBQrOVkq5zR0zg?si=ae6aea5b7ed14133">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GJbgJ4hXEAA34pb?format=jpg&name=900x900">
+					<p>(17) The provenance of gathered</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/24KSUIrJqbQdDgq18Cailr?si=ead418aea5694c6a">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GJbgJ4hXEAA34pb?format=jpg&name=900x900">
+					<p>(18) We do this together</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/2lhPSydKGntOPDomxkDlrr?si=0d2f0678eb9146fc">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GJbgJ4hXEAA34pb?format=jpg&name=900x900">
+					<p>(19) The will to power</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/3WpKTqdHZN017svQb9u8TW?si=c3c2b202737a4e98">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GJbgJ4hXEAA34pb?format=jpg&name=900x900">
+					<p>(20) Smoke become fire</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/6ApsMZ3bymVfcsm6atntVo?si=fb4de91092034272">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GJbgJ4hXEAA34pb?format=jpg&name=900x900">
+					<p>(21) I teach you</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/5SuqDbLSUviS0xPHvAhw60?si=8c295478033d46d2">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GJbgJ4hXEAA34pb?format=jpg&name=900x900">
+					<p>(22) A glimmer at the door</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/4KGymOvZcnkbIoUcf3ASgM?si=e8f8f73fc6464015">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GJbgJ4hXEAA34pb?format=jpg&name=900x900">
+					<p>(23) How we achieve</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/24oLfQVlNYhac5Jqsh6sqG?si=957af576babe4880">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GJbgJ4hXEAA34pb?format=jpg&name=900x900">
+					<p>(24) The sun forever rising</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/4XCEa4OXOG3bqtZclSyTZv?si=62dd17aa203f403b">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GJbgJ4hXEAA34pb?format=jpg&name=900x900">
+					<p>(25) Underworld</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/1wA9rCDCJWL6XrW83topo0?si=d752fba7fc144cf9">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GJbgJ4hXEAA34pb?format=jpg&name=900x900">
+					<p>(26) Superman Rising PT1</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/4hAwqrTejA62Vn1xgUOf0V?si=4c180481e78d432e">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GJbgJ4hXEAA34pb?format=jpg&name=900x900">
+					<p>(27) Beyond good and evil</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/7ywynGUmrlyohDrlSD8BQj?si=fbd36cce17a4409d">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GJbgJ4hXEAA34pb?format=jpg&name=900x900">
+					<p>(28) Monument builder</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/3OLxZ4oMPFH5skB324qt8k?si=b350d4df2c404181">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GJbgJ4hXEAA34pb?format=jpg&name=900x900">
+					<p>(29) Monument destroyer</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/1OsgMXX3u4eYeeyEnOBKqU?si=b886fffdd3264f42">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GJbgJ4hXEAA34pb?format=jpg&name=900x900">
+					<p>(30) Urgrund</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/1aoitrxlbnGakpqxovsMjg?si=65eb7ece1e524f0c">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GJbgJ4hXEAA34pb?format=jpg&name=900x900">
+					<p>(31) So begins the end</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/13reYNQdgu3biOLsZqk3Dy?si=8959ff3d9f2744e7">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GJbgJ4hXEAA34pb?format=jpg&name=900x900">
+					<p>(32) The house of belonging</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/17ZhFuXN0vG4lVlbQJ9Xjy?si=b0e096c1ad0242e2">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GJbgJ4hXEAA34pb?format=jpg&name=900x900">
+					<p>(33) Earthling</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/1dQmWcg1Be92LOwogxFezL?si=363e85b59c51498c">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GJbgJ4hXEAA34pb?format=jpg&name=900x900">
+					<p>(34) Flight is our nature</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/2VG9sW6umV9RXx2zYinj8H?si=e2b252db2804407b">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GJbgJ4hXEAA34pb?format=jpg&name=900x900">
+					<p>(35) Indivisible</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/2YNfbTDiKsloJEkcfo71VK?si=4a6009a66c8f4cca">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GJbgJ4hXEAA34pb?format=jpg&name=900x900">
+					<p>(36) And the Lion earth PT1</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/6sKbeNktcnGeyx5nE8xuuS?si=c85e34ad0ed94921">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GJbgJ4hXEAA34pb?format=jpg&name=900x900">
+					<p>(37) And the Lion earth PT2</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/0GhMz8BlZHg07NZMOOcljC?si=5767c824d0c840dd">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GJbgJ4hXEAA34pb?format=jpg&name=900x900">
+					<p>(38) Superman Rising PT2</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/6Q60BmM4JrOliafNK2EtmL?si=66d82338bf6c411e">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GJbgJ4hXEAA34pb?format=jpg&name=900x900">
+					<p>(39) At the speed force</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/241MmXOPyJFKVsHMLD8pjx?si=08eb2b4c21484730">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GJbgJ4hXEAA34pb?format=jpg&name=900x900">
+					<p>(40) My broken boy</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/1Hsv3Avb52vqpPQumy6zw8?si=5e67032df97444f4">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GJbgJ4hXEAA34pb?format=jpg&name=900x900">
+					<p>(41) That terrible strength</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/2iFaQgdIA1dmX3OF5jQ3dJ?si=a39ad96f21a74a67">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GJbgJ4hXEAA34pb?format=jpg&name=900x900">
+					<p>(42) An eternal reoccurrence</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/13AIpc8ELDLkjlMCULreAt?si=950f7683cdb8407c">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GJbgJ4hXEAA34pb?format=jpg&name=900x900">
+					<p>(43) We slay ourselves</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/6Fk4yyChp2Q44JVfwnWW1K?si=8fea1cfd01224690">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GJbgJ4hXEAA34pb?format=jpg&name=900x900">
+					<p>(44) Your own house to ashes</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/2muLBgWRzMlwGqk0t5mPTM?si=bcaf120d5665472a">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GJbgJ4hXEAA34pb?format=jpg&name=900x900">
+					<p>(45) All os you undisturbed</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/1zgIuEnu8jSNO9ahGWW96O?si=6de99595d4fd4d87">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GJbgJ4hXEAA34pb?format=jpg&name=900x900">
+					<p>(46) The art of preserving fire</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/7fBb0IZb7KlU62HVvN32AW?si=e192c91ea55b4614">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GJbgJ4hXEAA34pb?format=jpg&name=900x900">
+					<p>(47) The crew warpower</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/21tZsujAI0QypvN7c5xvvm?si=e948ca0d85544846">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GJbgJ4hXEAA34pb?format=jpg&name=900x900">
+					<p>(48) The foundation</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/4gwbefDJFHWfwsWkJqPb68?si=566916771bd14804">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GJbgJ4hXEAA34pb?format=jpg&name=900x900">
+					<p>(49) Batman, duty to fight</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/6deci5C5DZ3tkJelY12YEK?si=78bbcea12bda48b5">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GJbgJ4hXEAA34pb?format=jpg&name=900x900">
+					<p>(50) Batman, invocation to heal</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/5Kmuzq04zLGG6Prvp1AjAO?si=7ac506a6e627470f">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GJbgJ4hXEAA34pb?format=jpg&name=900x900">
+					<p>(51) Wonder Woman, call to stand</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/1BTJY4ucDs6CXQCmDZlUdZ?si=ae332b12f6274b3e">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GJbgJ4hXEAA34pb?format=jpg&name=900x900">
+					<p>(52) Flash, Space to win</p>
+				</a>
+			</div>
+						
+
+	</article>
+
+	<hr>
+
+	<article>
+
+		
+			<h1>Canciones</h1>
+			
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/6y3zNyQbSnMN50uXN0r3X3?si=06f04553901b4f02">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GJbgJ4hXEAA34pb?format=jpg&name=900x900">
+					<p>(53) Hallelujah</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/43I0E943aSF6HMWPXcjLrw?si=14afaf52a0104f50">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GJbgJ4hXEAA34pb?format=jpg&name=900x900">
+					<p>(54) Song to the Siren</p>
+				</a>
+			</div>	
+
+	</article>
+
+	<hr>
+	
+
+</body>
+</html>
