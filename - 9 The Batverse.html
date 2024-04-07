@@ -187,12 +187,12 @@
                 
             }
 
-            @keyframes nitidez {
+            @keyframes zoom-inverso {
     0% {
-        filter: blur(5px); /* Imagen borrosa al inicio */
+        transform: scale(1.5); /* Escala al 150% al inicio */
     }
     100% {
-        filter: blur(0); /* Imagen nítida después de 2 segundos */
+        transform: scale(1); /* Escala normal después de 2 segundos */
     }
 }
 
@@ -201,8 +201,8 @@
     text-align: center;
 }
 
-.logoheader {
-    animation: nitidez 2s ease forwards; /* Animación de desenfoque */
+.logoheader img {
+    animation: zoom-inverso 2s ease forwards; /* Animación de zoom inverso */
 }
 
 
