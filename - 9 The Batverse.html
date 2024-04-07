@@ -187,6 +187,24 @@
                 
             }
 
+            @keyframes nitidez {
+    0% {
+        filter: blur(5px); /* Imagen borrosa al inicio */
+    }
+    100% {
+        filter: blur(0); /* Imagen nítida después de 2 segundos */
+    }
+}
+
+.logoheader {
+    width: 100%;
+    text-align: center;
+}
+
+.logoheader {
+    animation: nitidez 2s ease forwards; /* Animación de desenfoque */
+}
+
 
 
         .boton {
