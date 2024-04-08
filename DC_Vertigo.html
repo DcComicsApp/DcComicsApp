@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DC Vertigo</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=1">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap" rel="stylesheet">
+	<style type="text/css">
+
+		body{
+			font-family: 'IBM Plex Sans', sans-serif;
+			margin: 0;
+			background-color: black;
+		}
+
+		a{text-decoration: none;}
+
+		header{display: none;}
+		
+		aside{
+			width: 20%;
+			height: 100vh;
+			background-color: black;
+			float: left;
+			border-right: 3px solid #14659E;
+			position: fixed;
+		}
+
+		aside img{
+			width: 45%;
+		}
+
+		img{
+			filter: contrast(1.06);
+		}
+
+		.logo{
+			text-align: center;
+			padding-top: 5vh;
+		}
+
+		.contenedorcajon{
+			padding-top: 40px;
+		}
+
+
+		section{
+			width: 80%;
+			background-color: black;
+			float: right;
+		}
+
+		hr{
+			width: 80%;
+			border: 2px solid #14659E;
+			margin-top: 8vh;
+			margin-bottom: 0;
+		}
+
+		section article h1{
+			font-size: 70px;
+			text-align: center;
+			color: white;
+		}
+
+		section article img{
+			display: inline-block;
+			text-align: center;
+			width: 16%;
+			margin-top: 50px;
+			margin-right: 2%;
+			margin-bottom: 0;
+			margin-left: 5.5%;
+			border-radius: 20px;
+			transition: 0.5s;
+			border:2.5px solid #1F4A69;
+			box-shadow: 0px 0px 0px black;
+		}
+
+		section article img:hover{
+			cursor: pointer;
+			border:2.5px solid #1F4A69;
+			box-shadow: 0px 0px 80px #14659E;
+		}
+
+		.carrusel {
+			  width: 100%;
+			  height: 685px;
+			  position: relative;
+			  overflow: hidden;
+			}
+
+		.carrusel .imagenes {
+			  width: 400%;
+			  height: 100%;
+			  position: absolute;
+			  top: 0;
+			  left: 0;
+			  display: flex;
+			  transition: left 1s ease-in-out;
+			}
+
+		.carrusel .imagenes label {
+			  flex: 1;
+			}
+
+		.carrusel .imagenes img {
+			  width: 100%;
+			  height: 100%;
+			  object-fit: cover;
+			}
+
+		.carrusel #imagen1:checked ~ .imagenes {
+			  left: 0;
+			}
+
+		.carrusel #imagen2:checked ~ .imagenes {
+			  left: -100%;
+			}
+
+		.carrusel #imagen3:checked ~ .imagenes {
+			  left: -200%;
+			}
+
+		.carrusel #imagen4:checked ~ .imagenes {
+			  left: -300%;
+			}
+
+
+		@keyframes carrusel {
+			  0% {
+			    left: 0;
+			  }
+			  25% {
+			    left: 0;
+			  }
+			  26% {
+			    left: -100%;
+			  }
+			  50% {
+			    left: -100%;
+			  }
+			  51% {
+			    left: -200%;
+			  }
+			  75% {
+			    left: -200%;
+			  }
+			  76% {
+			    left: -300%;
+			  }
+			  100% {
+			    left: -300%;
+			  }
+			}
+
+		.carrusel .imagenes {
+			  animation: carrusel 40s infinite;
+			}
+
+
+
+
+		@media screen and (max-width: 768px){
+
+			aside{
+				display: none;
+			}
+
+			header{display: block;}
+
+			.logoheader{
+				text-align: center;
+				
+				
+			}
+			
+			header div img{
+				width: 100%;
+				margin-bottom: 90px;
+				
+			}
+
+			section{
+				width: 100%;
+			}
+
+			section article img{				
+				border-radius: 15px;
+				width: 24%;
+				box-shadow: 0px 0px 50px #14659E;
+				border:0px;
+				margin-top: 7vh
+			}
+
+			section article h1{
+				font-size: 30px;
+				text-align: center;
+				color: white;
+				margin-top: -8vh
+			}
+
+			section article img:hover{
+				cursor: pointer;
+				box-shadow: 0px 0px 50px #14659E;
+				border:0px;
+			}
+			
+		}
+
+
+
+
+
+		@media screen and (max-width: 410px){
+
+
+				section article img{
+					width: 41.5%;
+					margin-top: 35px;
+					margin-bottom: 5px;
+					border-radius: 15px;
+					margin-right: 0%;
+					margin-left: 5.5%;
+					box-shadow: 0px 0px 22px #14659E;
+					border:0px;
+				}
+
+				section article img:hover{
+					box-shadow: 0px 0px 25px #14659E;
+					border:0px;
+				}
+
+				section article h1{
+					margin-top: 8vh
+
+				}
+
+				section article {
+					padding-top: 32%;
+				}
+
+				hr{
+					margin-top: 2vh;
+				}
+
+				.logoheader{
+					text-align: center;
+				
+			}
+
+				#textuno{margin-top: -60px}
+		}
+
+
+	</style>
+</head>
+
+
+
+
+
+<body>
+
+	<header>
+	
+		<div>
+			<div class="carrusel">
+ 				 <input type="radio" name="imagen" id="imagen1" checked>
+ 				 <input type="radio" name="imagen" id="imagen2">
+ 				 <input type="radio" name="imagen" id="imagen3">
+ 				 <input type="radio" name="imagen" id="imagen4">
+  
+ 			 <div class="imagenes">
+
+
+ 			 	  <label for="imagen1"><img src="https://pbs.twimg.com/media/GKpzaMVXoAAugu3?format=jpg&name=4096x4096"></label> 
+ 			 	  <label for="imagen4"><img src="https://pbs.twimg.com/media/GKpzaMVXoAAugu3?format=jpg&name=4096x4096"></label>
+ 			 	  <label for="imagen3"><img src="https://pbs.twimg.com/media/GKpzaMVXoAAugu3?format=jpg&name=4096x4096"></label>
+ 			 	  <label for="imagen1"><img src="https://pbs.twimg.com/media/GKpzaMVXoAAugu3?format=jpg&name=4096x4096"></label>	
+ 			 	  
+ 			 			  
+
+ 		 </div>
+		</div>
+		</div>
+
+	</header>
+
+
+	<aside>
+		<div class="logo">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/DC_Comics_logo.svg">
+		</div>
+
+		<div class="contenedorcajon">
+			
+		</div>	
+
+	</aside>
+
+
+
+
+	<section>
+		
+		<article>
+			<h1 id="textuno">Peliculas live action</h1>
+
+			<a href="1 Peliculas/141 Vertigo V for Vendetta/Vertigo V for Vendetta.html">
+				<img src="https://pbs.twimg.com/media/GKpu2rvW8AABfsi?format=jpg&name=medium">
+			</a>
+			
+
+
+		
+		</article>
+
+		<hr>
+
+	
+
+		
+
+
+
+	</section>
+
+
+</body>
+</html>
