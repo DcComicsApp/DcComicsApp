@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Soundtrack</title>
+	<meta name="viewport" content="width=device-width, user-scalable=1">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
+	<style type="text/css">
+		
+		body{
+			margin: 0;
+			font-family: 'IBM Plex Sans', sans-serif;
+			min-width: 323px;
+			background-color: black;
+		}
+
+		a{text-decoration: none;}
+
+		.portadamovil{display: none;}
+
+		.botonmovil{display: none;}
+
+		aside{
+			width: 20%;
+			height: 100vh;
+			background-color: black;
+			float: left;
+			border-right: 3px solid #14659E;
+			position: fixed;
+		}
+
+		aside div img{
+			width: 45%;
+		}
+
+		.logo{
+			text-align: center;
+			padding-top: 5vh;
+		}
+
+		.logopelicula{
+			text-align: center;
+			padding-top: 40px
+		}
+
+		.logopelicula img{
+			width: 90%;
+		}
+
+		.boton{
+			width: 70%;
+			height: 60px;
+			text-align: center;
+			line-height: 60px;
+			border-radius: 30px;
+			border: 2.5px solid #14659E;
+			color:white;
+			margin: 0 auto;
+			margin-top: 6vh;
+			transition: 0.5s;
+		}
+		.boton:hover{
+			box-shadow: 0px 0px 50px #14659E;
+			background-color: #14659E;
+			color: black;
+			cursor: pointer;
+		}
+
+		.posteraside{
+			text-align: center;
+			margin-top: 7vh;
+		}
+		.posteraside img{border-radius: 20px;}
+
+		section{
+			width: 80%;
+			height: 100vh;
+			background-color: black;
+			float: right;
+		}
+
+		.portada img{
+			width: 85%;
+			border-radius: 40px;
+		}
+
+		.portada{
+			text-align: center;
+			padding-top: 10vh;
+		}
+
+		#logopeliculados{
+			width: 30%;
+			margin-top: -4vh;
+		}
+
+		hr{
+			width: 80%;
+			border: 2px solid #14659E;
+			margin-top: 8vh;
+			margin-bottom: 0;
+		}
+
+		section h1{
+			font-size: 70px;
+			text-align: center;
+			color: white;
+		}
+
+		.detalles{
+			margin-left: 20%;
+		}
+
+		p{
+			width: 80%;
+			color: white;
+			font-size: 20px;
+		}
+
+		
+
+		.episodios{
+			display: inline-block;
+			width: 24%;
+			margin-top: 50px;
+			margin-right: 2%;
+			margin-bottom: 0;
+			margin-left: 5.5%;
+			
+		}
+
+		.episodios img{
+			width: 35%;
+			border-radius: 40px;
+			transition: 0.5s;
+			border:0px solid #1F4A69;
+			box-shadow: 0px 0px 80px #14659E;
+			left: 20%
+		}
+		
+
+		.episodios p{
+			text-align: left;
+			color: #B3B3B3;
+			float: right;
+
+		}
+
+		#fotoswiki2{
+			width: 8%;
+			display: inline-block;
+			text-align: center;
+			margin-top: 50px;
+			margin-right: 2%;
+			margin-bottom: 0;
+			margin-left: 5.5%;
+			border-radius: 20px;
+			transition: 0.5s;
+			border:0px solid #1F4A69;
+			box-shadow: 0px 0px 80px #14659E;
+		}
+
+
+
+
+
+
+
+		@media screen and (max-width: 768px){
+
+			aside{display: none;}
+
+			section{
+				width: 100%;
+			}
+			
+			.portada{
+				margin-top: -10%;
+			}
+			
+
+			#logopeliculados{
+				width: 80%;
+				margin-top: 2vh;
+
+			}
+
+			.botonmovil{
+				display: block;
+				
+				
+			}
+
+			section h1{
+				font-size: 40px;
+			}
+
+
+			.boton:hover{
+				box-shadow: none;
+				background-color: black;
+				color: white;
+				cursor: pointer;
+			}
+
+			.episodios{
+				text-align: center;
+				width: 40%;	
+			}
+
+			.episodios img{
+				width: 40%;
+				border-radius: 30px;
+				box-shadow: 0px 0px 50px #14659E;
+				
+			}
+
+			#fotoswiki2{
+			width: 11%;
+			box-shadow: 0px 0px 50px #14659E;
+
+			}
+			
+
+			
+
+
+
+		}
+
+
+
+
+		@media screen and (max-width: 410px){
+
+			section h1{
+				font-size: 30px;
+			}
+
+			.portada{display: none;}
+
+			.portadamovil{
+				display: block;
+			}
+			.portadamovil img{width: 100%;}
+
+			#informacion{
+				font-size: 15px;
+			}
+
+			#logopeliculados{
+				width: 85%;
+			}
+
+			.botonmovil{
+				margin-top: -10%;
+			}
+
+
+			section div p{
+				width: 90%;
+			}
+
+			.episodios{	
+				text-align: center;
+				width: 40%;
+				margin-top: 31px;	
+			}
+
+			.episodios img{
+				width: 45%;
+				border-radius: 20px;
+				transition: 0.5s;
+				border:0px solid #1F4A69;
+				box-shadow: 0px 0px 50px #14659E;
+				left: 20%
+			}
+			
+
+			.episodios p{
+				float: right;
+				font-size: 15px;
+			}
+
+			#fotoswiki2{
+				width: 20%;
+				margin-top: 4vh;
+				margin-right: 5%;
+				margin-bottom: 0;
+				margin-left: 6%;
+				box-shadow: 0px 0px 50px #14659E;
+			}
+
+
+
+
+			
+
+
+		}
+
+		
+
+		
+
+
+
+
+	</style>
+</head>
+
+	
+
+
+<body>
+
+
+	<aside>
+
+		<div class="logo">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/DC_Comics_logo.svg">
+		</div>
+
+		
+
+	</aside>
+
+
+	<section>
+
+	<div class="portada">
+		<img src="https://uhdwallpapers.org/uploads/converted/18/12/03/aquaman-hero-wallpaper-1920x1080_67954-mm-90.jpg">
+	</div>
+
+	<div class="portadamovil">
+		<img src="https://pbs.twimg.com/media/GLmX9_oXgAEnVKf?format=jpg&name=large">
+	</div>
+
+	
+
+	
+
+
+	<article>
+
+		
+			<h1>Soundtrack</h1>
+			
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/3ZwMSdmBu7ULqkPoIhN419?si=b789542926cf45d7">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GLmX9_nXgAA7GmE?format=jpg&name=large">
+					<p>(1) Arthur</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/2kzcLJSBvG4Msqi2aW9JrH?si=138d171a1f014674">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GLmX9_nXgAA7GmE?format=jpg&name=large">
+					<p>(2) The Kingdom of Atlantis</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/6XEVnayezM1PfNUGs0plJp?si=93721ca46a534b5b">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GLmX9_nXgAA7GmE?format=jpg&name=large">
+					<p>(3) It wasn´t meant to be</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/5kiChy5ZCeqIMRh9H3If4g?si=4e7dba6ddc914536">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GLmX9_nXgAA7GmE?format=jpg&name=large">
+					<p>(4) Atlantean Soldiers</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/6fOvVOyp4zn5haI2GSgwFK?si=3f7bbaf3978040bd">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GLmX9_nXgAA7GmE?format=jpg&name=large">
+					<p>(5) What does tha even mean</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/4z43G9RKTPBE1flbbO4zRC?si=95d1775a75644227">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GLmX9_nXgAA7GmE?format=jpg&name=large">
+					<p>(6) The Legend of Atlan</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/5ycU9OjTDtT3deAUzzdoWj?si=f12db8908f4540ea">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GLmX9_nXgAA7GmE?format=jpg&name=large">
+					<p>(7) Swimming Lessons</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/0JkEQrNYASg8gEwdDmXFaL?si=a25e768a82784172">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GLmX9_nXgAA7GmE?format=jpg&name=large">
+					<p>(8) The Black Manta</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/7Hm8dRFuwpI3OgBaZ4wvxP?si=4ff487b58eeb42f6">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GLmX9_nXgAA7GmE?format=jpg&name=large">
+					<p>(9) Greater than a king</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/67021SbkKpG7NEF7aUfmg1?si=3249181500974dc8">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GLmX9_nXgAA7GmE?format=jpg&name=large">
+					<p>(10) Permission to come aboard</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/6m7RrAqDhlEt8Pu6Ia8aRk?si=3c191569be6f4df9">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GLmX9_nXgAA7GmE?format=jpg&name=large">
+					<p>(11) Suited and Booted</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/2SCCEb0IDX8vNsuev9xwzN?si=2805f84743cd488b">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GLmX9_nXgAA7GmE?format=jpg&name=large">
+					<p>(12) Between land and sea</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/60eH1Rq5rBbwABYiD0mv4i?si=fb840190533f4688">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GLmX9_nXgAA7GmE?format=jpg&name=large">
+					<p>(13) He Commands the sea</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/2FU5xJF8X351lKxrK4VJb5?si=ee21627c1e214c97">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GLmX9_nXgAA7GmE?format=jpg&name=large">
+					<p>(14) Map in a Bottle</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/64LGtWvwrHskG1spuaeR6C?si=49f5044f1a464748">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GLmX9_nXgAA7GmE?format=jpg&name=large">
+					<p>(15) The Ring of Fire</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/1VOCONe88rn4MzzZW0gORH?si=bd5c35af90be43bc">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GLmX9_nXgAA7GmE?format=jpg&name=large">
+					<p>(16) Reunited</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/7ivfQxOHOoXP9SUgZdTL1d?si=f61ea61faaaa4d1e">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GLmX9_nXgAA7GmE?format=jpg&name=large">
+					<p>(17) Trench Engaged</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/3GAQkFeVyUlLKlwRus9ZhG?si=97e683fa64804b76">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GLmX9_nXgAA7GmE?format=jpg&name=large">
+					<p>(18) Mera Montage</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/3JbKH2DPrUa2aRFsw3GIkQ?si=fa9578a11f824187">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GLmX9_nXgAA7GmE?format=jpg&name=large">
+					<p>(19) Home Invasion</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/4iAEBCzFXDRoJ2SGoeexXD?si=6c242d46b1894b38">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GLmX9_nXgAA7GmE?format=jpg&name=large">
+					<p>(20) Saving Pops</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/6HYIHX8mgGZ31EvXBebxZ1?si=de1067dea7e24267">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GLmX9_nXgAA7GmE?format=jpg&name=large">
+					<p>(21) Ahab Waves</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/08efT3EG2gPhlGYtuZj9pT?si=c82e44ba33374c1a">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GLmX9_nXgAA7GmE?format=jpg&name=large">
+					<p>(22) Ask the sea</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/1FpaBDlOfXc6tvPaqJNsRl?si=a54b4fdc15fd4842">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GLmX9_nXgAA7GmE?format=jpg&name=large">
+					<p>(23) Obligation</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/5M4567NyCSK5AWxPJ3XJq4?si=bc476180226f4ee4">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GLmX9_nXgAA7GmE?format=jpg&name=large">
+					<p>(24) Dunes</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/3KeGggX1Ya5bcpSxsrINBY?si=345618faaf084828">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GLmX9_nXgAA7GmE?format=jpg&name=large">
+					<p>(25) Suited and Booted</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/5hb3CHEEoawBxlT5oAhZcu?si=91ec8d2cfaab41a9">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GLmX9_nXgAA7GmE?format=jpg&name=large">
+					<p>(26) The Black Manta</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/61PxYk8McMQPQcEn5pWVI0?si=8e021bac14604245">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GLmX9_nXgAA7GmE?format=jpg&name=large">
+					<p>(27) Atlantean Soldiers Feat</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/2SkhuEg2fK67Uu8csycbGy?si=80fd239940ff4f72">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GLmX9_nXgAA7GmE?format=jpg&name=large">
+					<p>(28) Kingdom of Atlantis Feat</p>
+				</a>
+			</div>	
+
+
+			
+						
+
+	</article>
+
+	<hr>
+
+	<article>
+
+		
+			<h1>Canciones</h1>
+			
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/5B6082J94hvTWxLjWBIm2g?si=0e72eb05665d4811">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GLmX9_nXgAA7GmE?format=jpg&name=large">
+					<p>(29) Everything I Need</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/4xtk8IT8fkWO4kGFO7Bikk?si=64b19257d7b24dc5">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GLmX9_nXgAA7GmE?format=jpg&name=large">
+					<p>(30) Ocean To Ocean</p>
+				</a>
+			</div>	
+
+	</article>
+
+	<hr>
+	
+
+</body>
+</html>
