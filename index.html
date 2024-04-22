@@ -22,6 +22,24 @@
 
 		.categorias{display: none;}
 
+		#overlay {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: #000;
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #loading-logo {
+            width: 200px; /* Ajusta el tamaño de tu logo según sea necesario */
+            height: 200px; /* Ajusta el tamaño de tu logo según sea necesario */
+        }
+
 		h2{
 			color: white;
 			text-align: right;
@@ -481,6 +499,18 @@
 
 <body>
 
+	 <div id="overlay">
+        <img id="loading-logo" src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExdXJodXYzc29vMHZ3YnBmZXprbGNvbDdpa3FrMmVwYzZkZ2FpajJwaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/0DBWFtXNBf0ncgHx3z/source.gif" alt="Logo de carga" style="width: 75%; height: auto;" >
+    </div>
+
+      <script>
+        window.addEventListener('load', function () {
+            // Oculta la pantalla de carga después de 4 segundos
+            setTimeout(function () {
+                document.getElementById('overlay').style.display = 'none';
+            }, 4000); // 4000 milisegundos = 4 segundos
+        });
+    </script>
 
 	<header>
 	
