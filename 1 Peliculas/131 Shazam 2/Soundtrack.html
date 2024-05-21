@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Soundtrack</title>
+	<meta name="viewport" content="width=device-width, user-scalable=1">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
+	<style type="text/css">
+		
+		body{
+			margin: 0;
+			font-family: 'IBM Plex Sans', sans-serif;
+			min-width: 323px;
+			background-color: black;
+		}
+
+		a{text-decoration: none;}
+
+		.portadamovil{display: none;}
+
+		.botonmovil{display: none;}
+
+		aside{
+			width: 20%;
+			height: 100vh;
+			background-color: black;
+			float: left;
+			border-right: 3px solid #14659E;
+			position: fixed;
+		}
+
+		aside div img{
+			width: 45%;
+		}
+
+		.logo{
+			text-align: center;
+			padding-top: 5vh;
+		}
+
+		.logopelicula{
+			text-align: center;
+			padding-top: 40px
+		}
+
+		.logopelicula img{
+			width: 90%;
+		}
+
+		.boton{
+			width: 70%;
+			height: 60px;
+			text-align: center;
+			line-height: 60px;
+			border-radius: 30px;
+			border: 2.5px solid #14659E;
+			color:white;
+			margin: 0 auto;
+			margin-top: 6vh;
+			transition: 0.5s;
+		}
+		.boton:hover{
+			box-shadow: 0px 0px 50px #14659E;
+			background-color: #14659E;
+			color: black;
+			cursor: pointer;
+		}
+
+		.posteraside{
+			text-align: center;
+			margin-top: 7vh;
+		}
+		.posteraside img{border-radius: 20px;}
+
+		section{
+			width: 80%;
+			height: 100vh;
+			background-color: black;
+			float: right;
+		}
+
+		.portada img{
+			width: 85%;
+			border-radius: 40px;
+		}
+
+		.portada{
+			text-align: center;
+			padding-top: 10vh;
+		}
+
+		#logopeliculados{
+			width: 30%;
+			margin-top: -4vh;
+		}
+
+		hr{
+			width: 80%;
+			border: 2px solid #14659E;
+			margin-top: 8vh;
+			margin-bottom: 0;
+		}
+
+		section h1{
+			font-size: 70px;
+			text-align: center;
+			color: white;
+		}
+
+		.detalles{
+			margin-left: 20%;
+		}
+
+		p{
+			width: 80%;
+			color: white;
+			font-size: 20px;
+		}
+
+		
+
+		.episodios{
+			display: inline-block;
+			width: 24%;
+			margin-top: 50px;
+			margin-right: 2%;
+			margin-bottom: 0;
+			margin-left: 5.5%;
+			
+		}
+
+		.episodios img{
+			width: 35%;
+			border-radius: 40px;
+			transition: 0.5s;
+			border:0px solid #1F4A69;
+			box-shadow: 0px 0px 80px #14659E;
+			left: 20%
+		}
+		
+
+		.episodios p{
+			text-align: left;
+			color: #B3B3B3;
+			float: right;
+
+		}
+
+		#fotoswiki2{
+			width: 8%;
+			display: inline-block;
+			text-align: center;
+			margin-top: 50px;
+			margin-right: 2%;
+			margin-bottom: 0;
+			margin-left: 5.5%;
+			border-radius: 20px;
+			transition: 0.5s;
+			border:0px solid #1F4A69;
+			box-shadow: 0px 0px 80px #14659E;
+		}
+
+
+
+
+
+
+
+		@media screen and (max-width: 768px){
+
+			aside{display: none;}
+
+			section{
+				width: 100%;
+			}
+			
+			.portada{
+				margin-top: -10%;
+			}
+			
+
+			#logopeliculados{
+				width: 80%;
+				margin-top: 2vh;
+
+			}
+
+			.botonmovil{
+				display: block;
+				
+				
+			}
+
+			section h1{
+				font-size: 40px;
+			}
+
+
+			.boton:hover{
+				box-shadow: none;
+				background-color: black;
+				color: white;
+				cursor: pointer;
+			}
+
+			.episodios{
+				text-align: center;
+				width: 40%;	
+			}
+
+			.episodios img{
+				width: 40%;
+				border-radius: 30px;
+				box-shadow: 0px 0px 50px #14659E;
+				
+			}
+
+			#fotoswiki2{
+			width: 11%;
+			box-shadow: 0px 0px 50px #14659E;
+
+			}
+			
+
+			
+
+
+
+		}
+
+
+
+
+		@media screen and (max-width: 410px){
+
+			section h1{
+				font-size: 30px;
+			}
+
+			.portada{display: none;}
+
+			.portadamovil{
+				display: block;
+			}
+			.portadamovil img{width: 100%;}
+
+			#informacion{
+				font-size: 15px;
+			}
+
+			#logopeliculados{
+				width: 85%;
+			}
+
+			.botonmovil{
+				margin-top: -10%;
+			}
+
+
+			section div p{
+				width: 90%;
+			}
+
+			.episodios{	
+				text-align: center;
+				width: 40%;
+				margin-top: 31px;	
+			}
+
+			.episodios img{
+				width: 45%;
+				border-radius: 20px;
+				transition: 0.5s;
+				border:0px solid #1F4A69;
+				box-shadow: 0px 0px 50px #14659E;
+				left: 20%
+			}
+			
+
+			.episodios p{
+				float: right;
+				font-size: 15px;
+			}
+
+			#fotoswiki2{
+				width: 20%;
+				margin-top: 4vh;
+				margin-right: 5%;
+				margin-bottom: 0;
+				margin-left: 6%;
+				box-shadow: 0px 0px 50px #14659E;
+			}
+
+
+
+
+			
+
+
+		}
+
+		
+
+		
+
+
+
+
+	</style>
+</head>
+
+	
+
+
+<body>
+
+
+	<aside>
+
+		<div class="logo">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/DC_Comics_logo.svg">
+		</div>
+
+		
+
+	</aside>
+
+
+	<section>
+
+	<div class="portada">
+		<img src="https://pbs.twimg.com/media/FtGrGsyXsAUcQTl?format=jpg&name=4096x4096">
+	</div>
+
+	<div class="portadamovil">
+		<img src="https://pbs.twimg.com/media/GOGH4dlXMAA_G61?format=jpg&name=medium">
+	</div>
+
+	
+
+	
+
+
+	<article>
+
+		
+			<h1>Soundtrack</h1>
+			
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/0ruVQiMm5zv4sv3NhJf0F2?si=5fe2c56bdce74b30">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GOGH4dkXMAAnhkC?format=jpg&name=small">
+					<p>(1) Shazam Fury of the Gods</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/04TIzNJDeozhUQGO6HTOKi?si=7f59dfb976a14e17">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GOGH4dkXMAAnhkC?format=jpg&name=small">
+					<p>(2) Fright at the museum</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/5ukYNcjyy2bhV84ZybipN3?si=db53241552d94674">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GOGH4dkXMAAnhkC?format=jpg&name=small">
+					<p>(3) The daughters of Atlas</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/48PC9ulYi5a9amT4lAlYxE?si=33674146eb514906">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GOGH4dkXMAAnhkC?format=jpg&name=small">
+					<p>(4) Steve</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/33fIq6yFE4ezcZ8dSttuN1?si=89826a68fb2a4786">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GOGH4dkXMAAnhkC?format=jpg&name=small">
+					<p>(5) Freddy over heels</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/2PWNAZuacr9AlryoL3xEdi?si=077391c9116840d8">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GOGH4dkXMAAnhkC?format=jpg&name=small">
+					<p>(6) Dome and gloom</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/4f8RBDmQvDxDWEl6smRnYI?si=436db6b63bfd40ee">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GOGH4dkXMAAnhkC?format=jpg&name=small">
+					<p>(7) Freddy sneaks in</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/25NxZZeZUvc0eIk4Le5fvW?si=6e2f4f0e35fe4939">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GOGH4dkXMAAnhkC?format=jpg&name=small">
+					<p>(8) Act of violins</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/45SPaNxgWJDCSnb2Dw3GAl?si=7ddeb72618f84a83">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GOGH4dkXMAAnhkC?format=jpg&name=small">
+					<p>(9) The guardian</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/3duMji7jyDPeBirNt9tfzG?si=d901a94fe62142e0">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GOGH4dkXMAAnhkC?format=jpg&name=small">
+					<p>(10) A family affair</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/3qih9RtQFNkJq8e25NNIGP?si=20558bb5088740e6">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GOGH4dkXMAAnhkC?format=jpg&name=small">
+					<p>(11) Dragon drop</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/32fGTRq6J4T2TcfqVPCIHC?si=2045983fe9a64aec">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GOGH4dkXMAAnhkC?format=jpg&name=small">
+					<p>(12) Philly tree´s take</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/5EWcDa3B0AoCjgygNkIEIt?si=6b32de30435d4064">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GOGH4dkXMAAnhkC?format=jpg&name=small">
+					<p>(13) I chose right</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/6xkCnmm7BkS9Myf7ukprTR?si=820b4fdc41c6436d">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GOGH4dkXMAAnhkC?format=jpg&name=small">
+					<p>(14) Before you go</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/0C9EnSVsNpGZB9NTe0mHcM?si=881850f130ff4aec">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GOGH4dkXMAAnhkC?format=jpg&name=small">
+					<p>(15) Dragon chase</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/3Fm9MTj3pFQTPousgMPsGL?si=d148005808454847">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GOGH4dkXMAAnhkC?format=jpg&name=small">
+					<p>(16) You disobeyed me</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/4AgrIa1LIp07EfREGKbFSi?si=4dfe44ec19f841b6">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GOGH4dkXMAAnhkC?format=jpg&name=small">
+					<p>(17) Lightning in a bottle</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/4b0Ib6kHa6OERRjsSFL70J?si=b9ffe6a63c854b22">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GOGH4dkXMAAnhkC?format=jpg&name=small">
+					<p>(18) Unicorn act</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/3HS5rGY5Ny7EAqEzpa4jDZ?si=89349cde94994a9d">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GOGH4dkXMAAnhkC?format=jpg&name=small">
+					<p>(19) Teste the rainbow</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/2oVlaEfZAMda0scoF1Mek3?si=79ced258e5c84597">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GOGH4dkXMAAnhkC?format=jpg&name=small">
+					<p>(20) Garage Showdown</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/7IvxgQFycXLmBMsFOqGSxk?si=7b22574735754a58">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GOGH4dkXMAAnhkC?format=jpg&name=small">
+					<p>(21) Freddy resist</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/2XfBqkidVGUEK0WI1mEQjF?si=eb42c1104b424df6">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GOGH4dkXMAAnhkC?format=jpg&name=small">
+					<p>(22) Crack of dome</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/2eyBnQbkTN2lDe6WIp9SY0?si=82c0f5232bcf436c">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GOGH4dkXMAAnhkC?format=jpg&name=small">
+					<p>(23) All or none</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/2SJJ4e2j3shopEkszPlGCM?si=9e2fda50686d4aaf">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GOGH4dkXMAAnhkC?format=jpg&name=small">
+					<p>(24) We end this now</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/7dpYfSPALiQ6BFsRseIEko?si=462a9a1f797943c1">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GOGH4dkXMAAnhkC?format=jpg&name=small">
+					<p>(25) A true god after all</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/2GZSxiOq2zVaM56egK2Jui?si=dde69982615949ed">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GOGH4dkXMAAnhkC?format=jpg&name=small">
+					<p>(26) Restoration</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/65AmLyEJHZDu1kp6U7mWaA?si=4d12210c6a384917">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GOGH4dkXMAAnhkC?format=jpg&name=small">
+					<p>(27) Hero</p>
+				</a>
+			</div>	
+
+			<div class="episodios">
+				<a href="https://open.spotify.com/intl-es/track/7EcSExXI7e5TSujYAT9YKP?si=48523035e5504599">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GOGH4dkXMAAnhkC?format=jpg&name=small">
+					<p>(28) Changing of the garden</p>
+				</a>
+			</div>	
+
+			
+		
+						
+
+	</article>
+
+	<hr>
+
+	
+
+</body>
+</html>
