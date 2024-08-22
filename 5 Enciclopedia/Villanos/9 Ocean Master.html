@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ocean Master</title>
+	<meta name="viewport" content="width=device-width, user-scalable=1">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
+	<style type="text/css">
+		
+		body{
+			margin: 0;
+			font-family: 'IBM Plex Sans', sans-serif;
+			min-width: 323px;
+			background-color: black;
+		}
+
+		a{text-decoration: none;}
+
+		.portadamovil{display: none;}
+
+		.botonmovil{display: none;}
+
+		aside{
+			width: 20%;
+			height: 100vh;
+			background-color: black;
+			float: left;
+			border-right: 3px solid #14659E;
+			position: fixed;
+		}
+
+		aside div img{
+			width: 45%;
+		}
+
+		.logo{
+			text-align: center;
+			padding-top: 5vh;
+		}
+
+		.logopelicula{
+			text-align: center;
+			padding-top: 40px
+		}
+
+		.logopelicula img{
+			width: 90%;
+		}
+
+		.boton{
+			width: 70%;
+			height: 60px;
+			text-align: center;
+			line-height: 60px;
+			border-radius: 30px;
+			border: 2.5px solid #14659E;
+			color:white;
+			margin: 0 auto;
+			margin-top: 6vh;
+			transition: 0.5s;
+		}
+		.boton:hover{
+			box-shadow: 0px 0px 50px #14659E;
+			background-color: #14659E;
+			color: black;
+			cursor: pointer;
+		}
+
+		section{
+			width: 80%;
+			height: 100vh;
+			background-color: black;
+			float: right;
+		}
+
+		.portada img{
+			width: 85%;
+			border-radius: 40px;
+		}
+
+		.portada{
+			text-align: center;
+			padding-top: 10vh;
+		}
+
+		#logopeliculados{
+			width: 30%;
+			margin-top: -4vh;
+		}
+
+		hr{
+			width: 80%;
+			border: 2px solid #14659E;
+			margin-top: 8vh;
+			margin-bottom: 0;
+		}
+
+		section h1{
+			font-size: 70px;
+			text-align: center;
+			color: white;
+			margin-top: 4vh;
+		}
+
+		.detalles{
+			margin-left: 5%;
+			margin-top: 4vh;
+		}
+
+		p{
+			width: 90%;
+			color: white;
+			font-size: 12px;
+		}
+
+
+
+
+
+		@media screen and (max-width: 768px){
+
+			aside{display: none;}
+
+			section{
+				width: 100%;
+			}
+			
+			.portada{
+				margin-top: -10%;
+			}
+			
+
+			#logopeliculados{
+				width: 80%;
+				margin-top: 2vh;
+
+			}
+
+			.botonmovil{
+				display: block;
+				
+				
+			}
+
+			section h1{
+				font-size: 40px;
+			}
+
+
+			.boton:hover{
+				box-shadow: none;
+				background-color: black;
+				color: white;
+				cursor: pointer;
+			}
+
+
+
+		}
+
+
+
+
+		@media screen and (max-width: 410px){
+
+			section h1{
+				font-size: 25px;
+			}
+
+			.portada{display: none;}
+
+			.portadamovil{
+				display: block;
+			}
+			.portadamovil img{width: 100%;}
+
+			#informacion{
+				font-size: 10px;
+			}
+
+			#logopeliculados{
+				width: 100%;
+				margin-top: -7vh;
+
+			}
+
+			
+
+			section div p{
+				width: 90%;
+			}
+			
+
+
+		}
+
+		
+
+		
+
+
+
+
+	</style>
+</head>
+
+	
+
+
+<body>
+
+
+	<aside>
+
+		<div class="logo">
+			<img src="https://pbs.twimg.com/media/GTlaSzCXQAA64Sj?format=jpg&name=medium">
+		</div>
+
+		<div class="logopelicula">
+			<img src="https://pbs.twimg.com/media/GVmrRAPWwAAgaNd?format=jpg&name=900x900">
+		</div>
+
+		
+
+		
+
+	</aside>
+
+
+	<section>
+
+	<div class="portada">
+		<img src="https://pbs.twimg.com/media/GVmrRAbXYAAUzZ4?format=jpg&name=large">
+	</div>
+
+	<div class="portadamovil">
+		<img src="https://pbs.twimg.com/media/GVmrRAVWsAAUHND?format=jpg&name=large">
+	</div>
+
+	<div class="logopelicula">
+		<img id="logopeliculados" src="https://pbs.twimg.com/media/GVmrRAPWwAAgaNd?format=jpg&name=900x900">
+	</div>
+
+
+	<div class="detalles">
+		<p>PELIGROSIDAD</p> 
+		<progress id="file" max="100" value="80" style="width: 95%"> 70% </progress>
+
+		<p>FUERZA</p> 
+		<progress id="file" max="100" value="65" style="width: 95%"> 70% </progress>
+
+		<p>INTELIGENCIA</p> 
+		<progress id="file" max="100" value="80" style="width: 95%"> 70% </progress>
+
+		<p>VELOCIDAD</p> 
+		<progress id="file" max="100" value="65" style="width: 95%"> 70% </progress>
+
+		
+		
+	</div>
+
+	<hr>
+
+
+	<h1>Información basica</h1>
+	<div class="detalles">
+		<p>Primera aparición: Aquaman #29, (septiembre de 1966)</p> 
+
+		<p>Creadores: Bob Haney / Nick Cardy </p> 
+
+		<p>Nombre original: Orm Marius/p> 
+
+		<p>Raza: Atlante</p> 
+
+		<p>Peso y Altura: 91kg / 1,80m</p> 
+
+		<p>Residencia: Atlantis</p> 
+
+		<p>Ocupaciones: Ex-Rey</p> 
+		
+	</div>
+
+	<hr>
+
+	<h1>Habilidades</h1>
+
+	<div class="detalles">
+
+		<p>Fisiología atlanteana</p> 
+		<p>Atributos aumentados</p> 
+		<p>Experto en combate cuerpo a cuerpo</p> 
+		<p>Estratega y manipulador</p> 
+		<p>Corona del rey</p> 
+		<p>Tridente de Nerón</p> 
+		
+	</div>
+	
+	
+
+	<article>
+
+
+	<hr>
+
+	<h1>Información general</h1>
+
+	<div class="detalles">
+
+		<p>Hijo de Atlan y de una mujer sin mucha importancia, Orm nació para ser el legítimo rey de Atlantis. En su estapa como adolescente se intereso por aprender las artes de la magia, en donde podría controlar el agua cómo quisiera.
+		
+		Su primer contactó con humanos fue cuando rescato a Kako de ser asesinada por un oso polar. Esto lleno la humanidad del atlante, enamorándose profundamente de ella, lamentablemente terminaría cegado por el amor ya qué encontraría a Arthur teniendo relaciones sexuales con ella, en un intento de acabar con los dos lleno de celos, dejo muy malherida a Kako mientras que a Curry lo dejo en el océano para que se ahogara.
+
+		Arthur se postulo al trono mucho tiempo después, cegado por su avaricia ocasionada por su medio hermano, tuvo una armadura de combate y hizo un trato con un ser antiguo de nombre Neron, qué le quito su alma a cambió de una arma muy poderosa qué racionalmente era un tridente. La hora llegó, y la venganza tocó, Orm comenzó una guerra entre su medio hermano y el por la lucha del poder, atacando en todos los defectos de Arthur fue derrotado en el desenlace.
+
+		Con el alter-ego de Ocean Master, se volvió en incontables ocasiones un dolor de cabeza para Aquaman, quién injustamente lo había ganado todo, un hogar, una familia y el respeto de su pueblo. Hasta el mismo llegó a unirse a la Injustice League para derrotar a su medio hermano y a sus compañeros.</p> 
+		
+		
+	</div>
+
+
+	<hr>
+
+	<h1>Personalidad</h1>
+
+	<div class="detalles">
+
+		<p>Ocean Master es una mente maestra intrigante, no está por encima de jugar con las personas (como los puristas) para que se ajusten a sus grandes planes. Utiliza su identidad secreta y su papel en la familia real para promover sus objetivos; su posición como el hermano menor cariñoso y afectuoso del rey también aseguró que nadie sospechara de su verdadera personalidad e intenciones durante años.</p> 
+		
+		
+	</div>
+	
+	
+
+	<article>
+			
+			
+			
+
+	</article>
+
+	<hr>
+
+	</section>
+
+	
+
+	
+
+
+
+
+</body>
+</html>
