@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Black Manta</title>
+	<meta name="viewport" content="width=device-width, user-scalable=1">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
+	<style type="text/css">
+		
+		body{
+			margin: 0;
+			font-family: 'IBM Plex Sans', sans-serif;
+			min-width: 323px;
+			background-color: black;
+		}
+
+		a{text-decoration: none;}
+
+		.portadamovil{display: none;}
+
+		.botonmovil{display: none;}
+
+		aside{
+			width: 20%;
+			height: 100vh;
+			background-color: black;
+			float: left;
+			border-right: 3px solid #14659E;
+			position: fixed;
+		}
+
+		aside div img{
+			width: 45%;
+		}
+
+		.logo{
+			text-align: center;
+			padding-top: 5vh;
+		}
+
+		.logopelicula{
+			text-align: center;
+			padding-top: 40px
+		}
+
+		.logopelicula img{
+			width: 90%;
+		}
+
+		.boton{
+			width: 70%;
+			height: 60px;
+			text-align: center;
+			line-height: 60px;
+			border-radius: 30px;
+			border: 2.5px solid #14659E;
+			color:white;
+			margin: 0 auto;
+			margin-top: 6vh;
+			transition: 0.5s;
+		}
+		.boton:hover{
+			box-shadow: 0px 0px 50px #14659E;
+			background-color: #14659E;
+			color: black;
+			cursor: pointer;
+		}
+
+		section{
+			width: 80%;
+			height: 100vh;
+			background-color: black;
+			float: right;
+		}
+
+		.portada img{
+			width: 85%;
+			border-radius: 40px;
+		}
+
+		.portada{
+			text-align: center;
+			padding-top: 10vh;
+		}
+
+		#logopeliculados{
+			width: 30%;
+			margin-top: -4vh;
+		}
+
+		hr{
+			width: 80%;
+			border: 2px solid #14659E;
+			margin-top: 8vh;
+			margin-bottom: 0;
+		}
+
+		section h1{
+			font-size: 70px;
+			text-align: center;
+			color: white;
+			margin-top: 4vh;
+		}
+
+		.detalles{
+			margin-left: 5%;
+			margin-top: 4vh;
+		}
+
+		p{
+			width: 90%;
+			color: white;
+			font-size: 12px;
+		}
+
+
+
+
+
+		@media screen and (max-width: 768px){
+
+			aside{display: none;}
+
+			section{
+				width: 100%;
+			}
+			
+			.portada{
+				margin-top: -10%;
+			}
+			
+
+			#logopeliculados{
+				width: 80%;
+				margin-top: 2vh;
+
+			}
+
+			.botonmovil{
+				display: block;
+				
+				
+			}
+
+			section h1{
+				font-size: 40px;
+			}
+
+
+			.boton:hover{
+				box-shadow: none;
+				background-color: black;
+				color: white;
+				cursor: pointer;
+			}
+
+
+
+		}
+
+
+
+
+		@media screen and (max-width: 410px){
+
+			section h1{
+				font-size: 25px;
+			}
+
+			.portada{display: none;}
+
+			.portadamovil{
+				display: block;
+			}
+			.portadamovil img{width: 100%;}
+
+			#informacion{
+				font-size: 10px;
+			}
+
+			#logopeliculados{
+				width: 100%;
+				margin-top: -7vh;
+
+			}
+
+			
+
+			section div p{
+				width: 90%;
+			}
+			
+
+
+		}
+
+		
+
+		
+
+
+
+
+	</style>
+</head>
+
+	
+
+
+<body>
+
+
+	<aside>
+
+		<div class="logo">
+			<img src="https://pbs.twimg.com/media/GTlaSzCXQAA64Sj?format=jpg&name=medium">
+		</div>
+
+		<div class="logopelicula">
+			<img src="https://pbs.twimg.com/media/GVlK5BzWQAACmhB?format=jpg&name=900x900">
+		</div>
+
+		
+
+		
+
+	</aside>
+
+
+	<section>
+
+	<div class="portada">
+		<img src="https://pbs.twimg.com/media/GVlK5DBWoAAnO6b?format=jpg&name=large">
+	</div>
+
+	<div class="portadamovil">
+		<img src="https://pbs.twimg.com/media/GVlK5BmW0AETUKM?format=jpg&name=4096x4096">
+	</div>
+
+	<div class="logopelicula">
+		<img id="logopeliculados" src="https://pbs.twimg.com/media/GVlK5BzWQAACmhB?format=jpg&name=900x900">
+	</div>
+
+
+	<div class="detalles">
+		<p>PELIGROSIDAD</p> 
+		<progress id="file" max="100" value="77" style="width: 95%"> 70% </progress>
+
+		<p>FUERZA</p> 
+		<progress id="file" max="100" value="45" style="width: 95%"> 70% </progress>
+
+		<p>INTELIGENCIA</p> 
+		<progress id="file" max="100" value="80" style="width: 95%"> 70% </progress>
+
+		<p>VELOCIDAD</p> 
+		<progress id="file" max="100" value="55" style="width: 95%"> 70% </progress>
+
+		
+		
+	</div>
+
+	<hr>
+
+
+	<h1>Información basica</h1>
+	<div class="detalles">
+		<p>Primera aparición: Aquaman #35 (septiembre de 1967)</p> 
+
+		<p>Creadores: Bob Haney / Nick Cardy</p> 
+
+		<p>Nombre original: David Milton Hyde</p> 
+
+		<p>Raza: Humano</p> 
+
+		<p>Peso y Altura: 113kg / 1,93m</p> 
+
+		<p>Residencia: Nomada</p> 
+
+		<p>Ocupaciones: Mercenario</p> 
+		
+	</div>
+
+	<hr>
+
+	<h1>Habilidades</h1>
+
+	<div class="detalles">
+
+		<p>Buceador experto</p> 
+		<p>Asesino experto y gran luchador</p> 
+		<p>Máxima condición física</p> 
+		<p>Liderazgo e Intelecto </p> 
+		<p>Armamento Atlante</p> 
+		<p>Rayos de calor oculares</p> 
+		
+	</div>
+	
+	
+
+	<article>
+
+
+	<hr>
+
+	<h1>Información general</h1>
+
+	<div class="detalles">
+
+		<p>El mayor enemigo de Aquaman es el villano más temido de los siete mares, David Hyde, cuyo corazón es tan frío como las profundidades del océano. Considerado uno de los mayores enemigos de Aquaman, Black Manta tiene un odio singular por el Rey de la Atlántida. Durante décadas, el verdadero nombre y los motivos de Manta estuvieron envueltos en misterio, escondidos detrás de su amenazante casco de gran tamaño. En los tiempos modernos, sin embargo, sus verdaderas motivaciones han sido reveladas. Pero no importa la época, Black Manta siempre ha infligido un tipo especial de dolor a su archienemigo, consolidando su reputación como uno de los criminales más despiadados y motivados en la historia de DC. Aquaman tiene una relación difícil con el mundo de la superficie, y eso se refleja en su relación con Black Manta. Este villano representa todo lo que los atlantes temen sobre la humanidad. Black Manta es un pirata y saqueador que no piensa en matar a los atlantes para obtener lo que quiere. Y debido a que guarda un rencor profundamente arraigado contra el propio Aquaman, Black Manta nunca dejará de intentar destruir la Atlántida mientras su némesis siga vivo.</p> 
+		
+		
+	</div>
+
+
+	<hr>
+
+	<h1>Personalidad</h1>
+
+	<div class="detalles">
+
+		<p>Black Manta tiene una personalidad fría, él ha sido capaz de autenticas atrocidades. Manta no tiene corazón, no tiene emociones ni sentimientos, no siente nada por matar a un infante o a cualquier persona. Este villano ha hecho lo peor de lo peor, es uno de los personajes más sádicos de todo DC Cómics. Manta es un alma sin emociones, nunca deja testigos en sus maldades. El adquirio esta personalidad gracias a su infancia, cómo ya lo mencioné, está fue complicada, debido que lo secuestraron, abusaron de él sexualmente y lo torturaron. Por esto, su carácter es tan frío, puede matar a personas que ama, incluso de su familia sin tener ningún cargo de conciencia. El siente un odio gigantesco hacia a Aquaman, la relación entre ambos es de un odio tremendo. En mi opinión, la conexión y todos los años de lucha que llevan es de lo mejor.
+
+		Black Manta es un oponente serio. No es simplemente un mercenario terrible que hace cualquier cosa por dinero, es un villano que puede tomar a Aquaman y golperlo hasta la muerte. Es más, en una de sus batallas, Manta mató a su padre y Aquaman mata al padre de del villano. Black Manta no trabaja por dinero, trabaja para Aquaman, cada respiro que toma es para robar el aire de Arthur y, por consiguiente, asesinar a todos sus seres amados. Ambos se odian tanto que su ira no se puede controlar y solo la muerte terminará su batalla. Así es Black Manta, una persona que es fuerte por sí misma, pero casi invencible por su odio a Aquaman y alguien que constantemente pone al héroe al límite, a un paso de volverse loco cada vez que pelean. Manta es dominante, concentrado y dirige a sus hombres con gran autoridad. Ha demostrado detestar cualquier falla o error, y castiga a sus hombres por eso. Black Manta puede perder la paciencia con facilidad si las cosas no salen según lo planeado.</p> 
+		
+		
+	</div>
+	
+	
+
+	<article>
+			
+			
+			
+
+	</article>
+
+	<hr>
+
+	</section>
+
+	
+
+	
+
+
+
+
+</body>
+</html>
