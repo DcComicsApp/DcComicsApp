@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Penguin</title>
+	<meta name="viewport" content="width=device-width, user-scalable=1">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
+	<style type="text/css">
+		
+		body{
+			margin: 0;
+			font-family: 'IBM Plex Sans', sans-serif;
+			min-width: 323px;
+			background-color: black;
+		}
+
+		a{text-decoration: none;}
+
+		.portadamovil{display: none;}
+
+		.botonmovil{display: none;}
+
+		aside{
+			width: 20%;
+			height: 100vh;
+			background-color: black;
+			float: left;
+			border-right: 3px solid #14659E;
+			position: fixed;
+		}
+
+		aside div img{
+			width: 45%;
+		}
+
+		.logo{
+			text-align: center;
+			padding-top: 5vh;
+		}
+
+		.logopelicula{
+			text-align: center;
+			padding-top: 40px
+		}
+
+		.logopelicula img{
+			width: 90%;
+		}
+
+		.boton{
+			width: 70%;
+			height: 60px;
+			text-align: center;
+			line-height: 60px;
+			border-radius: 30px;
+			border: 2.5px solid #14659E;
+			color:white;
+			margin: 0 auto;
+			margin-top: 6vh;
+			transition: 0.5s;
+		}
+		.boton:hover{
+			box-shadow: 0px 0px 50px #14659E;
+			background-color: #14659E;
+			color: black;
+			cursor: pointer;
+		}
+
+		section{
+			width: 80%;
+			height: 100vh;
+			background-color: black;
+			float: right;
+		}
+
+		.portada img{
+			width: 85%;
+			border-radius: 40px;
+		}
+
+		.portada{
+			text-align: center;
+			padding-top: 10vh;
+		}
+
+		#logopeliculados{
+			width: 30%;
+			margin-top: -4vh;
+		}
+
+		hr{
+			width: 80%;
+			border: 2px solid #14659E;
+			margin-top: 8vh;
+			margin-bottom: 0;
+		}
+
+		section h1{
+			font-size: 70px;
+			text-align: center;
+			color: white;
+			margin-top: 4vh;
+		}
+
+		.detalles{
+			margin-left: 5%;
+			margin-top: 4vh;
+		}
+
+		p{
+			width: 90%;
+			color: white;
+			font-size: 12px;
+		}
+
+
+
+
+
+		@media screen and (max-width: 768px){
+
+			aside{display: none;}
+
+			section{
+				width: 100%;
+			}
+			
+			.portada{
+				margin-top: -10%;
+			}
+			
+
+			#logopeliculados{
+				width: 80%;
+				margin-top: 2vh;
+
+			}
+
+			.botonmovil{
+				display: block;
+				
+				
+			}
+
+			section h1{
+				font-size: 40px;
+			}
+
+
+			.boton:hover{
+				box-shadow: none;
+				background-color: black;
+				color: white;
+				cursor: pointer;
+			}
+
+
+
+		}
+
+
+
+
+		@media screen and (max-width: 410px){
+
+			section h1{
+				font-size: 25px;
+			}
+
+			.portada{display: none;}
+
+			.portadamovil{
+				display: block;
+			}
+			.portadamovil img{width: 100%;}
+
+			#informacion{
+				font-size: 10px;
+			}
+
+			#logopeliculados{
+				width: 100%;
+				margin-top: -7vh;
+
+			}
+
+			
+
+			section div p{
+				width: 90%;
+			}
+			
+
+
+		}
+
+		
+
+		
+
+
+
+
+	</style>
+</head>
+
+	
+
+
+<body>
+
+
+	<aside>
+
+		<div class="logo">
+			<img src="https://pbs.twimg.com/media/GTlaSzCXQAA64Sj?format=jpg&name=medium">
+		</div>
+
+		<div class="logopelicula">
+			<img src="https://pbs.twimg.com/media/GXB0AuWXcAAuSHq?format=jpg&name=900x900">
+		</div>
+
+		
+
+		
+
+	</aside>
+
+
+	<section>
+
+	<div class="portada">
+		<img src="https://pbs.twimg.com/media/GXB0AuUWcAA4h4k?format=jpg&name=large">
+	</div>
+
+	<div class="portadamovil">
+		<img src="https://pbs.twimg.com/media/GXB0AucXwAAEtXL?format=jpg&name=large">
+	</div>
+
+	<div class="logopelicula">
+		<img id="logopeliculados" src="https://pbs.twimg.com/media/GXB0AuWXcAAuSHq?format=jpg&name=900x900">
+	</div>
+
+
+	<div class="detalles">
+		<p>PELIGROSIDAD</p> 
+		<progress id="file" max="100" value="60" style="width: 95%"> 70% </progress>
+
+		<p>FUERZA</p> 
+		<progress id="file" max="100" value="30" style="width: 95%"> 70% </progress>
+
+		<p>INTELIGENCIA</p> 
+		<progress id="file" max="100" value="70" style="width: 95%"> 70% </progress>
+
+		<p>VELOCIDAD</p> 
+		<progress id="file" max="100" value="15" style="width: 95%"> 70% </progress>
+
+		
+		
+	</div>
+
+	<hr>
+
+
+	<h1>Información basica</h1>
+	<div class="detalles">
+		<p>Primera aparición: Detective Comics #58 (December 1941)</p> 
+
+		<p>Creadores: Bill Finger / Bob Kane  </p> 
+
+		<p>Nombre original: Oswald Chesterfield Cobblepot<p> 
+
+		<p>Raza: Humano</p> 
+
+		<p>Peso y Altura: 79g / 1,57m</p> 
+
+		<p>Residencia: Gotham</p> 
+
+		<p>Ocupaciones: Jefe Mafioso</p> 
+		
+	</div>
+
+	<hr>
+
+	<h1>Habilidades</h1>
+
+	<div class="detalles">
+
+		<p>Intelecto nivel de genio</p> 
+		<p>Variedad de equipo relacionado con aves.</p> 
+		<p>Mortales paraguas especializados.</p> 
+		<p>Conexiones vastas con el mundo criminal.</p> 
+		
+	</div>
+	
+	
+
+	<article>
+
+
+	<hr>
+
+	<h1>Información general</h1>
+
+	<div class="detalles">
+
+		<p>Nacido como Oswald Chesterfield Cobblepot , el Pingüino fue objeto de muchas burlas en su infancia debido a su baja estatura, obesidad y nariz de pájaro. Estos rasgos lo convirtieron en un paria en su rica y debutante familia. Su rechazo lo llevó a volverse malvado. Estos se contrastan con los orígenes de recolección de riqueza más agresivos y específicos de la novela gráfica de Batman Batman: Penguin Triumphant , que afirma específicamente que Oswald Cobblepot no es ni nunca fue loco y simplemente usó su mente astuta y habilidades científicas en el desarrollo de armas para intimidar y controlar a otros. Las armas preferidas del Pingüino son los paraguas con forma de truco que utiliza para ejecutar sus planes torcidos. Varias versiones de los orígenes del Pingüino dicen que su madre sobreprotectora lo obligó de niño a llevar siempre un paraguas encima debido a que su padre murió de neumonía después de ser empapado en un aguacero. En consonancia con sus pretensiones de ser un caballero refinado, también prefiere usar ropa formal, como sombrero de copa, frac y polainas durante sus trabajos. El Pingüino recibió su alter ego de una burla de la infancia, otorgada por sus compañeros, que se burlaban de él debido a su apariencia grotesca y amor por los pájaros (algunos relatos de su origen sugieren que también sufría algún tipo de dolencia en la cadera, que le hacía caminar como un pato; el Pingüino no muestra signos de sufrir esta aflicción en la actualidad). Algunos cómics sugieren que intentó abandonar el título (que odia), pero Batman lo ha vuelto permanentemente popular.</p> 
+		
+		
+	</div>
+
+
+	<hr>
+
+	<h1>Personalidad</h1>
+
+	<div class="detalles">
+
+		<p>Un maestro manipulador, el Pingüino suele estar rodeado de secuaces violentos que cumplen sus órdenes sin dudarlo. Pero cuando se trata de un cara a cara, espere que desate una andanada mortal con una variedad de armas tipo paraguas y otros dispositivos ingeniosos, que a menudo toman la forma de un ave.</p> 
+		
+		
+	</div>
+	
+	
+
+	<article>
+			
+			
+			
+
+	</article>
+
+	<hr>
+
+	</section>
+
+	
+
+	
+
+
+
+
+</body>
+</html>
