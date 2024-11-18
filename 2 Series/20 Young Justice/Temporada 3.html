@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Temporada 4</title>
+	<meta name="viewport" content="width=device-width, user-scalable=1">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
+	<style type="text/css">
+		
+		body{
+			margin: 0;
+			font-family: 'IBM Plex Sans', sans-serif;
+			min-width: 323px;
+			background-color: black;
+		}
+
+		a{text-decoration: none;}
+
+		.portadamovil{display: none;}
+
+		.botonmovil{display: none;}
+
+		aside{
+			width: 20%;
+			height: 100vh;
+			background-color: black;
+			float: left;
+			border-right: 3px solid #14659E;
+			position: fixed;
+		}
+
+		aside div img{
+			width: 45%;
+		}
+
+		.logo{
+			text-align: center;
+			padding-top: 5vh;
+		}
+
+		.logopelicula{
+			text-align: center;
+			padding-top: 40px
+		}
+
+		.logopelicula img{
+			width: 90%;
+		}
+
+		.boton{
+			width: 70%;
+			height: 60px;
+			text-align: center;
+			line-height: 60px;
+			border-radius: 30px;
+			border: 2.5px solid #14659E;
+			color:white;
+			margin: 0 auto;
+			margin-top: 6vh;
+			transition: 0.5s;
+		}
+		.boton:hover{
+			box-shadow: 0px 0px 50px #14659E;
+			background-color: #14659E;
+			color: black;
+			cursor: pointer;
+		}
+
+		.posteraside{
+			text-align: center;
+			margin-top: 7vh;
+		}
+		.posteraside img{border-radius: 20px;}
+
+		section{
+			width: 80%;
+			height: 100vh;
+			background-color: black;
+			float: right;
+		}
+
+		.portada img{
+			width: 85%;
+			border-radius: 40px;
+		}
+
+		.portada{
+			text-align: center;
+			padding-top: 10vh;
+		}
+
+		#logopeliculados{
+			width: 30%;
+			margin-top: -4vh;
+		}
+
+		hr{
+			width: 80%;
+			border: 2px solid #14659E;
+			margin-top: 8vh;
+			margin-bottom: 0;
+		}
+
+		section h1{
+			font-size: 70px;
+			text-align: center;
+			color: white;
+		}
+
+		.detalles{
+			margin-left: 20%;
+		}
+
+		p{
+			width: 80%;
+			color: white;
+			font-size: 20px;
+		}
+
+		
+
+		.episodios{
+			display: inline-block;
+			width: 24%;
+			margin-top: 50px;
+			margin-right: 2%;
+			margin-bottom: 0;
+			margin-left: 5.5%;
+			
+		}
+
+		.episodios img{
+			width: 35%;
+			border-radius: 40px;
+			transition: 0.5s;
+			border:0px solid #1F4A69;
+			box-shadow: 0px 0px 80px #14659E;
+			left: 20%
+		}
+		
+
+		.episodios p{
+			text-align: left;
+			color: #B3B3B3;
+			float: right;
+
+		}
+
+
+
+
+
+
+
+		@media screen and (max-width: 768px){
+
+			aside{display: none;}
+
+			section{
+				width: 100%;
+			}
+			
+			.portada{
+				margin-top: -10%;
+			}
+			
+
+			#logopeliculados{
+				width: 80%;
+				margin-top: 2vh;
+
+			}
+
+			.botonmovil{
+				display: block;
+				
+				
+			}
+
+			section h1{
+				font-size: 40px;
+			}
+
+
+			.boton:hover{
+				box-shadow: none;
+				background-color: black;
+				color: white;
+				cursor: pointer;
+			}
+
+			.episodios{
+				text-align: center;
+				width: 40%;	
+			}
+
+			.episodios img{
+				width: 40%;
+				border-radius: 30px;
+				box-shadow: 0px 0px 80px #14659E;
+			}
+			
+
+			
+
+
+
+		}
+
+
+
+
+		@media screen and (max-width: 410px){
+
+			section h1{
+				font-size: 30px;
+			}
+
+			.portada{display: none;}
+
+			.portadamovil{
+				display: block;
+			}
+			.portadamovil img{width: 100%;}
+
+			#informacion{
+				font-size: 15px;
+			}
+
+			#logopeliculados{
+				width: 85%;
+			}
+
+			.botonmovil{
+				margin-top: -10%;
+			}
+
+
+			section div p{
+				width: 90%;
+			}
+
+			.episodios{	
+				text-align: center;
+				width: 40%;
+				margin-top: 30px;	
+			}
+
+			.episodios img{
+				width: 45%;
+				border-radius: 20px;
+				transition: 0.5s;
+				border:0px solid #1F4A69;
+				box-shadow: 0px 0px 50px #14659E;
+				left: 20%
+			}
+			
+
+			.episodios p{
+				float: right;
+				font-size: 15px;
+			}
+
+
+			
+
+
+		}
+
+		
+
+		
+
+
+
+
+	</style>
+</head>
+
+	
+
+
+<body>
+
+
+	<aside>
+
+		<div class="logo">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/DC_Comics_logo.svg">
+		</div>
+
+		<div class="logopelicula">
+			<img src="https://pbs.twimg.com/media/E4JWaTpWUAAg2TD?format=jpg&name=900x900">
+		</div>
+
+		<div class="posteraside">
+			<img src="https://pbs.twimg.com/media/E4JWaTpXMAAS2X2?format=jpg&name=900x900">
+		</div>
+
+		
+
+	</aside>
+
+
+	<section>
+
+	<div class="portada">
+		<img src="https://pbs.twimg.com/media/GcrcmIBXkAAFxIg?format=jpg&name=4096x4096">
+	</div>
+
+	<div class="portadamovil">
+		<img src="https://pbs.twimg.com/media/GcrcmIKWEAA2txz?format=jpg&name=4096x4096">
+	</div>
+
+	
+
+	
+
+
+	<article>
+
+		
+			<h1>Temporada 3</h1>
+			
+			<div class="episodios">
+				<a href="https://youtu.be/25bzUNfp3zE">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GcrcmIIXAAEBQ7Y?format=jpg&name=360x360">
+					<p>(47) Todos los príncipes</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/S270wVc5Vkk">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GcrcmIIXAAEBQ7Y?format=jpg&name=360x360">
+					<p>(48)Nuestra realeza </p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/YQ4CsVFMs1s">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GcrcmIIXAAEBQ7Y?format=jpg&name=360x360">
+					<p>(49) La amenaza eminente</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/sXuQpAwRwK0">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GcrcmIIXAAEBQ7Y?format=jpg&name=360x360">
+					<p>(50) Seguridad Privada</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/U8ubgsPzSTI">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GcrcmIIXAAEBQ7Y?format=jpg&name=360x360">
+					<p>(51) Misión ausente</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/AFM3b2oUQ38">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GcrcmIIXAAEBQ7Y?format=jpg&name=360x360">
+					<p>(52) Operación de rescate</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/4kfG1xxPWyY">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GcrcmIIXAAEBQ7Y?format=jpg&name=360x360">
+					<p>(53) Evolución</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/nC2thMzcJ3A">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GcrcmIIXAAEBQ7Y?format=jpg&name=360x360">
+					<p>(54) Tríptico</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/fn7sDNY6U2k">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GcrcmIIXAAEBQ7Y?format=jpg&name=360x360">
+					<p>(55) Incendios en el hogar</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/tBxO0zf8hfA">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GcrcmIIXAAEBQ7Y?format=jpg&name=360x360">
+					<p>(56) Seres humanos excepcionales</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/f9FXDFiGG-o">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GcrcmIIXAAEBQ7Y?format=jpg&name=360x360">
+					<p>(57) Otro monstruo humano</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/xUgmz-CTraU">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GcrcmIIXAAEBQ7Y?format=jpg&name=360x360">
+					<p>(58) Monos de pesadilla</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/kq2Nc3DjuPw">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GcrcmIIXAAEBQ7Y?format=jpg&name=360x360">
+					<p>(59) Verdaderos héroes</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/YljeG7xxP7g">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GcrcmIIXAAEBQ7Y?format=jpg&name=360x360">
+					<p>(60) Influencia</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/hZPUmWwI62w">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GcrcmIIXAAEBQ7Y?format=jpg&name=360x360">
+					<p>(61) Aprovechar</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/7KSseL9RdSE">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GcrcmIIXAAEBQ7Y?format=jpg&name=360x360">
+					<p>(62) Ilusión de control</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/wRDUIuL9FME">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GcrcmIIXAAEBQ7Y?format=jpg&name=360x360">
+					<p>(63) Primera impresión</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/cRkqQdhEjxQ">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GcrcmIIXAAEBQ7Y?format=jpg&name=360x360">
+					<p>(64) Advertencia temprana</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/rPUxqeJxLVM">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GcrcmIIXAAEBQ7Y?format=jpg&name=360x360">
+					<p>(65) Sabiduría mayor</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/yXqjqEt2uOE">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GcrcmIIXAAEBQ7Y?format=jpg&name=360x360">
+					<p>(66) Conversaciones tranquilas</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GcrcmIIXAAEBQ7Y?format=jpg&name=360x360">
+					<p>(67) Factores desconocidos</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GcrcmIIXAAEBQ7Y?format=jpg&name=360x360">
+					<p>(68) Patologías antisociales</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GcrcmIIXAAEBQ7Y?format=jpg&name=360x360">
+					<p>(69) Término</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GcrcmIIXAAEBQ7Y?format=jpg&name=360x360">
+					<p>(70) En la brecha</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GcrcmIIXAAEBQ7Y?format=jpg&name=360x360">
+					<p>(71) Abrumada</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GcrcmIIXAAEBQ7Y?format=jpg&name=360x360">
+					<p>(72) Nunca más</p>
+				</a>
+			</div>
+					
+
+	</article>
+
+	<hr>
+	
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
