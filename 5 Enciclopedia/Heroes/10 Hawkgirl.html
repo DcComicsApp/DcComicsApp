@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hawkgirl</title>
+	<meta name="viewport" content="width=device-width, user-scalable=1">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
+	<style type="text/css">
+		
+		body{
+			margin: 0;
+			font-family: 'IBM Plex Sans', sans-serif;
+			min-width: 323px;
+			background-color: black;
+		}
+
+		a{text-decoration: none;}
+
+		.portadamovil{display: none;}
+
+		.botonmovil{display: none;}
+
+		aside{
+			width: 20%;
+			height: 100vh;
+			background-color: black;
+			float: left;
+			border-right: 3px solid #14659E;
+			position: fixed;
+		}
+
+		aside div img{
+			width: 45%;
+		}
+
+		.logo{
+			text-align: center;
+			padding-top: 5vh;
+		}
+
+		.logopelicula{
+			text-align: center;
+			padding-top: 40px
+		}
+
+		.logopelicula img{
+			width: 90%;
+		}
+
+		.boton{
+			width: 70%;
+			height: 60px;
+			text-align: center;
+			line-height: 60px;
+			border-radius: 30px;
+			border: 2.5px solid #14659E;
+			color:white;
+			margin: 0 auto;
+			margin-top: 6vh;
+			transition: 0.5s;
+		}
+		.boton:hover{
+			box-shadow: 0px 0px 50px #14659E;
+			background-color: #14659E;
+			color: black;
+			cursor: pointer;
+		}
+
+		section{
+			width: 80%;
+			height: 100vh;
+			background-color: black;
+			float: right;
+		}
+
+		.portada img{
+			width: 85%;
+			border-radius: 40px;
+		}
+
+		.portada{
+			text-align: center;
+			padding-top: 10vh;
+		}
+
+		#logopeliculados{
+			width: 30%;
+			margin-top: -4vh;
+		}
+
+		hr{
+			width: 80%;
+			border: 2px solid #14659E;
+			margin-top: 8vh;
+			margin-bottom: 0;
+		}
+
+		section h1{
+			font-size: 70px;
+			text-align: center;
+			color: white;
+			margin-top: 4vh;
+		}
+
+		.detalles{
+			margin-left: 5%;
+			margin-top: 4vh;
+		}
+
+		p{
+			width: 90%;
+			color: white;
+			font-size: 12px;
+		}
+
+
+
+
+
+		@media screen and (max-width: 768px){
+
+			aside{display: none;}
+
+			section{
+				width: 100%;
+			}
+			
+			.portada{
+				margin-top: -10%;
+			}
+			
+
+			#logopeliculados{
+				width: 80%;
+				margin-top: 2vh;
+
+			}
+
+			.botonmovil{
+				display: block;
+				
+				
+			}
+
+			section h1{
+				font-size: 40px;
+			}
+
+
+			.boton:hover{
+				box-shadow: none;
+				background-color: black;
+				color: white;
+				cursor: pointer;
+			}
+
+
+
+		}
+
+
+
+
+		@media screen and (max-width: 410px){
+
+			section h1{
+				font-size: 25px;
+			}
+
+			.portada{display: none;}
+
+			.portadamovil{
+				display: block;
+			}
+			.portadamovil img{width: 100%;}
+
+			#informacion{
+				font-size: 10px;
+			}
+
+			#logopeliculados{
+				width: 100%;
+				margin-top: -7vh;
+
+			}
+
+			
+
+			section div p{
+				width: 90%;
+			}
+			
+
+
+		}
+
+		
+
+		
+
+
+
+
+	</style>
+</head>
+
+	
+
+
+<body>
+
+
+	<aside>
+
+		<div class="logo">
+			<img src="https://pbs.twimg.com/media/GTlaSzCXQAA64Sj?format=jpg&name=medium">
+		</div>
+
+		<div class="logopelicula">
+			<img src="https://pbs.twimg.com/media/GWpttAPX0AAcXia?format=jpg&name=900x900">
+		</div>
+
+		
+
+		
+
+	</aside>
+
+
+	<section>
+
+	<div class="portada">
+		<img src="https://pbs.twimg.com/media/GWpttAWWEAAKXpW?format=jpg&name=large">
+	</div>
+
+	<div class="portadamovil">
+		<img src="https://pbs.twimg.com/media/GWpts_AWYAASUBI?format=jpg&name=large">
+	</div>
+
+	<div class="logopelicula">
+		<img id="logopeliculados" src="https://pbs.twimg.com/media/GWpttAPX0AAcXia?format=jpg&name=900x900">
+	</div>
+
+
+	<div class="detalles">
+		<p>PELIGROSIDAD</p> 
+		<progress id="file" max="100" value="70" style="width: 95%"> 70% </progress>
+
+		<p>FUERZA</p> 
+		<progress id="file" max="100" value="75" style="width: 95%"> 70% </progress>
+
+		<p>INTELIGENCIA</p> 
+		<progress id="file" max="100" value="45" style="width: 95%"> 70% </progress>
+
+		<p>VELOCIDAD</p> 
+		<progress id="file" max="100" value="60" style="width: 90%"> 70% </progress>
+
+		
+		
+	</div>
+
+	<hr>
+
+
+	<h1>Información basica</h1>
+	<div class="detalles">
+		<p>Primera aparición: Flash Comics #1 (enero de 1940)</p> 
+
+		<p>Creadores: Gardner Fox </p> 
+
+		<p>Nombre original: Shiera Sanders</p> 
+
+		<p>Raza: Thanagariana</p> 
+
+		<p>Peso y Altura: 52kg / 1,63m</p> 
+
+		<p>Residencia: Thanagar</p> 
+
+		<p>Ocupaciones: Superheroína</p> 
+		
+	</div>
+
+	<hr>
+
+	<h1>Habilidades</h1>
+
+	<div class="detalles">
+
+		<p>Superfuerza</p> 
+		<p>Vuelo</p> 
+		<p>Mazo electrico</p> 
+		<p>Gran habilidad para luchar</p> 
+		<p>No pueden leer su mente</p> 
+
+		
+	</div>
+	
+	
+
+	<article>
+
+
+	<hr>
+
+	<h1>Información general</h1>
+
+	<div class="detalles">
+
+		<p>Shayera Hol nació en Thanagar, una civilización científicamente avanzada en el que la delincuencia era prácticamente desconocida. Cuando era una adolescente, Shayera se unió a la fuerza de policía Thanagariana y fue asignada para ayudar a el oficial de la fuerza con mas condecoraciones, Katar Hol, en la captura de los ladrones Rainbow.
+		En primer lugar, Katar estaba furioso por que se le había asignado una mujer joven y sin experiencia como socio, aunque, sin embargo sintió una fuerte atracción hacia ella.
+		Juntos, capturaron a los ladrones Rainbow dándose la situación de que Shayera salvara la vida de Katar y los dos se enamoraron profundamente, y unas semanas más tarde, se casaron. Diez años más tarde, la pareja fue enviada a la Tierra en búsqueda del criminal llamado Byth; al llegar a la Tierra, se hicieron amigos del comisario de policía George Emmett en Midway City, que estableció sus identidades civiles como Carter y Shaiera Hall. Después de capturar a Byth y devolverlo a su planeta, Katar y Shayera decidieron volver a estudiar los métodos de combate en contra del crimen de la Tierra y comenzaron a luchar contra el mal como los superhéroes Hawkman y Hawkgirl. Shayera decidió llamarse a sí misma Hawkwoman en la década de 1980. Como Hawkwoman, Shayera eventualmente se unió a su esposo como un miembro de la Liga de la Justicia. Como shaiera, primero trabajó como secretaria de Carter, pero más tarde se convirtió en co-director del Museo de la Ciudad de Midway. Ella tiene una especie de rivalidad con el museo naturalista Mavis Trent, quien tiene sus ojos puestos en ambos Hawkman y Carter Hall. Más tarde, Thanagar estableció una dictadura militar que tenia como meta la conquista de otros planetas. Hawkaman y Hawkwoman frustraron los planes Thanagarianos para invadir la Tierra, destruyendo su propia nave espacial en el proceso. Hawkman y Hawkwoman permanecieron en la Tierra, considerados como traidores por todos en Thanagar. Ayudó a su marido a llegar a un acuerdo con las muertes que habían causado durante la batalla. Hawkwoman posee un cinturón/arnés que contiene el enésimo metal que desafía la gravedad, con alas artificiales que le permiten volar. Después de Crisis en las Tierras, el origen de Shayera fue renovado.</p> 
+		
+		
+	</div>
+
+
+	<hr>
+
+	<h1>Personalidad</h1>
+
+	<div class="detalles">
+
+		<p>Hawkgirl es una persona muy valiente e intrépida que también es conocida por su característico grito de guerra. Tiene la costumbre de ser atrevida en diferentes situaciones. Esto se usa durante sus muchas bromas, que pueden dirigirse a cualquier persona, ya sean enemigos o sus propios aliados.</p> 
+		
+		
+	</div>
+	
+	
+
+	<article>
+			
+			
+			
+
+	</article>
+
+	<hr>
+
+	</section>
+
+	
+
+	
+
+
+
+
+</body>
+</html>
