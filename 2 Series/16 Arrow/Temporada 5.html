@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Temporada 5</title>
+	<meta name="viewport" content="width=device-width, user-scalable=1">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
+	<style type="text/css">
+		
+		body{
+			margin: 0;
+			font-family: 'IBM Plex Sans', sans-serif;
+			min-width: 323px;
+			background-color: black;
+		}
+
+		a{text-decoration: none;}
+
+		.portadamovil{display: none;}
+
+		.botonmovil{display: none;}
+
+		aside{
+			width: 20%;
+			height: 100vh;
+			background-color: black;
+			float: left;
+			border-right: 3px solid #14659E;
+			position: fixed;
+		}
+
+		aside div img{
+			width: 45%;
+		}
+
+		.logo{
+			text-align: center;
+			padding-top: 5vh;
+		}
+
+		.logopelicula{
+			text-align: center;
+			padding-top: 40px
+		}
+
+		.logopelicula img{
+			width: 90%;
+		}
+
+		.boton{
+			width: 70%;
+			height: 60px;
+			text-align: center;
+			line-height: 60px;
+			border-radius: 30px;
+			border: 2.5px solid #14659E;
+			color:white;
+			margin: 0 auto;
+			margin-top: 6vh;
+			transition: 0.5s;
+		}
+		.boton:hover{
+			box-shadow: 0px 0px 50px #14659E;
+			background-color: #14659E;
+			color: black;
+			cursor: pointer;
+		}
+
+		.posteraside{
+			text-align: center;
+			margin-top: 7vh;
+		}
+		.posteraside img{border-radius: 20px;}
+
+		section{
+			width: 80%;
+			height: 100vh;
+			background-color: black;
+			float: right;
+		}
+
+		.portada img{
+			width: 85%;
+			border-radius: 40px;
+		}
+
+		.portada{
+			text-align: center;
+			padding-top: 10vh;
+		}
+
+		#logopeliculados{
+			width: 30%;
+			margin-top: -4vh;
+		}
+
+		hr{
+			width: 80%;
+			border: 2px solid #14659E;
+			margin-top: 8vh;
+			margin-bottom: 0;
+		}
+
+		section h1{
+			font-size: 70px;
+			text-align: center;
+			color: white;
+		}
+
+		.detalles{
+			margin-left: 20%;
+		}
+
+		p{
+			width: 80%;
+			color: white;
+			font-size: 20px;
+		}
+
+		
+
+		.episodios{
+			display: inline-block;
+			width: 24%;
+			margin-top: 50px;
+			margin-right: 2%;
+			margin-bottom: 0;
+			margin-left: 5.5%;
+			
+		}
+
+		.episodios img{
+			width: 35%;
+			border-radius: 40px;
+			transition: 0.5s;
+			border:0px solid #1F4A69;
+			box-shadow: 0px 0px 80px #14659E;
+			left: 20%
+		}
+		
+
+		.episodios p{
+			text-align: left;
+			color: #B3B3B3;
+			float: right;
+
+		}
+
+
+
+
+
+
+
+		@media screen and (max-width: 768px){
+
+			aside{display: none;}
+
+			section{
+				width: 100%;
+			}
+			
+			.portada{
+				margin-top: -10%;
+			}
+			
+
+			#logopeliculados{
+				width: 80%;
+				margin-top: 2vh;
+
+			}
+
+			.botonmovil{
+				display: block;
+				
+				
+			}
+
+			section h1{
+				font-size: 40px;
+			}
+
+
+			.boton:hover{
+				box-shadow: none;
+				background-color: black;
+				color: white;
+				cursor: pointer;
+			}
+
+			.episodios{
+				text-align: center;
+				width: 40%;	
+			}
+
+			.episodios img{
+				width: 40%;
+				border-radius: 30px;
+				box-shadow: 0px 0px 80px #14659E;
+			}
+			
+
+			
+
+
+
+		}
+
+
+
+
+		@media screen and (max-width: 410px){
+
+			section h1{
+				font-size: 30px;
+			}
+
+			.portada{display: none;}
+
+			.portadamovil{
+				display: block;
+			}
+			.portadamovil img{width: 100%;}
+
+			#informacion{
+				font-size: 15px;
+			}
+
+			#logopeliculados{
+				width: 85%;
+			}
+
+			.botonmovil{
+				margin-top: -10%;
+			}
+
+
+			section div p{
+				width: 90%;
+			}
+
+			.episodios{	
+				text-align: center;
+				width: 40%;
+				margin-top: 30px;	
+			}
+
+			.episodios img{
+				width: 45%;
+				border-radius: 20px;
+				transition: 0.5s;
+				border:0px solid #1F4A69;
+				box-shadow: 0px 0px 50px #14659E;
+				left: 20%
+			}
+			
+
+			.episodios p{
+				float: right;
+				font-size: 15px;
+			}
+
+
+			
+
+
+		}
+
+		
+
+		
+
+
+
+
+	</style>
+</head>
+
+	
+
+
+<body>
+
+
+	<aside>
+
+		<div class="logo">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/DC_Comics_logo.svg">
+		</div>
+
+		<div class="logopelicula">
+			<img src="https://pbs.twimg.com/media/E3_iNQsXIAIg6Oj?format=jpg&name=900x900">
+		</div>
+
+		<div class="posteraside">
+			<img src="https://pbs.twimg.com/media/E3_jT_3XEAgqoLi?format=jpg&name=small">
+		</div>
+
+		
+
+	</aside>
+
+
+	<section>
+
+	<div class="portada">
+		<img src="https://pbs.twimg.com/media/E3_iNQnXwAQtDu3?format=jpg&name=4096x4096">
+	</div>
+
+	<div class="portadamovil">
+		<img src="https://pbs.twimg.com/media/GiNsDW4XkAAUmib?format=jpg&name=large">
+	</div>
+
+	
+
+	
+
+
+	<article>
+
+		
+			<h1>Temporada 5</h1>
+			
+			<div class="episodios">
+				<a href="https://youtu.be/stJ2x2agNro">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GiNsDW-W0AEKW2t?format=jpg&name=360x360">
+					<p>(93) El legado de Green Arrow</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/lzUw_tDD9z8">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GiNsDW-W0AEKW2t?format=jpg&name=360x360">
+					<p>(94) Los reclutas</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/mr9F5vtxgtM">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GiNsDW-W0AEKW2t?format=jpg&name=360x360">
+					<p>(95) Cuestion de confianza</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/tBu15vZ_dEQ">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GiNsDW-W0AEKW2t?format=jpg&name=360x360">
+					<p>(96) Penitencia</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/9aPdzsqf04c">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GiNsDW-W0AEKW2t?format=jpg&name=360x360">
+					<p>(97) Blanco humano</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/7FxNjhmHjow">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GiNsDW-W0AEKW2t?format=jpg&name=360x360">
+					<p>(98) Asi empieza</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/BlS8LOohaWQ">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GiNsDW-W0AEKW2t?format=jpg&name=360x360">
+					<p>(99) Vigilante</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/IMd7bI9QcBg">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GiNsDW-W0AEKW2t?format=jpg&name=360x360">
+					<p>(100) Invasion</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/2EQMGyUEpHA">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GiNsDW-W0AEKW2t?format=jpg&name=360x360">
+					<p>(101) Lo que dejamos atras</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/yIQrqIB-xM0">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GiNsDW-W0AEKW2t?format=jpg&name=360x360">
+					<p>(102) Quien eres tu?</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/k91Kvsgfx10">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GiNsDW-W0AEKW2t?format=jpg&name=360x360">
+					<p>(103) Segundas oportunidades</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/4GSK9cBvc9c">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GiNsDW-W0AEKW2t?format=jpg&name=360x360">
+					<p>(104) Bratva</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/ceUXtwGJojQ">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GiNsDW-W0AEKW2t?format=jpg&name=360x360">
+					<p>(105) El espectro de las armas</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/K2jKL452mZA">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GiNsDW-W0AEKW2t?format=jpg&name=360x360">
+					<p>(106) El devorador de pecados</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/n7N4iavJstw">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GiNsDW-W0AEKW2t?format=jpg&name=360x360">
+					<p>(107) Jugando con fuego</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/2BnnKYnqMVA">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GiNsDW-W0AEKW2t?format=jpg&name=360x360">
+					<p>(108) Jaque mate</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/j5sY5KfAmUI">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GiNsDW-W0AEKW2t?format=jpg&name=360x360">
+					<p>(109) Encapuchado</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/XuS3XkdggHU">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GiNsDW-W0AEKW2t?format=jpg&name=360x360">
+					<p>(110) Disueltos</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/mRyPJaftjdI">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GiNsDW-W0AEKW2t?format=jpg&name=360x360">
+					<p>(111) Relaciones peligrosas</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/192OiGM8_Bo">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GiNsDW-W0AEKW2t?format=jpg&name=360x360">
+					<p>(112) Debajo</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/JDbXumttI_s">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GiNsDW-W0AEKW2t?format=jpg&name=360x360">
+					<p>(113) Honraras a tu padre</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/8aW5Zv2vvW0">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GiNsDW-W0AEKW2t?format=jpg&name=360x360">
+					<p>(114) Perdidos</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/3FrnYpJbhkc">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GiNsDW-W0AEKW2t?format=jpg&name=360x360">
+					<p>(115) Lian Yu</p>
+				</a>
+			</div>
+
+			
+
+	</article>
+
+	<hr>
+	
+
+</body>
+</html>
