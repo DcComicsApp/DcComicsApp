@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Temporada 6</title>
+	<meta name="viewport" content="width=device-width, user-scalable=1">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
+	<style type="text/css">
+		
+		body{
+			margin: 0;
+			font-family: 'IBM Plex Sans', sans-serif;
+			min-width: 323px;
+			background-color: black;
+		}
+
+		a{text-decoration: none;}
+
+		.portadamovil{display: none;}
+
+		.botonmovil{display: none;}
+
+		aside{
+			width: 20%;
+			height: 100vh;
+			background-color: black;
+			float: left;
+			border-right: 3px solid #14659E;
+			position: fixed;
+		}
+
+		aside div img{
+			width: 45%;
+		}
+
+		.logo{
+			text-align: center;
+			padding-top: 5vh;
+		}
+
+		.logopelicula{
+			text-align: center;
+			padding-top: 40px
+		}
+
+		.logopelicula img{
+			width: 90%;
+		}
+
+		.boton{
+			width: 70%;
+			height: 60px;
+			text-align: center;
+			line-height: 60px;
+			border-radius: 30px;
+			border: 2.5px solid #14659E;
+			color:white;
+			margin: 0 auto;
+			margin-top: 6vh;
+			transition: 0.5s;
+		}
+		.boton:hover{
+			box-shadow: 0px 0px 50px #14659E;
+			background-color: #14659E;
+			color: black;
+			cursor: pointer;
+		}
+
+		.posteraside{
+			text-align: center;
+			margin-top: 7vh;
+		}
+		.posteraside img{border-radius: 20px;}
+
+		section{
+			width: 80%;
+			height: 100vh;
+			background-color: black;
+			float: right;
+		}
+
+		.portada img{
+			width: 85%;
+			border-radius: 40px;
+		}
+
+		.portada{
+			text-align: center;
+			padding-top: 10vh;
+		}
+
+		#logopeliculados{
+			width: 30%;
+			margin-top: -4vh;
+		}
+
+		hr{
+			width: 80%;
+			border: 2px solid #14659E;
+			margin-top: 8vh;
+			margin-bottom: 0;
+		}
+
+		section h1{
+			font-size: 70px;
+			text-align: center;
+			color: white;
+		}
+
+		.detalles{
+			margin-left: 20%;
+		}
+
+		p{
+			width: 80%;
+			color: white;
+			font-size: 20px;
+		}
+
+		
+
+		.episodios{
+			display: inline-block;
+			width: 24%;
+			margin-top: 50px;
+			margin-right: 2%;
+			margin-bottom: 0;
+			margin-left: 5.5%;
+			
+		}
+
+		.episodios img{
+			width: 35%;
+			border-radius: 40px;
+			transition: 0.5s;
+			border:0px solid #1F4A69;
+			box-shadow: 0px 0px 80px #14659E;
+			left: 20%
+		}
+		
+
+		.episodios p{
+			text-align: left;
+			color: #B3B3B3;
+			float: right;
+
+		}
+
+
+
+
+
+
+
+		@media screen and (max-width: 768px){
+
+			aside{display: none;}
+
+			section{
+				width: 100%;
+			}
+			
+			.portada{
+				margin-top: -10%;
+			}
+			
+
+			#logopeliculados{
+				width: 80%;
+				margin-top: 2vh;
+
+			}
+
+			.botonmovil{
+				display: block;
+				
+				
+			}
+
+			section h1{
+				font-size: 40px;
+			}
+
+
+			.boton:hover{
+				box-shadow: none;
+				background-color: black;
+				color: white;
+				cursor: pointer;
+			}
+
+			.episodios{
+				text-align: center;
+				width: 40%;	
+			}
+
+			.episodios img{
+				width: 40%;
+				border-radius: 30px;
+				box-shadow: 0px 0px 80px #14659E;
+			}
+			
+
+			
+
+
+
+		}
+
+
+
+
+		@media screen and (max-width: 410px){
+
+			section h1{
+				font-size: 30px;
+			}
+
+			.portada{display: none;}
+
+			.portadamovil{
+				display: block;
+			}
+			.portadamovil img{width: 100%;}
+
+			#informacion{
+				font-size: 15px;
+			}
+
+			#logopeliculados{
+				width: 85%;
+			}
+
+			.botonmovil{
+				margin-top: -10%;
+			}
+
+
+			section div p{
+				width: 90%;
+			}
+
+			.episodios{	
+				text-align: center;
+				width: 40%;
+				margin-top: 30px;	
+			}
+
+			.episodios img{
+				width: 45%;
+				border-radius: 20px;
+				transition: 0.5s;
+				border:0px solid #1F4A69;
+				box-shadow: 0px 0px 50px #14659E;
+				left: 20%
+			}
+			
+
+			.episodios p{
+				float: right;
+				font-size: 15px;
+			}
+
+
+			
+
+
+		}
+
+		
+
+		
+
+
+
+
+	</style>
+</head>
+
+	
+
+
+<body>
+
+
+	<aside>
+
+		<div class="logo">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/DC_Comics_logo.svg">
+		</div>
+
+		<div class="logopelicula">
+			<img src="https://pbs.twimg.com/media/E3_iNQsXIAIg6Oj?format=jpg&name=900x900">
+		</div>
+
+		<div class="posteraside">
+			<img src="https://pbs.twimg.com/media/E3_jT_3XEAgqoLi?format=jpg&name=small">
+		</div>
+
+		
+
+	</aside>
+
+
+	<section>
+
+	<div class="portada">
+		<img src="https://pbs.twimg.com/media/E3_iNQnXwAQtDu3?format=jpg&name=4096x4096">
+	</div>
+
+	<div class="portadamovil">
+		<img src="https://pbs.twimg.com/media/GiNsDW-XAAA_tj6?format=jpg&name=medium">
+	</div>
+
+	
+
+	
+
+
+	<article>
+
+		
+			<h1>Temporada 6</h1>
+			
+			<div class="episodios">
+				<a href="https://youtu.be/mTXs8QCXg1Y">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GiNsDXAWUAAR2T-?format=jpg&name=360x360">
+					<p>(116) Los efectos colaterales</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/7EOTKF3_4co">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GiNsDXAWUAAR2T-?format=jpg&name=360x360">
+					<p>(117) Tributo</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/4hK1wpt7EnM">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GiNsDXAWUAAR2T-?format=jpg&name=360x360">
+					<p>(118) Juntos somos familia</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/2OltMG0peVM">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GiNsDXAWUAAR2T-?format=jpg&name=360x360">
+					<p>(119) Inversion</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/6Omu1fFpeOA">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GiNsDXAWUAAR2T-?format=jpg&name=360x360">
+					<p>(120) El regreso de Deathstroke</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/gg0aVfPA4OQ">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GiNsDXAWUAAR2T-?format=jpg&name=360x360">
+					<p>(121) Promesas cumplidad</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/MmImld4yNng">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GiNsDXAWUAAR2T-?format=jpg&name=360x360">
+					<p>(122) Accion de gracias</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/94VOCrbCXf8">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GiNsDXAWUAAR2T-?format=jpg&name=360x360">
+					<p>(123) Crisis en Tierra X</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/kGJcx9NCBlY">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GiNsDXAWUAAR2T-?format=jpg&name=360x360">
+					<p>(124) Diferencias irreconciliables</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/Wjqydrw84Ow">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GiNsDXAWUAAR2T-?format=jpg&name=360x360">
+					<p>(125) Divididos</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/1Rykh8R5vts">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GiNsDXAWUAAR2T-?format=jpg&name=360x360">
+					<p>(126) Caemos</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/Aq7jbiRMOkM">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GiNsDXAWUAAR2T-?format=jpg&name=360x360">
+					<p>(127) Todo por nada</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/xNIOqr7wEK8">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GiNsDXAWUAAR2T-?format=jpg&name=360x360">
+					<p>(128) El mayor truco del diablo</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/09wRQ-Iun0c">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GiNsDXAWUAAR2T-?format=jpg&name=360x360">
+					<p>(129) Rumbo de colision</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/8tqkHn--uAw">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GiNsDXAWUAAR2T-?format=jpg&name=360x360">
+					<p>(130) Doble</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/ABXOJzp0pdY">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GiNsDXAWUAAR2T-?format=jpg&name=360x360">
+					<p>(131) El gremio de Tanatos</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/tn1-x5S0dcc">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GiNsDXAWUAAR2T-?format=jpg&name=360x360">
+					<p>(132) Hemanos de armas</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/RpY_R65w1zY">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GiNsDXAWUAAR2T-?format=jpg&name=360x360">
+					<p>(133) Fundamentos</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/hzETwOPk9KA">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GiNsDXAWUAAR2T-?format=jpg&name=360x360">
+					<p>(134) El dragon</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/MGMHn1NUvms">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GiNsDXAWUAAR2T-?format=jpg&name=360x360">
+					<p>(135) Lealtades cambiantes</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/t_n3vfONFmw">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GiNsDXAWUAAR2T-?format=jpg&name=360x360">
+					<p>(136) Caso Nº 11-19-41-73</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/U9Lynx2H1Tc">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GiNsDXAWUAAR2T-?format=jpg&name=360x360">
+					<p>(137) Los lazos que atan</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/IxMmvyVzVNs">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GiNsDXAWUAAR2T-?format=jpg&name=360x360">
+					<p>(138) Cadena perpetua</p>
+				</a>
+			</div>
+
+			
+
+	</article>
+
+	<hr>
+	
+
+</body>
+</html>
