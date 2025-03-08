@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Temporada 4</title>
+	<meta name="viewport" content="width=device-width, user-scalable=1">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
+	<style type="text/css">
+		
+		body{
+			margin: 0;
+			font-family: 'IBM Plex Sans', sans-serif;
+			min-width: 323px;
+			background-color: black;
+		}
+
+		a{text-decoration: none;}
+
+		.portadamovil{display: none;}
+
+		.botonmovil{display: none;}
+
+		aside{
+			width: 20%;
+			height: 100vh;
+			background-color: black;
+			float: left;
+			border-right: 3px solid #14659E;
+			position: fixed;
+		}
+
+		aside div img{
+			width: 45%;
+		}
+
+		.logo{
+			text-align: center;
+			padding-top: 5vh;
+		}
+
+		.logopelicula{
+			text-align: center;
+			padding-top: 40px
+		}
+
+		.logopelicula img{
+			width: 90%;
+		}
+
+		.boton{
+			width: 70%;
+			height: 60px;
+			text-align: center;
+			line-height: 60px;
+			border-radius: 30px;
+			border: 2.5px solid #14659E;
+			color:white;
+			margin: 0 auto;
+			margin-top: 6vh;
+			transition: 0.5s;
+		}
+		.boton:hover{
+			box-shadow: 0px 0px 50px #14659E;
+			background-color: #14659E;
+			color: black;
+			cursor: pointer;
+		}
+
+		.posteraside{
+			text-align: center;
+			margin-top: 7vh;
+		}
+		.posteraside img{border-radius: 20px;}
+
+		section{
+			width: 80%;
+			height: 100vh;
+			background-color: black;
+			float: right;
+		}
+
+		.portada img{
+			width: 85%;
+			border-radius: 40px;
+		}
+
+		.portada{
+			text-align: center;
+			padding-top: 10vh;
+		}
+
+		#logopeliculados{
+			width: 30%;
+			margin-top: -4vh;
+		}
+
+		hr{
+			width: 80%;
+			border: 2px solid #14659E;
+			margin-top: 8vh;
+			margin-bottom: 0;
+		}
+
+		section h1{
+			font-size: 70px;
+			text-align: center;
+			color: white;
+		}
+
+		.detalles{
+			margin-left: 20%;
+		}
+
+		p{
+			width: 80%;
+			color: white;
+			font-size: 20px;
+		}
+
+		
+
+		.episodios{
+			display: inline-block;
+			width: 24%;
+			margin-top: 50px;
+			margin-right: 2%;
+			margin-bottom: 0;
+			margin-left: 5.5%;
+			
+		}
+
+		.episodios img{
+			width: 35%;
+			border-radius: 40px;
+			transition: 0.5s;
+			border:0px solid #1F4A69;
+			box-shadow: 0px 0px 80px #14659E;
+			left: 20%
+		}
+		
+
+		.episodios p{
+			text-align: left;
+			color: #B3B3B3;
+			float: right;
+
+		}
+
+
+
+
+
+
+
+		@media screen and (max-width: 768px){
+
+			aside{display: none;}
+
+			section{
+				width: 100%;
+			}
+			
+			.portada{
+				margin-top: -10%;
+			}
+			
+
+			#logopeliculados{
+				width: 80%;
+				margin-top: 2vh;
+
+			}
+
+			.botonmovil{
+				display: block;
+				
+				
+			}
+
+			section h1{
+				font-size: 40px;
+			}
+
+
+			.boton:hover{
+				box-shadow: none;
+				background-color: black;
+				color: white;
+				cursor: pointer;
+			}
+
+			.episodios{
+				text-align: center;
+				width: 40%;	
+			}
+
+			.episodios img{
+				width: 40%;
+				border-radius: 30px;
+				box-shadow: 0px 0px 80px #14659E;
+			}
+			
+
+			
+
+
+
+		}
+
+
+
+
+		@media screen and (max-width: 410px){
+
+			section h1{
+				font-size: 30px;
+			}
+
+			.portada{display: none;}
+
+			.portadamovil{
+				display: block;
+			}
+			.portadamovil img{width: 100%;}
+
+			#informacion{
+				font-size: 15px;
+			}
+
+			#logopeliculados{
+				width: 85%;
+			}
+
+			.botonmovil{
+				margin-top: -10%;
+			}
+
+
+			section div p{
+				width: 90%;
+			}
+
+			.episodios{	
+				text-align: center;
+				width: 40%;
+				margin-top: 30px;	
+			}
+
+			.episodios img{
+				width: 45%;
+				border-radius: 20px;
+				transition: 0.5s;
+				border:0px solid #1F4A69;
+				box-shadow: 0px 0px 50px #14659E;
+				left: 20%
+			}
+			
+
+			.episodios p{
+				float: right;
+				font-size: 15px;
+			}
+
+
+			
+
+
+		}
+
+		
+
+		
+
+
+
+
+	</style>
+</head>
+
+	
+
+
+<body>
+
+
+	<aside>
+
+		<div class="logo">
+			<img src="https://pbs.twimg.com/media/GTlaSzCXQAA64Sj?format=jpg&name=medium">
+		</div>
+
+		<div class="logopelicula">
+			<img src="https://pbs.twimg.com/media/GlgrxFPXsAAT5Wj?format=jpg&name=900x900">
+		</div>
+
+		<div class="posteraside">
+			<img src="https://pbs.twimg.com/media/GlgrxFLWAAA-OIa?format=jpg&name=small">
+		</div>
+
+		
+
+	</aside>
+
+
+	<section>
+
+	<div class="portada">
+		<img src="https://pbs.twimg.com/media/GlgrxFHWgAEdXX0?format=jpg&name=medium">
+	</div>
+
+	<div class="portadamovil">
+		<img src="https://pbs.twimg.com/media/GlgsovkWMAA6mJw?format=jpg&name=large">
+	</div>
+
+	
+
+	
+
+
+	<article>
+
+		
+			<h1>Temporada 4</h1>
+			
+			<div class="episodios">
+				<a href="https://youtu.be/RpubuCSHIIM">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/Glgsq7JXkAAgywP?format=jpg&name=360x360">
+					<p>(46) La Reconstrucción [1/4]</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/_Z3FQLPQqHo">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/Glgsq7JXkAAgywP?format=jpg&name=360x360">
+					<p>(47) La Reconstrucción [2/4]</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/o8_qaeIKQpA">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/Glgsq7JXkAAgywP?format=jpg&name=360x360">
+					<p>(48) La Reconstrucción [3/4]</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/O8k10mmdy6M">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/Glgsq7JXkAAgywP?format=jpg&name=360x360">
+					<p>(49) La Reconstrucción [4/4]</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/O0s6GnhxwC0">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/Glgsq7JXkAAgywP?format=jpg&name=360x360">
+					<p>(50) El libro de la ruina [1/4]</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/BkQtCwhvejI">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/Glgsq7JXkAAgywP?format=jpg&name=360x360">
+					<p>(51) El libro de la ruina [2/4]</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/NQ2wjJxBCRU">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/Glgsq7JXkAAgywP?format=jpg&name=360x360">
+					<p>(52) Painkiller</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/0iy4ywFkVUo">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/Glgsq7JXkAAgywP?format=jpg&name=360x360">
+					<p>(53) El libro de la ruina [3/4]</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/PVl-mOYfZAA">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/Glgsq7JXkAAgywP?format=jpg&name=360x360">
+					<p>(54) El libro de la ruina [4/4]</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/9V0pOeJtjXw">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/Glgsq7JXkAAgywP?format=jpg&name=360x360">
+					<p>(55) El Libro de la Reunificación [1/2]</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/Ikdtwe9DBbk">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/Glgsq7JXkAAgywP?format=jpg&name=360x360">
+					<p>(56) El Libro de la Reunificación [2/2]</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/ML3iEOb7p5s">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/Glgsq7JXkAAgywP?format=jpg&name=360x360">
+					<p>(57) El Libro de la Resurrección [1/2]</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/FYGXcAbB_04">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/Glgsq7JXkAAgywP?format=jpg&name=360x360">
+					<p>(58) El Libro de la Resurrección [2/2]</p>
+				</a>
+			</div>
+
+
+			
+
+		
+	
+			
+
+	</article>
+
+	<hr>
+	
+
+</body>
+</html>

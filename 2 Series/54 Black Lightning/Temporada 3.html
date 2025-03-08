@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Temporada 3</title>
+	<meta name="viewport" content="width=device-width, user-scalable=1">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
+	<style type="text/css">
+		
+		body{
+			margin: 0;
+			font-family: 'IBM Plex Sans', sans-serif;
+			min-width: 323px;
+			background-color: black;
+		}
+
+		a{text-decoration: none;}
+
+		.portadamovil{display: none;}
+
+		.botonmovil{display: none;}
+
+		aside{
+			width: 20%;
+			height: 100vh;
+			background-color: black;
+			float: left;
+			border-right: 3px solid #14659E;
+			position: fixed;
+		}
+
+		aside div img{
+			width: 45%;
+		}
+
+		.logo{
+			text-align: center;
+			padding-top: 5vh;
+		}
+
+		.logopelicula{
+			text-align: center;
+			padding-top: 40px
+		}
+
+		.logopelicula img{
+			width: 90%;
+		}
+
+		.boton{
+			width: 70%;
+			height: 60px;
+			text-align: center;
+			line-height: 60px;
+			border-radius: 30px;
+			border: 2.5px solid #14659E;
+			color:white;
+			margin: 0 auto;
+			margin-top: 6vh;
+			transition: 0.5s;
+		}
+		.boton:hover{
+			box-shadow: 0px 0px 50px #14659E;
+			background-color: #14659E;
+			color: black;
+			cursor: pointer;
+		}
+
+		.posteraside{
+			text-align: center;
+			margin-top: 7vh;
+		}
+		.posteraside img{border-radius: 20px;}
+
+		section{
+			width: 80%;
+			height: 100vh;
+			background-color: black;
+			float: right;
+		}
+
+		.portada img{
+			width: 85%;
+			border-radius: 40px;
+		}
+
+		.portada{
+			text-align: center;
+			padding-top: 10vh;
+		}
+
+		#logopeliculados{
+			width: 30%;
+			margin-top: -4vh;
+		}
+
+		hr{
+			width: 80%;
+			border: 2px solid #14659E;
+			margin-top: 8vh;
+			margin-bottom: 0;
+		}
+
+		section h1{
+			font-size: 70px;
+			text-align: center;
+			color: white;
+		}
+
+		.detalles{
+			margin-left: 20%;
+		}
+
+		p{
+			width: 80%;
+			color: white;
+			font-size: 20px;
+		}
+
+		
+
+		.episodios{
+			display: inline-block;
+			width: 24%;
+			margin-top: 50px;
+			margin-right: 2%;
+			margin-bottom: 0;
+			margin-left: 5.5%;
+			
+		}
+
+		.episodios img{
+			width: 35%;
+			border-radius: 40px;
+			transition: 0.5s;
+			border:0px solid #1F4A69;
+			box-shadow: 0px 0px 80px #14659E;
+			left: 20%
+		}
+		
+
+		.episodios p{
+			text-align: left;
+			color: #B3B3B3;
+			float: right;
+
+		}
+
+
+
+
+
+
+
+		@media screen and (max-width: 768px){
+
+			aside{display: none;}
+
+			section{
+				width: 100%;
+			}
+			
+			.portada{
+				margin-top: -10%;
+			}
+			
+
+			#logopeliculados{
+				width: 80%;
+				margin-top: 2vh;
+
+			}
+
+			.botonmovil{
+				display: block;
+				
+				
+			}
+
+			section h1{
+				font-size: 40px;
+			}
+
+
+			.boton:hover{
+				box-shadow: none;
+				background-color: black;
+				color: white;
+				cursor: pointer;
+			}
+
+			.episodios{
+				text-align: center;
+				width: 40%;	
+			}
+
+			.episodios img{
+				width: 40%;
+				border-radius: 30px;
+				box-shadow: 0px 0px 80px #14659E;
+			}
+			
+
+			
+
+
+
+		}
+
+
+
+
+		@media screen and (max-width: 410px){
+
+			section h1{
+				font-size: 30px;
+			}
+
+			.portada{display: none;}
+
+			.portadamovil{
+				display: block;
+			}
+			.portadamovil img{width: 100%;}
+
+			#informacion{
+				font-size: 15px;
+			}
+
+			#logopeliculados{
+				width: 85%;
+			}
+
+			.botonmovil{
+				margin-top: -10%;
+			}
+
+
+			section div p{
+				width: 90%;
+			}
+
+			.episodios{	
+				text-align: center;
+				width: 40%;
+				margin-top: 30px;	
+			}
+
+			.episodios img{
+				width: 45%;
+				border-radius: 20px;
+				transition: 0.5s;
+				border:0px solid #1F4A69;
+				box-shadow: 0px 0px 50px #14659E;
+				left: 20%
+			}
+			
+
+			.episodios p{
+				float: right;
+				font-size: 15px;
+			}
+
+
+			
+
+
+		}
+
+		
+
+		
+
+
+
+
+	</style>
+</head>
+
+	
+
+
+<body>
+
+
+	<aside>
+
+		<div class="logo">
+			<img src="https://pbs.twimg.com/media/GTlaSzCXQAA64Sj?format=jpg&name=medium">
+		</div>
+
+		<div class="logopelicula">
+			<img src="https://pbs.twimg.com/media/GlgrxFPXsAAT5Wj?format=jpg&name=900x900">
+		</div>
+
+		<div class="posteraside">
+			<img src="https://pbs.twimg.com/media/GlgrxFLWAAA-OIa?format=jpg&name=small">
+		</div>
+
+		
+
+	</aside>
+
+
+	<section>
+
+	<div class="portada">
+		<img src="https://pbs.twimg.com/media/GlgrxFHWgAEdXX0?format=jpg&name=medium">
+	</div>
+
+	<div class="portadamovil">
+		<img src="https://pbs.twimg.com/media/Glgsk9FWoAAPCbJ?format=jpg&name=large">
+	</div>
+
+	
+
+	
+
+
+	<article>
+
+		
+			<h1>Temporada 3</h1>
+			
+			<div class="episodios">
+				<a href="https://youtu.be/tlUmySV6lQE">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GlgsovpXcAAi4rz?format=jpg&name=360x360">
+					<p>(30) El nacimiento de un mirlo</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/atwxopyS_SY">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GlgsovpXcAAi4rz?format=jpg&name=360x360">
+					<p>(31) Tasbih de Maryam</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/z9QQk_WbLik">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GlgsovpXcAAi4rz?format=jpg&name=360x360">
+					<p>(32) El sueño del agente Odell</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/9J69DDcWTzg">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GlgsovpXcAAi4rz?format=jpg&name=360x360">
+					<p>(33) El Uróboros de Lynn</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/AYZRaTkOgjI">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GlgsovpXcAAi4rz?format=jpg&name=360x360">
+					<p>(34) Requiem for Tavon</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/C6clJOQB48M">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GlgsovpXcAAi4rz?format=jpg&name=360x360">
+					<p>(35) Golpeando las puertas del cielo</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/jo5cX5w_b-s">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GlgsovpXcAAi4rz?format=jpg&name=360x360">
+					<p>(36) El Opus de Henderson</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/E84J3MFPa8M">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GlgsovpXcAAi4rz?format=jpg&name=360x360">
+					<p>(37) La batalla de Franklin Terrace</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/BcpFxKrKIzk">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GlgsovpXcAAi4rz?format=jpg&name=360x360">
+					<p>(38) Crisis de la Tierra</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/PpBmK6eFhHY">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GlgsovpXcAAi4rz?format=jpg&name=360x360">
+					<p>(39) Bendiciones y maldiciones renacen</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/UAZ04l0pThM">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GlgsovpXcAAi4rz?format=jpg&name=360x360">
+					<p>(40) La adicción de Lynn</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/4rKFujwC5HU">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GlgsovpXcAAi4rz?format=jpg&name=360x360">
+					<p>(41) Huérfano de madre</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/OpUpM_wmlnI">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GlgsovpXcAAi4rz?format=jpg&name=360x360">
+					<p>(42) Agarra la correa</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/VA2GFec8ydk">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GlgsovpXcAAi4rz?format=jpg&name=360x360">
+					<p>(43) Regreso a casa</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/m13LU58Ed3M">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GlgsovpXcAAi4rz?format=jpg&name=360x360">
+					<p>(44) La libertad no es libre</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/7skAVD052z4">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GlgsovpXcAAi4rz?format=jpg&name=360x360">
+					<p>(45) Liberación</p>
+				</a>
+			</div>
+
+
+			
+
+		
+	
+			
+
+	</article>
+
+	<hr>
+	
+
+</body>
+</html>
