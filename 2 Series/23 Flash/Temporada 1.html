@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Temporada 1</title>
+	<meta name="viewport" content="width=device-width, user-scalable=1">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
+	<style type="text/css">
+		
+		body{
+			margin: 0;
+			font-family: 'IBM Plex Sans', sans-serif;
+			min-width: 323px;
+			background-color: black;
+		}
+
+		a{text-decoration: none;}
+
+		.portadamovil{display: none;}
+
+		.botonmovil{display: none;}
+
+		aside{
+			width: 20%;
+			height: 100vh;
+			background-color: black;
+			float: left;
+			border-right: 3px solid #14659E;
+			position: fixed;
+		}
+
+		aside div img{
+			width: 45%;
+		}
+
+		.logo{
+			text-align: center;
+			padding-top: 5vh;
+		}
+
+		.logopelicula{
+			text-align: center;
+			padding-top: 40px
+		}
+
+		.logopelicula img{
+			width: 90%;
+		}
+
+		.boton{
+			width: 70%;
+			height: 60px;
+			text-align: center;
+			line-height: 60px;
+			border-radius: 30px;
+			border: 2.5px solid #14659E;
+			color:white;
+			margin: 0 auto;
+			margin-top: 6vh;
+			transition: 0.5s;
+		}
+		.boton:hover{
+			box-shadow: 0px 0px 50px #14659E;
+			background-color: #14659E;
+			color: black;
+			cursor: pointer;
+		}
+
+		.posteraside{
+			text-align: center;
+			margin-top: 7vh;
+		}
+		.posteraside img{border-radius: 20px;}
+
+		section{
+			width: 80%;
+			height: 100vh;
+			background-color: black;
+			float: right;
+		}
+
+		.portada img{
+			width: 85%;
+			border-radius: 40px;
+		}
+
+		.portada{
+			text-align: center;
+			padding-top: 10vh;
+		}
+
+		#logopeliculados{
+			width: 30%;
+			margin-top: -4vh;
+		}
+
+		hr{
+			width: 80%;
+			border: 2px solid #14659E;
+			margin-top: 8vh;
+			margin-bottom: 0;
+		}
+
+		section h1{
+			font-size: 70px;
+			text-align: center;
+			color: white;
+		}
+
+		.detalles{
+			margin-left: 20%;
+		}
+
+		p{
+			width: 80%;
+			color: white;
+			font-size: 20px;
+		}
+
+		
+
+		.episodios{
+			display: inline-block;
+			width: 24%;
+			margin-top: 50px;
+			margin-right: 2%;
+			margin-bottom: 0;
+			margin-left: 5.5%;
+			
+		}
+
+		.episodios img{
+			width: 35%;
+			border-radius: 40px;
+			transition: 0.5s;
+			border:0px solid #1F4A69;
+			box-shadow: 0px 0px 80px #14659E;
+			left: 20%
+		}
+		
+
+		.episodios p{
+			text-align: left;
+			color: #B3B3B3;
+			float: right;
+
+		}
+
+
+
+
+
+
+
+		@media screen and (max-width: 768px){
+
+			aside{display: none;}
+
+			section{
+				width: 100%;
+			}
+			
+			.portada{
+				margin-top: -10%;
+			}
+			
+
+			#logopeliculados{
+				width: 80%;
+				margin-top: 2vh;
+
+			}
+
+			.botonmovil{
+				display: block;
+				
+				
+			}
+
+			section h1{
+				font-size: 40px;
+			}
+
+
+			.boton:hover{
+				box-shadow: none;
+				background-color: black;
+				color: white;
+				cursor: pointer;
+			}
+
+			.episodios{
+				text-align: center;
+				width: 40%;	
+			}
+
+			.episodios img{
+				width: 40%;
+				border-radius: 30px;
+				box-shadow: 0px 0px 80px #14659E;
+			}
+			
+
+			
+
+
+
+		}
+
+
+
+
+		@media screen and (max-width: 410px){
+
+			section h1{
+				font-size: 30px;
+			}
+
+			.portada{display: none;}
+
+			.portadamovil{
+				display: block;
+			}
+			.portadamovil img{width: 100%;}
+
+			#informacion{
+				font-size: 15px;
+			}
+
+			#logopeliculados{
+				width: 85%;
+			}
+
+			.botonmovil{
+				margin-top: -10%;
+			}
+
+
+			section div p{
+				width: 90%;
+			}
+
+			.episodios{	
+				text-align: center;
+				width: 40%;
+				margin-top: 30px;	
+			}
+
+			.episodios img{
+				width: 45%;
+				border-radius: 20px;
+				transition: 0.5s;
+				border:0px solid #1F4A69;
+				box-shadow: 0px 0px 50px #14659E;
+				left: 20%
+			}
+			
+
+			.episodios p{
+				float: right;
+				font-size: 15px;
+			}
+
+
+			
+
+
+		}
+
+		
+
+		
+
+
+
+
+	</style>
+</head>
+
+	
+
+
+<body>
+
+
+	<aside>
+
+		<div class="logo">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/DC_Comics_logo.svg">
+		</div>
+
+		<div class="logopelicula">
+			<img src="https://pbs.twimg.com/media/E4bC1sKWEAARt-5?format=jpg&name=900x900">
+		</div>
+
+		<div class="posteraside">
+			<img src="https://pbs.twimg.com/media/E4bC1sFWQAEXwVm?format=jpg&name=medium">
+		</div>
+
+		
+
+	</aside>
+
+
+	<section>
+
+	<div class="portada">
+		<img src="https://pbs.twimg.com/media/E4bC1sHWQAMZenJ?format=jpg&name=medium">
+	</div>
+
+	<div class="portadamovil">
+		<img src="https://pbs.twimg.com/media/GokOEqsXkAAIBO1?format=jpg&name=medium">
+	</div>
+
+	
+
+	
+
+
+	<article>
+
+		
+			<h1>Temporada 1</h1>
+			
+			<div class="episodios">
+				<a href="https://youtu.be/c8RDnAOcHtc">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GokOEquWsAAy2Fh?format=jpg&name=360x360">
+					<p>(1) Piloto</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/VShNG03YbR8">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GokOEquWsAAy2Fh?format=jpg&name=360x360">
+					<p>(2) El hombre mas rapido del mundo</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/AsQOhGS8ud0">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GokOEquWsAAy2Fh?format=jpg&name=360x360">
+					<p>(3) Cosas que no puedes dejar atras</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/3bHUvWE0zRc">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GokOEquWsAAy2Fh?format=jpg&name=360x360">
+					<p>(4) Rebelde</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/nXzd62lfpzc">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GokOEquWsAAy2Fh?format=jpg&name=360x360">
+					<p>(5) Plastique</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/svVogyfIY-w">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GokOEquWsAAy2Fh?format=jpg&name=360x360">
+					<p>(6) Ha nacido Flash</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/SbVhrBnBmHU">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GokOEquWsAAy2Fh?format=jpg&name=360x360">
+					<p>(7) Apagon</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/8TAKIMF-QSk">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GokOEquWsAAy2Fh?format=jpg&name=360x360">
+					<p>(8) Flash contra Arrow</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/NLZpIo1tZz0">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GokOEquWsAAy2Fh?format=jpg&name=360x360">
+					<p>(9) El hombre del traje amarillo</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/Yp5t1o0L67k">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GokOEquWsAAy2Fh?format=jpg&name=360x360">
+					<p>(10) La venganza de los rebeldes</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/HNsTK1aSAg4">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GokOEquWsAAy2Fh?format=jpg&name=360x360">
+					<p>(11) El sonido y la furia</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/HtF5v9HLcCY">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GokOEquWsAAy2Fh?format=jpg&name=360x360">
+					<p>(12) Loco por ti</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/QRThdNjR60E">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GokOEquWsAAy2Fh?format=jpg&name=360x360">
+					<p>(13) El hombre nuclear</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/lsL7T-RUIIA">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GokOEquWsAAy2Fh?format=jpg&name=360x360">
+					<p>(14) Despues de la explosion</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/PR6i2nci2x4">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GokOEquWsAAy2Fh?format=jpg&name=360x360">
+					<p>(15) Fuera de su tiempo</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/Zlj_cTZkdWY">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GokOEquWsAAy2Fh?format=jpg&name=360x360">
+					<p>(16) La hora de los renegados</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/R32FxEYMTVA">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GokOEquWsAAy2Fh?format=jpg&name=360x360">
+					<p>(17) Los bromistas</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/UVnWvP0q5aM">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GokOEquWsAAy2Fh?format=jpg&name=360x360">
+					<p>(18) Los mejores</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/A_DEGor0hms">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GokOEquWsAAy2Fh?format=jpg&name=360x360">
+					<p>(19) Quien es Harrison Wells</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/Y3ttmaYCsa8">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GokOEquWsAAy2Fh?format=jpg&name=360x360">
+					<p>(20) La trampa</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/iw1mTkqwKCQ">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GokOEquWsAAy2Fh?format=jpg&name=360x360">
+					<p>(21) Grodd vive</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/LDr4KKcK2i8">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GokOEquWsAAy2Fh?format=jpg&name=360x360">
+					<p>(22) Rebeldes a la fuga</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/LKRNtE90WDc">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GokOEquWsAAy2Fh?format=jpg&name=360x360">
+					<p>(23) Lo bastante rapido</p>
+				</a>
+			</div>
+
+			
+
+	</article>
+
+	<hr>
+	
+
+</body>
+</html>
