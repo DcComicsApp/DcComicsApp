@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Temporada 4</title>
+	<meta name="viewport" content="width=device-width, user-scalable=1">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
+	<style type="text/css">
+		
+		body{
+			margin: 0;
+			font-family: 'IBM Plex Sans', sans-serif;
+			min-width: 323px;
+			background-color: black;
+		}
+
+		a{text-decoration: none;}
+
+		.portadamovil{display: none;}
+
+		.botonmovil{display: none;}
+
+		aside{
+			width: 20%;
+			height: 100vh;
+			background-color: black;
+			float: left;
+			border-right: 3px solid #14659E;
+			position: fixed;
+		}
+
+		aside div img{
+			width: 45%;
+		}
+
+		.logo{
+			text-align: center;
+			padding-top: 5vh;
+		}
+
+		.logopelicula{
+			text-align: center;
+			padding-top: 40px
+		}
+
+		.logopelicula img{
+			width: 90%;
+		}
+
+		.boton{
+			width: 70%;
+			height: 60px;
+			text-align: center;
+			line-height: 60px;
+			border-radius: 30px;
+			border: 2.5px solid #14659E;
+			color:white;
+			margin: 0 auto;
+			margin-top: 6vh;
+			transition: 0.5s;
+		}
+		.boton:hover{
+			box-shadow: 0px 0px 50px #14659E;
+			background-color: #14659E;
+			color: black;
+			cursor: pointer;
+		}
+
+		.posteraside{
+			text-align: center;
+			margin-top: 7vh;
+		}
+		.posteraside img{border-radius: 20px;}
+
+		section{
+			width: 80%;
+			height: 100vh;
+			background-color: black;
+			float: right;
+		}
+
+		.portada img{
+			width: 85%;
+			border-radius: 40px;
+		}
+
+		.portada{
+			text-align: center;
+			padding-top: 10vh;
+		}
+
+		#logopeliculados{
+			width: 30%;
+			margin-top: -4vh;
+		}
+
+		hr{
+			width: 80%;
+			border: 2px solid #14659E;
+			margin-top: 8vh;
+			margin-bottom: 0;
+		}
+
+		section h1{
+			font-size: 70px;
+			text-align: center;
+			color: white;
+		}
+
+		.detalles{
+			margin-left: 20%;
+		}
+
+		p{
+			width: 80%;
+			color: white;
+			font-size: 20px;
+		}
+
+		
+
+		.episodios{
+			display: inline-block;
+			width: 24%;
+			margin-top: 50px;
+			margin-right: 2%;
+			margin-bottom: 0;
+			margin-left: 5.5%;
+			
+		}
+
+		.episodios img{
+			width: 35%;
+			border-radius: 40px;
+			transition: 0.5s;
+			border:0px solid #1F4A69;
+			box-shadow: 0px 0px 80px #14659E;
+			left: 20%
+		}
+		
+
+		.episodios p{
+			text-align: left;
+			color: #B3B3B3;
+			float: right;
+
+		}
+
+
+
+
+
+
+
+		@media screen and (max-width: 768px){
+
+			aside{display: none;}
+
+			section{
+				width: 100%;
+			}
+			
+			.portada{
+				margin-top: -10%;
+			}
+			
+
+			#logopeliculados{
+				width: 80%;
+				margin-top: 2vh;
+
+			}
+
+			.botonmovil{
+				display: block;
+				
+				
+			}
+
+			section h1{
+				font-size: 40px;
+			}
+
+
+			.boton:hover{
+				box-shadow: none;
+				background-color: black;
+				color: white;
+				cursor: pointer;
+			}
+
+			.episodios{
+				text-align: center;
+				width: 40%;	
+			}
+
+			.episodios img{
+				width: 40%;
+				border-radius: 30px;
+				box-shadow: 0px 0px 80px #14659E;
+			}
+			
+
+			
+
+
+
+		}
+
+
+
+
+		@media screen and (max-width: 410px){
+
+			section h1{
+				font-size: 30px;
+			}
+
+			.portada{display: none;}
+
+			.portadamovil{
+				display: block;
+			}
+			.portadamovil img{width: 100%;}
+
+			#informacion{
+				font-size: 15px;
+			}
+
+			#logopeliculados{
+				width: 85%;
+			}
+
+			.botonmovil{
+				margin-top: -10%;
+			}
+
+
+			section div p{
+				width: 90%;
+			}
+
+			.episodios{	
+				text-align: center;
+				width: 40%;
+				margin-top: 30px;	
+			}
+
+			.episodios img{
+				width: 45%;
+				border-radius: 20px;
+				transition: 0.5s;
+				border:0px solid #1F4A69;
+				box-shadow: 0px 0px 50px #14659E;
+				left: 20%
+			}
+			
+
+			.episodios p{
+				float: right;
+				font-size: 15px;
+			}
+
+
+			
+
+
+		}
+
+		
+
+		
+
+
+
+
+	</style>
+</head>
+
+	
+
+
+<body>
+
+
+	<aside>
+
+		<div class="logo">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/DC_Comics_logo.svg">
+		</div>
+
+		<div class="logopelicula">
+			<img src="https://pbs.twimg.com/media/E4bC1sKWEAARt-5?format=jpg&name=900x900">
+		</div>
+
+		<div class="posteraside">
+			<img src="https://pbs.twimg.com/media/E4bC1sFWQAEXwVm?format=jpg&name=medium">
+		</div>
+
+		
+
+	</aside>
+
+
+	<section>
+
+	<div class="portada">
+		<img src="https://pbs.twimg.com/media/E4bC1sHWQAMZenJ?format=jpg&name=medium">
+	</div>
+
+	<div class="portadamovil">
+		<img src="https://pbs.twimg.com/media/GoueVIbXcAAMsbC?format=jpg&name=large">
+	</div>
+
+	
+
+	
+
+
+	<article>
+
+		
+			<h1>Temporada 4</h1>
+			
+			<div class="episodios">
+				<a href="https://youtu.be/MWrMmtGQdP4">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GoueVFjXoAAe-RT?format=jpg&name=360x360">
+					<p>(70) El renacer de Flash</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/2ou-GX1emds">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GoueVFjXoAAe-RT?format=jpg&name=360x360">
+					<p>(71) Señales mezcladas</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/iR90KTW4Kko">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GoueVFjXoAAe-RT?format=jpg&name=360x360">
+					<p>(72) Una chica con suerte</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/UKISGp0x7n0">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GoueVFjXoAAe-RT?format=jpg&name=360x360">
+					<p>(73) Alargado viaje hacia la noche</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/7ydC-VAj7W0">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GoueVFjXoAAe-RT?format=jpg&name=360x360">
+					<p>(74) Noche de chicas</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/0BEsISs-yeE">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GoueVFjXoAAe-RT?format=jpg&name=360x360">
+					<p>(75) Cuando Harry conoce a Harry</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/57-F_LdGQ98">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GoueVFjXoAAe-RT?format=jpg&name=360x360">
+					<p>(76) Luego existo</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/qAnRwmN-2gc">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GoueVFjXoAAe-RT?format=jpg&name=360x360">
+					<p>(77) Crisis en tierra X</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/aj_NXmYfLk0">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GoueVFjXoAAe-RT?format=jpg&name=360x360">
+					<p>(78) No corras</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/k3kmAx8Hw9Q">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GoueVFjXoAAe-RT?format=jpg&name=360x360">
+					<p>(79) El juicio de Flash</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/KoBoMaIkyMw">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GoueVFjXoAAe-RT?format=jpg&name=360x360">
+					<p>(80) El caballero se levanta</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/Ag_JZPoUeHo">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GoueVFjXoAAe-RT?format=jpg&name=360x360">
+					<p>(81) Carinyo en el equipo Flash</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/t7Vz9_M8MMg">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GoueVFjXoAAe-RT?format=jpg&name=360x360">
+					<p>(82) Colores verdaderos</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/lnxG8hhemUY">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GoueVFjXoAAe-RT?format=jpg&name=360x360">
+					<p>(83) Sujeto 9</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/TVxw-YX2Lw0">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GoueVFjXoAAe-RT?format=jpg&name=360x360">
+					<p>(84) Introduzca flashtime</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/TH8KtNKDnrc">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GoueVFjXoAAe-RT?format=jpg&name=360x360">
+					<p>(85) Corre Iris corre</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/fWR8LpXa5-A">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GoueVFjXoAAe-RT?format=jpg&name=360x360">
+					<p>(86) Nulo y molesto</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/FQJH-FMgA5M">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GoueVFjXoAAe-RT?format=jpg&name=360x360">
+					<p>(87) Perderse</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/bEky-OZNiio">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GoueVFjXoAAe-RT?format=jpg&name=360x360">
+					<p>(88) Picaro de la furia</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/oP9mjMASCd0">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GoueVFjXoAAe-RT?format=jpg&name=360x360">
+					<p>(89) Ella tambien existe</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/uPf3_Aqnbws">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GoueVFjXoAAe-RT?format=jpg&name=360x360">
+					<p>(90) Harry u los Harrisons</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/4JiddDqZ1Qo">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GoueVFjXoAAe-RT?format=jpg&name=360x360">
+					<p>(91) Piensa rapido</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/AysTLqZ2GQ4">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GoueVFjXoAAe-RT?format=jpg&name=360x360">
+					<p>(92) Nosotros somos Flash</p>
+				</a>
+			</div>
+
+			
+
+	</article>
+
+	<hr>
+	
+
+</body>
+</html>
