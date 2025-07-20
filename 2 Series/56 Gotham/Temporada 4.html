@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Temporada 4</title>
+	<meta name="viewport" content="width=device-width, user-scalable=1">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
+	<style type="text/css">
+		
+		body{
+			margin: 0;
+			font-family: 'IBM Plex Sans', sans-serif;
+			min-width: 323px;
+			background-color: black;
+		}
+
+		a{text-decoration: none;}
+
+		.portadamovil{display: none;}
+
+		.botonmovil{display: none;}
+
+		aside{
+			width: 20%;
+			height: 100vh;
+			background-color: black;
+			float: left;
+			border-right: 3px solid #14659E;
+			position: fixed;
+		}
+
+		aside div img{
+			width: 45%;
+		}
+
+		.logo{
+			text-align: center;
+			padding-top: 5vh;
+		}
+
+		.logopelicula{
+			text-align: center;
+			padding-top: 40px
+		}
+
+		.logopelicula img{
+			width: 90%;
+		}
+
+		.boton{
+			width: 70%;
+			height: 60px;
+			text-align: center;
+			line-height: 60px;
+			border-radius: 30px;
+			border: 2.5px solid #14659E;
+			color:white;
+			margin: 0 auto;
+			margin-top: 6vh;
+			transition: 0.5s;
+		}
+		.boton:hover{
+			box-shadow: 0px 0px 50px #14659E;
+			background-color: #14659E;
+			color: black;
+			cursor: pointer;
+		}
+
+		.posteraside{
+			text-align: center;
+			margin-top: 7vh;
+		}
+		.posteraside img{border-radius: 20px;}
+
+		section{
+			width: 80%;
+			height: 100vh;
+			background-color: black;
+			float: right;
+		}
+
+		.portada img{
+			width: 85%;
+			border-radius: 40px;
+		}
+
+		.portada{
+			text-align: center;
+			padding-top: 10vh;
+		}
+
+		#logopeliculados{
+			width: 30%;
+			margin-top: -4vh;
+		}
+
+		hr{
+			width: 80%;
+			border: 2px solid #14659E;
+			margin-top: 8vh;
+			margin-bottom: 0;
+		}
+
+		section h1{
+			font-size: 70px;
+			text-align: center;
+			color: white;
+		}
+
+		.detalles{
+			margin-left: 20%;
+		}
+
+		p{
+			width: 80%;
+			color: white;
+			font-size: 20px;
+		}
+
+		
+
+		.episodios{
+			display: inline-block;
+			width: 24%;
+			margin-top: 50px;
+			margin-right: 2%;
+			margin-bottom: 0;
+			margin-left: 5.5%;
+			
+		}
+
+		.episodios img{
+			width: 35%;
+			border-radius: 40px;
+			transition: 0.5s;
+			border:0px solid #1F4A69;
+			box-shadow: 0px 0px 80px #14659E;
+			left: 20%
+		}
+		
+
+		.episodios p{
+			text-align: left;
+			color: #B3B3B3;
+			float: right;
+
+		}
+
+
+
+
+
+
+
+		@media screen and (max-width: 768px){
+
+			aside{display: none;}
+
+			section{
+				width: 100%;
+			}
+			
+			.portada{
+				margin-top: -10%;
+			}
+			
+
+			#logopeliculados{
+				width: 80%;
+				margin-top: 2vh;
+
+			}
+
+			.botonmovil{
+				display: block;
+				
+				
+			}
+
+			section h1{
+				font-size: 40px;
+			}
+
+
+			.boton:hover{
+				box-shadow: none;
+				background-color: black;
+				color: white;
+				cursor: pointer;
+			}
+
+			.episodios{
+				text-align: center;
+				width: 40%;	
+			}
+
+			.episodios img{
+				width: 40%;
+				border-radius: 30px;
+				box-shadow: 0px 0px 80px #14659E;
+			}
+			
+
+			
+
+
+
+		}
+
+
+
+
+		@media screen and (max-width: 410px){
+
+			section h1{
+				font-size: 30px;
+			}
+
+			.portada{display: none;}
+
+			.portadamovil{
+				display: block;
+			}
+			.portadamovil img{width: 100%;}
+
+			#informacion{
+				font-size: 15px;
+			}
+
+			#logopeliculados{
+				width: 85%;
+			}
+
+			.botonmovil{
+				margin-top: -10%;
+			}
+
+
+			section div p{
+				width: 90%;
+			}
+
+			.episodios{	
+				text-align: center;
+				width: 40%;
+				margin-top: 30px;	
+			}
+
+			.episodios img{
+				width: 45%;
+				border-radius: 20px;
+				transition: 0.5s;
+				border:0px solid #1F4A69;
+				box-shadow: 0px 0px 50px #14659E;
+				left: 20%
+			}
+			
+
+			.episodios p{
+				float: right;
+				font-size: 15px;
+			}
+
+
+			
+
+
+		}
+
+		
+
+		
+
+
+
+
+	</style>
+</head>
+
+	
+
+
+<body>
+
+
+	<aside>
+
+		<div class="logo">
+			<img src="https://pbs.twimg.com/media/GTlaSzCXQAA64Sj?format=jpg&name=medium">
+		</div>
+
+		<div class="logopelicula">
+			<img src="https://pbs.twimg.com/media/GuCcWVPWUAAE_NO?format=jpg&name=900x900">
+		</div>
+
+		<div class="posteraside">
+			<img src="https://pbs.twimg.com/media/GuCcWVYX0AAP5UB?format=jpg&name=small">
+		</div>
+
+		
+
+	</aside>
+
+
+	<section>
+
+	<div class="portada">
+		<img src="https://pbs.twimg.com/media/GuCcWVLWgAAjqgY?format=jpg&name=large">
+	</div>
+
+	<div class="portadamovil">
+		<img src="https://pbs.twimg.com/media/GvFSHipWcAA2fRg?format=jpg&name=4096x4096">
+	</div>
+
+	
+
+	
+
+
+	<article>
+
+		
+			<h1>Temporada 4</h1>
+			
+			<div class="episodios">
+				<a href="https://youtu.be/tnBPb3X7bQE">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GvFSHnAXgAAgmcc?format=jpg&name=360x360">
+					<p>(67) Pax Pinguina</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/-uxCgDrpRUg">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GvFSHnAXgAAgmcc?format=jpg&name=360x360">
+					<p>(68) El atemorizado caza</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/lL0CwxT-t1Y">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GvFSHnAXgAAgmcc?format=jpg&name=360x360">
+					<p>(69) Se esconde tras la mascara</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/lDA-n79lDuM">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GvFSHnAXgAAgmcc?format=jpg&name=360x360">
+					<p>(70) Cabeza del demonio</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/QsOSPIPRbqc">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GvFSHnAXgAAgmcc?format=jpg&name=360x360">
+					<p>(71) La senda del cuchillo</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/VPKOAgG2br0">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GvFSHnAXgAAgmcc?format=jpg&name=360x360">
+					<p>(72) Tarde del cerdo</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/ulzg7FF30BE">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GvFSHnAXgAAgmcc?format=jpg&name=360x360">
+					<p>(73) Narrows</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/zPMZiSi4I54">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GvFSHnAXgAAgmcc?format=jpg&name=360x360">
+					<p>(74) Deja de darte</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/DLRgMegEVAs">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GvFSHnAXgAAgmcc?format=jpg&name=360x360">
+					<p>(75) Dejalos que coman</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/ElSTl5Lz19c">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GvFSHnAXgAAgmcc?format=jpg&name=360x360">
+					<p>(76) Cosas que explotan</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/jQiRKYqpero">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GvFSHnAXgAAgmcc?format=jpg&name=360x360">
+					<p>(77) Reina mata a caballo</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/lPy1Ip1tMQY">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GvFSHnAXgAAgmcc?format=jpg&name=360x360">
+					<p>(78) Piezas de un espejo roto</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/i6JE3V8LyyM">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GvFSHnAXgAAgmcc?format=jpg&name=360x360">
+					<p>(79) Una hermosa oscuridad</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/mOSqziB-MCI">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GvFSHnAXgAAgmcc?format=jpg&name=360x360">
+					<p>(80) Reuniones</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/C1cD78IgUqE">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GvFSHnAXgAAgmcc?format=jpg&name=360x360">
+					<p>(81) El barco se hunde</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/0XFtnC1r-UA">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GvFSHnAXgAAgmcc?format=jpg&name=360x360">
+					<p>(82) Una de mis tres sopas</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/r4yY-VbxjnM">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GvFSHnAXgAAgmcc?format=jpg&name=360x360">
+					<p>(83) Almuerzo obligatorio</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/IeMdsPJ1M5M">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GvFSHnAXgAAgmcc?format=jpg&name=360x360">
+					<p>(84) Esto es entretenimiento</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/SIdNWPqZdpk">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GvFSHnAXgAAgmcc?format=jpg&name=360x360">
+					<p>(85) Hasta nuestras muertes</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/3pmyR6XnKwk">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GvFSHnAXgAAgmcc?format=jpg&name=360x360">
+					<p>(86) Viejo cadaver</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/o-HzlYJejgA">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GvFSHnAXgAAgmcc?format=jpg&name=360x360">
+					<p>(87) Un mal dia</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/r_EYydp3YHo">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/GvFSHnAXgAAgmcc?format=jpg&name=360x360">
+					<p>(88) Tierra de nadie</p>
+				</a>
+			</div>
+
+			
+		
+	
+			
+
+	</article>
+
+	<hr>
+	
+
+</body>
+</html>
