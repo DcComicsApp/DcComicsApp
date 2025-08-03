@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Alfred Pennyworth</title>
+	<meta name="viewport" content="width=device-width, user-scalable=1">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
+	<style type="text/css">
+		
+		body{
+			margin: 0;
+			font-family: 'IBM Plex Sans', sans-serif;
+			min-width: 323px;
+			background-color: black;
+		}
+
+		a{text-decoration: none;}
+
+		.portadamovil{display: none;}
+
+		.botonmovil{display: none;}
+
+		aside{
+			width: 20%;
+			height: 100vh;
+			background-color: black;
+			float: left;
+			border-right: 3px solid #14659E;
+			position: fixed;
+		}
+
+		aside div img{
+			width: 45%;
+		}
+
+		.logo{
+			text-align: center;
+			padding-top: 5vh;
+		}
+
+		.logopelicula{
+			text-align: center;
+			padding-top: 40px
+		}
+
+		.logopelicula img{
+			width: 90%;
+		}
+
+		.boton{
+			width: 70%;
+			height: 60px;
+			text-align: center;
+			line-height: 60px;
+			border-radius: 30px;
+			border: 2.5px solid #14659E;
+			color:white;
+			margin: 0 auto;
+			margin-top: 6vh;
+			transition: 0.5s;
+		}
+		.boton:hover{
+			box-shadow: 0px 0px 50px #14659E;
+			background-color: #14659E;
+			color: black;
+			cursor: pointer;
+		}
+
+		section{
+			width: 80%;
+			height: 100vh;
+			background-color: black;
+			float: right;
+		}
+
+		.portada img{
+			width: 85%;
+			border-radius: 40px;
+		}
+
+		.portada{
+			text-align: center;
+			padding-top: 10vh;
+		}
+
+		#logopeliculados{
+			width: 30%;
+			margin-top: -4vh;
+		}
+
+		hr{
+			width: 80%;
+			border: 2px solid #14659E;
+			margin-top: 8vh;
+			margin-bottom: 0;
+		}
+
+		section h1{
+			font-size: 70px;
+			text-align: center;
+			color: white;
+			margin-top: 4vh;
+		}
+
+		.detalles{
+			margin-left: 5%;
+			margin-top: 4vh;
+		}
+
+		p{
+			width: 90%;
+			color: white;
+			font-size: 12px;
+		}
+
+
+
+
+
+		@media screen and (max-width: 768px){
+
+			aside{display: none;}
+
+			section{
+				width: 100%;
+			}
+			
+			.portada{
+				margin-top: -10%;
+			}
+			
+
+			#logopeliculados{
+				width: 80%;
+				margin-top: 2vh;
+
+			}
+
+			.botonmovil{
+				display: block;
+				
+				
+			}
+
+			section h1{
+				font-size: 40px;
+			}
+
+
+			.boton:hover{
+				box-shadow: none;
+				background-color: black;
+				color: white;
+				cursor: pointer;
+			}
+
+
+
+		}
+
+
+
+
+		@media screen and (max-width: 410px){
+
+			section h1{
+				font-size: 25px;
+			}
+
+			.portada{display: none;}
+
+			.portadamovil{
+				display: block;
+			}
+			.portadamovil img{width: 100%;}
+
+			#informacion{
+				font-size: 10px;
+			}
+
+			#logopeliculados{
+				width: 100%;
+				margin-top: -6vh;
+
+			}
+
+			
+
+			section div p{
+				width: 90%;
+			}
+			
+
+
+		}
+
+		
+
+		
+
+
+
+
+	</style>
+</head>
+
+	
+
+
+<body>
+
+
+	<aside>
+
+		<div class="logo">
+			<img src="https://pbs.twimg.com/media/GTlaSzCXQAA64Sj?format=jpg&name=900x900">
+		</div>
+
+		<div class="logopelicula">
+			<img src="https://pbs.twimg.com/media/GxbV_IpWsAAOqTv?format=jpg&name=900x900">
+		</div>
+
+		
+
+		
+
+	</aside>
+
+
+	<section>
+
+	<div class="portada">
+		<img src="https://pbs.twimg.com/media/GxbV_FDWgAAYcj9?format=jpg&name=large">
+	</div>
+
+	<div class="portadamovil">
+		<img src="https://pbs.twimg.com/media/GxbV_FPW4AAoeMZ?format=jpg&name=medium">
+	</div>
+
+	<div class="logopelicula">
+		<img id="logopeliculados" src="https://pbs.twimg.com/media/GxbV_IpWsAAOqTv?format=jpg&name=900x900">
+	</div>
+
+
+
+	<h1>Información básica</h1>
+<div class="detalles">
+	<p>Primera aparición: Batman #16 (abril de 1943)</p> 
+
+	<p>Creadores: Don Cameron / Bob Kane</p> 
+
+	<p>Nombre original: Alfred Thaddeus Crane Pennyworth</p> 
+
+	<p>Raza: Humano</p> 
+
+	<p>Peso y Altura: 75kg / 1,82m</p> 
+
+	<p>Residencia: Gotham</p> 
+
+	<p>Ocupaciones: Mayordomo, médico de campo, mentor, ex agente del MI6</p> 
+</div>
+
+<hr>
+
+<h1>Habilidades</h1>
+
+<div class="detalles">
+	<p>Entrenamiento militar y de inteligencia (MI6)</p> 
+	<p>Conocimientos avanzados en medicina, tecnología y primeros auxilios</p> 
+	<p>Gran estratega y observador</p> 
+	<p>Habilidades culinarias y de mayordomía impecables</p> 
+</div>
+
+<article>
+
+<hr>
+
+<h1>Información general</h1>
+
+<div class="detalles">
+	<p>Alfred Pennyworth es mucho más que el mayordomo de Bruce Wayne. Ex actor y agente del Servicio Secreto Británico (MI6), se convirtió en el cuidador del joven Bruce tras la muerte de sus padres, asumiendo una figura paterna. Con el tiempo, Alfred se convirtió en el aliado más confiable de Batman, asistiendo en el cuidado físico, emocional y logístico del Caballero Oscuro. Desde la Batcueva, Alfred proporciona apoyo médico, táctico y moral, siendo una parte esencial del funcionamiento de la cruzada de Batman contra el crimen en Gotham. Ha sido un pilar fundamental tanto para Bruce como para los miembros de la Batfamilia.</p> 
+</div>
+
+<hr>
+
+<h1>Personalidad</h1>
+
+<div class="detalles">
+	<p>Alfred es sabio, leal, sarcástico y profundamente humano. Posee una mezcla de formalidad británica con un agudo sentido del humor, frecuentemente usando comentarios irónicos para aliviar tensiones. A pesar de su naturaleza reservada, Alfred demuestra un profundo amor por Bruce Wayne y la Batfamilia, actuando como su brújula moral. Es pragmático y valiente, dispuesto a arriesgar su vida para proteger a los que considera su familia.</p> 
+</div>
+	
+	
+
+	<article>
+			
+			
+			
+
+	</article>
+
+	<hr>
+
+	</section>
+
+	
+
+	
+
+
+
+
+</body>
+</html>
