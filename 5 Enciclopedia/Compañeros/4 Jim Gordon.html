@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jim Gordon</title>
+	<meta name="viewport" content="width=device-width, user-scalable=1">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
+	<style type="text/css">
+		
+		body{
+			margin: 0;
+			font-family: 'IBM Plex Sans', sans-serif;
+			min-width: 323px;
+			background-color: black;
+		}
+
+		a{text-decoration: none;}
+
+		.portadamovil{display: none;}
+
+		.botonmovil{display: none;}
+
+		aside{
+			width: 20%;
+			height: 100vh;
+			background-color: black;
+			float: left;
+			border-right: 3px solid #14659E;
+			position: fixed;
+		}
+
+		aside div img{
+			width: 45%;
+		}
+
+		.logo{
+			text-align: center;
+			padding-top: 5vh;
+		}
+
+		.logopelicula{
+			text-align: center;
+			padding-top: 40px
+		}
+
+		.logopelicula img{
+			width: 90%;
+		}
+
+		.boton{
+			width: 70%;
+			height: 60px;
+			text-align: center;
+			line-height: 60px;
+			border-radius: 30px;
+			border: 2.5px solid #14659E;
+			color:white;
+			margin: 0 auto;
+			margin-top: 6vh;
+			transition: 0.5s;
+		}
+		.boton:hover{
+			box-shadow: 0px 0px 50px #14659E;
+			background-color: #14659E;
+			color: black;
+			cursor: pointer;
+		}
+
+		section{
+			width: 80%;
+			height: 100vh;
+			background-color: black;
+			float: right;
+		}
+
+		.portada img{
+			width: 85%;
+			border-radius: 40px;
+		}
+
+		.portada{
+			text-align: center;
+			padding-top: 10vh;
+		}
+
+		#logopeliculados{
+			width: 30%;
+			margin-top: -4vh;
+		}
+
+		hr{
+			width: 80%;
+			border: 2px solid #14659E;
+			margin-top: 8vh;
+			margin-bottom: 0;
+		}
+
+		section h1{
+			font-size: 70px;
+			text-align: center;
+			color: white;
+			margin-top: 4vh;
+		}
+
+		.detalles{
+			margin-left: 5%;
+			margin-top: 4vh;
+		}
+
+		p{
+			width: 90%;
+			color: white;
+			font-size: 12px;
+		}
+
+
+
+
+
+		@media screen and (max-width: 768px){
+
+			aside{display: none;}
+
+			section{
+				width: 100%;
+			}
+			
+			.portada{
+				margin-top: -10%;
+			}
+			
+
+			#logopeliculados{
+				width: 80%;
+				margin-top: 2vh;
+
+			}
+
+			.botonmovil{
+				display: block;
+				
+				
+			}
+
+			section h1{
+				font-size: 40px;
+			}
+
+
+			.boton:hover{
+				box-shadow: none;
+				background-color: black;
+				color: white;
+				cursor: pointer;
+			}
+
+
+
+		}
+
+
+
+
+		@media screen and (max-width: 410px){
+
+			section h1{
+				font-size: 25px;
+			}
+
+			.portada{display: none;}
+
+			.portadamovil{
+				display: block;
+			}
+			.portadamovil img{width: 100%;}
+
+			#informacion{
+				font-size: 10px;
+			}
+
+			#logopeliculados{
+				width: 100%;
+				margin-top: -6vh;
+
+			}
+
+			
+
+			section div p{
+				width: 90%;
+			}
+			
+
+
+		}
+
+		
+
+		
+
+
+
+
+	</style>
+</head>
+
+	
+
+
+<body>
+
+
+	<aside>
+
+		<div class="logo">
+			<img src="https://pbs.twimg.com/media/GTlaSzCXQAA64Sj?format=jpg&name=900x900">
+		</div>
+
+		<div class="logopelicula">
+			<img src="https://pbs.twimg.com/media/GxbYARGWEAINKpU?format=jpg&name=900x900">
+		</div>
+
+		
+
+		
+
+	</aside>
+
+
+	<section>
+
+	<div class="portada">
+		<img src="https://pbs.twimg.com/media/GxbYARDXsAEft_Z?format=jpg&name=large">
+	</div>
+
+	<div class="portadamovil">
+		<img src="https://pbs.twimg.com/media/GxbYARaWMAIdRcX?format=jpg&name=large">
+	</div>
+
+	<div class="logopelicula">
+		<img id="logopeliculados" src="https://pbs.twimg.com/media/GxbYARGWEAINKpU?format=jpg&name=900x900">
+	</div>
+
+
+
+	<h1>Información básica</h1>
+<div class="detalles">
+	<p>Primera aparición: Detective Comics #27 (mayo de 1939)</p> 
+
+	<p>Creadores: Bill Finger / Bob Kane</p> 
+
+	<p>Nombre original: James Worthington Gordon</p> 
+
+	<p>Raza: Humano</p> 
+
+	<p>Peso y Altura: 82kg / 1,83m</p> 
+
+	<p>Residencia: Gotham City</p> 
+
+	<p>Ocupaciones: Comisario del Departamento de Policía de Gotham (GCPD)</p> 
+</div>
+
+<hr>
+
+<h1>Habilidades</h1>
+
+<div class="detalles">
+	<p>Gran experiencia en investigación criminal</p> 
+	<p>Alto sentido de la ética y justicia</p> 
+	<p>Manejo de armas de fuego</p> 
+	<p>Experiencia táctica y liderazgo policial</p> 
+</div>
+
+<article>
+
+<hr>
+
+<h1>Información general</h1>
+
+<div class="detalles">
+	<p>James Gordon es el comisario del Departamento de Policía de Gotham y uno de los pocos funcionarios públicos no corruptos de la ciudad. A lo largo de su carrera, ha trabajado incansablemente para limpiar Gotham del crimen, a menudo enfrentándose a obstáculos institucionales, mafias y supervillanos. Su relación con Batman es una de confianza mutua, aunque también marcada por las tensiones entre métodos legales e ilegales. Gordon fue una figura clave en la lucha contra el crimen incluso antes de la llegada de Batman, y se mantuvo como su aliado más firme durante las épocas más oscuras de Gotham. Es también el padre de Barbara Gordon (Batgirl/Oracle).</p> 
+</div>
+
+<hr>
+
+<h1>Personalidad</h1>
+
+<div class="detalles">
+	<p>Jim Gordon es íntegro, decidido, y guiado por un fuerte código moral. Su compromiso con la justicia y la verdad lo convierte en una figura solitaria en un departamento plagado de corrupción. Es metódico, paciente, y dispuesto a arriesgar su carrera (y vida) por lo que cree correcto. Aunque muchas veces se ve abrumado por la ciudad que protege, su determinación nunca flaquea. Como líder, inspira respeto y confianza tanto en sus subordinados como en sus aliados enmascarados.</p> 
+</div>
+	
+
+	<article>
+			
+			
+			
+
+	</article>
+
+	<hr>
+
+	</section>
+
+	
+
+	
+
+
+
+
+</body>
+</html>
