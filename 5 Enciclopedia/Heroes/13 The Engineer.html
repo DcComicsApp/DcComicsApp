@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Engineer</title>
+	<meta name="viewport" content="width=device-width, user-scalable=1">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
+	<style type="text/css">
+		
+		body{
+			margin: 0;
+			font-family: 'IBM Plex Sans', sans-serif;
+			min-width: 323px;
+			background-color: black;
+		}
+
+		a{text-decoration: none;}
+
+		.portadamovil{display: none;}
+
+		.botonmovil{display: none;}
+
+		aside{
+			width: 20%;
+			height: 100vh;
+			background-color: black;
+			float: left;
+			border-right: 3px solid #14659E;
+			position: fixed;
+		}
+
+		aside div img{
+			width: 45%;
+		}
+
+		.logo{
+			text-align: center;
+			padding-top: 5vh;
+		}
+
+		.logopelicula{
+			text-align: center;
+			padding-top: 40px
+		}
+
+		.logopelicula img{
+			width: 90%;
+		}
+
+		.boton{
+			width: 70%;
+			height: 60px;
+			text-align: center;
+			line-height: 60px;
+			border-radius: 30px;
+			border: 2.5px solid #14659E;
+			color:white;
+			margin: 0 auto;
+			margin-top: 6vh;
+			transition: 0.5s;
+		}
+		.boton:hover{
+			box-shadow: 0px 0px 50px #14659E;
+			background-color: #14659E;
+			color: black;
+			cursor: pointer;
+		}
+
+		section{
+			width: 80%;
+			height: 100vh;
+			background-color: black;
+			float: right;
+		}
+
+		.portada img{
+			width: 85%;
+			border-radius: 40px;
+		}
+
+		.portada{
+			text-align: center;
+			padding-top: 10vh;
+		}
+
+		#logopeliculados{
+			width: 30%;
+			margin-top: -4vh;
+		}
+
+		hr{
+			width: 80%;
+			border: 2px solid #14659E;
+			margin-top: 8vh;
+			margin-bottom: 0;
+		}
+
+		section h1{
+			font-size: 70px;
+			text-align: center;
+			color: white;
+			margin-top: 4vh;
+		}
+
+		.detalles{
+			margin-left: 5%;
+			margin-top: 4vh;
+		}
+
+		p{
+			width: 90%;
+			color: white;
+			font-size: 12px;
+		}
+
+
+
+
+
+		@media screen and (max-width: 768px){
+
+			aside{display: none;}
+
+			section{
+				width: 100%;
+			}
+			
+			.portada{
+				margin-top: -10%;
+			}
+			
+
+			#logopeliculados{
+				width: 80%;
+				margin-top: 2vh;
+
+			}
+
+			.botonmovil{
+				display: block;
+				
+				
+			}
+
+			section h1{
+				font-size: 40px;
+			}
+
+
+			.boton:hover{
+				box-shadow: none;
+				background-color: black;
+				color: white;
+				cursor: pointer;
+			}
+
+
+
+		}
+
+
+
+
+		@media screen and (max-width: 410px){
+
+			section h1{
+				font-size: 25px;
+			}
+
+			.portada{display: none;}
+
+			.portadamovil{
+				display: block;
+			}
+			.portadamovil img{width: 100%;}
+
+			#informacion{
+				font-size: 10px;
+			}
+
+			#logopeliculados{
+				width: 100%;
+				margin-top: -7vh;
+
+			}
+
+			
+
+			section div p{
+				width: 90%;
+			}
+			
+
+
+		}
+
+		
+
+		
+
+
+
+
+	</style>
+</head>
+
+	
+
+
+<body>
+
+
+	<aside>
+
+		<div class="logo">
+			<img src="https://pbs.twimg.com/media/GTlaSzCXQAA64Sj?format=jpg&name=medium">
+		</div>
+
+		<div class="logopelicula">
+			<img src="https://pbs.twimg.com/media/GxbZh-WWIAA9Lh1?format=jpg&name=900x900">
+		</div>
+
+		
+
+		
+
+	</aside>
+
+
+	<section>
+
+	<div class="portada">
+		<img src="https://pbs.twimg.com/media/GxbZh-AWEAE2oTm?format=jpg&name=900x900">
+	</div>
+
+	<div class="portadamovil">
+		<img src="https://pbs.twimg.com/media/GxbZh95XkAASOU6?format=jpg&name=medium">
+	</div>
+
+	<div class="logopelicula">
+		<img id="logopeliculados" src="https://pbs.twimg.com/media/GxbZh-WWIAA9Lh1?format=jpg&name=900x900">
+	</div>
+
+
+
+	<div class="detalles">
+	<p>PELIGROSIDAD</p> 
+	<progress id="file" max="100" value="85" style="width: 95%"> 85% </progress>
+
+	<p>FUERZA</p> 
+	<progress id="file" max="100" value="80" style="width: 95%"> 80% </progress>
+
+	<p>INTELIGENCIA</p> 
+	<progress id="file" max="100" value="95" style="width: 95%"> 95% </progress>
+
+	<p>VELOCIDAD</p> 
+	<progress id="file" max="100" value="70" style="width: 95%"> 70% </progress>
+</div>
+
+<hr>
+
+<h1>Información básica</h1>
+<div class="detalles">
+	<p>Primera aparición: The Authority #1 (mayo de 1999)</p> 
+
+	<p>Creadores: Warren Ellis / Bryan Hitch</p> 
+
+	<p>Nombre original: Angela Spica</p> 
+
+	<p>Raza: Humana modificada (tecnorgánica)</p> 
+
+	<p>Peso y Altura: Variable (gracias a nanotecnología)</p> 
+
+	<p>Residencia: Carrier (base dimensional de The Authority)</p> 
+
+	<p>Ocupaciones: Científica / Superheroína / Miembro de The Authority</p> 
+</div>
+
+<hr>
+
+<h1>Habilidades</h1>
+
+<div class="detalles">
+	<p>Nanotecnología integrada en su cuerpo</p> 
+	<p>Puede generar armamento, escudos y herramientas con su cuerpo</p> 
+	<p>Vuelo, manipulación de materia, y acceso a bases de datos tecnológicas</p> 
+	<p>Intelecto de nivel genio y conocimientos avanzados en ingeniería</p> 
+</div>
+
+<article>
+
+<hr>
+
+<h1>Información general</h1>
+
+<div class="detalles">
+	<p>Angela Spica, la segunda persona en llevar el nombre de "The Engineer", fue una brillante científica que se inyectó millones de nanomáquinas en su sistema sanguíneo para reemplazar su cuerpo con una forma tecnorgánica. Esta decisión cambió su vida para siempre, dándole la capacidad de crear cualquier cosa que imagine, desde armamento hasta dispositivos complejos, directamente desde su propio cuerpo. Como miembro de *The Authority*, un grupo de metahumanos que protege la Tierra a su manera, Angela actúa como la principal científica y experta tecnológica del equipo. A pesar de sus increíbles habilidades, Angela lucha por mantener su humanidad y no dejarse consumir por el poder de la tecnología que ahora forma parte de ella.</p> 
+</div>
+
+<hr>
+
+<h1>Personalidad</h1>
+
+<div class="detalles">
+	<p>Angela es racional, ingeniosa y profundamente empática. Aunque posee un inmenso poder tecnológico, conserva una perspectiva humanista y un fuerte sentido del bien común. Es una figura pragmática dentro de The Authority, capaz de tomar decisiones difíciles, pero siempre buscando soluciones que minimicen el daño. Su humor sarcástico y aguda inteligencia la hacen una voz clave en el grupo. Bajo su exterior reforzado, Angela sigue siendo una persona compasiva que no ha perdido su sentido moral, incluso cuando sus acciones se desarrollan fuera de los márgenes tradicionales de la justicia.</p> 
+</div>
+	
+	
+
+	<article>
+			
+			
+			
+
+	</article>
+
+	<hr>
+
+	</section>
+
+	
+
+	
+
+
+
+
+</body>
+</html>
