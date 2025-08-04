@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rick Flag Sr</title>
+	<meta name="viewport" content="width=device-width, user-scalable=1">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
+	<style type="text/css">
+		
+		body{
+			margin: 0;
+			font-family: 'IBM Plex Sans', sans-serif;
+			min-width: 323px;
+			background-color: black;
+		}
+
+		a{text-decoration: none;}
+
+		.portadamovil{display: none;}
+
+		.botonmovil{display: none;}
+
+		aside{
+			width: 20%;
+			height: 100vh;
+			background-color: black;
+			float: left;
+			border-right: 3px solid #14659E;
+			position: fixed;
+		}
+
+		aside div img{
+			width: 45%;
+		}
+
+		.logo{
+			text-align: center;
+			padding-top: 5vh;
+		}
+
+		.logopelicula{
+			text-align: center;
+			padding-top: 40px
+		}
+
+		.logopelicula img{
+			width: 90%;
+		}
+
+		.boton{
+			width: 70%;
+			height: 60px;
+			text-align: center;
+			line-height: 60px;
+			border-radius: 30px;
+			border: 2.5px solid #14659E;
+			color:white;
+			margin: 0 auto;
+			margin-top: 6vh;
+			transition: 0.5s;
+		}
+		.boton:hover{
+			box-shadow: 0px 0px 50px #14659E;
+			background-color: #14659E;
+			color: black;
+			cursor: pointer;
+		}
+
+		section{
+			width: 80%;
+			height: 100vh;
+			background-color: black;
+			float: right;
+		}
+
+		.portada img{
+			width: 85%;
+			border-radius: 40px;
+		}
+
+		.portada{
+			text-align: center;
+			padding-top: 10vh;
+		}
+
+		#logopeliculados{
+			width: 30%;
+			margin-top: -4vh;
+		}
+
+		hr{
+			width: 80%;
+			border: 2px solid #14659E;
+			margin-top: 8vh;
+			margin-bottom: 0;
+		}
+
+		section h1{
+			font-size: 70px;
+			text-align: center;
+			color: white;
+			margin-top: 4vh;
+		}
+
+		.detalles{
+			margin-left: 5%;
+			margin-top: 4vh;
+		}
+
+		p{
+			width: 90%;
+			color: white;
+			font-size: 12px;
+		}
+
+
+
+
+
+		@media screen and (max-width: 768px){
+
+			aside{display: none;}
+
+			section{
+				width: 100%;
+			}
+			
+			.portada{
+				margin-top: -10%;
+			}
+			
+
+			#logopeliculados{
+				width: 80%;
+				margin-top: 2vh;
+
+			}
+
+			.botonmovil{
+				display: block;
+				
+				
+			}
+
+			section h1{
+				font-size: 40px;
+			}
+
+
+			.boton:hover{
+				box-shadow: none;
+				background-color: black;
+				color: white;
+				cursor: pointer;
+			}
+
+
+
+		}
+
+
+
+
+		@media screen and (max-width: 410px){
+
+			section h1{
+				font-size: 25px;
+			}
+
+			.portada{display: none;}
+
+			.portadamovil{
+				display: block;
+			}
+			.portadamovil img{width: 100%;}
+
+			#informacion{
+				font-size: 10px;
+			}
+
+			#logopeliculados{
+				width: 100%;
+				margin-top: -6vh;
+
+			}
+
+			
+
+			section div p{
+				width: 90%;
+			}
+			
+
+
+		}
+
+		
+
+		
+
+
+
+
+	</style>
+</head>
+
+	
+
+
+<body>
+
+
+	<aside>
+
+		<div class="logo">
+			<img src="https://pbs.twimg.com/media/GTlaSzCXQAA64Sj?format=jpg&name=900x900">
+		</div>
+
+		<div class="logopelicula">
+			<img src="https://pbs.twimg.com/media/GxfyteDWMAAu8by?format=jpg&name=900x900">
+		</div>
+
+		
+
+		
+
+	</aside>
+
+
+	<section>
+
+	<div class="portada">
+		<img src="https://pbs.twimg.com/media/Gxfytd-WoAAOoq0?format=jpg&name=medium">
+	</div>
+
+	<div class="portadamovil">
+		<img src="https://pbs.twimg.com/media/GxfyteUXEAA_VKM?format=jpg&name=large">
+	</div>
+
+	<div class="logopelicula">
+		<img id="logopeliculados" src="https://pbs.twimg.com/media/GxfyteDWMAAu8by?format=jpg&name=900x900">
+	</div>
+
+
+
+	<h1>Información básica</h1>
+<div class="detalles">
+	<p>Primera aparición: The Brave and the Bold #25 (septiembre de 1959)</p> 
+
+	<p>Creadores: Robert Kanigher / Ross Andru</p> 
+
+	<p>Nombre original: Richard Montgomery Flag</p> 
+
+	<p>Raza: Humano</p> 
+
+	<p>Peso y Altura: 90kg / 1,85m</p> 
+
+	<p>Residencia: Estados Unidos</p> 
+
+	<p>Ocupaciones: Oficial militar / Líder de campo del Suicide Squad original</p> 
+</div>
+
+<hr>
+
+<h1>Habilidades</h1>
+
+<div class="detalles">
+	<p>Entrenamiento militar avanzado</p> 
+	<p>Liderazgo táctico en operaciones de alto riesgo</p> 
+	<p>Habilidades en combate cuerpo a cuerpo y armas de fuego</p> 
+	<p>Capacidad estratégica en misiones suicidas y operaciones encubiertas</p> 
+</div>
+
+<article>
+
+<hr>
+
+<h1>Información general</h1>
+
+<div class="detalles">
+	<p>Rick Flag Sr. fue un condecorado soldado estadounidense que lideró al *Suicide Squadron* original durante la Segunda Guerra Mundial, un grupo de operaciones especiales encargado de misiones extremadamente peligrosas para el gobierno de los EE. UU. Tras el fin de la guerra, ayudó a establecer la versión moderna del *Suicide Squad*, también conocida como *Task Force X*, y contribuyó a sentar las bases de lo que luego sería una organización secreta recurrente en el Universo DC. Rick Flag Sr. fue un héroe trágico, marcado por la pérdida, el sacrificio y un sentido extremo del deber, que pasó su legado a su hijo, Rick Flag Jr.</p> 
+</div>
+
+<hr>
+
+<h1>Personalidad</h1>
+
+<div class="detalles">
+	<p>Rick Flag Sr. era disciplinado, patriótico y altamente comprometido con su país. Su carácter firme y su liderazgo inspiraron respeto en el campo de batalla, incluso cuando enfrentaba misiones suicidas. Era pragmático, resistente y mentalmente fuerte, aunque el peso de las misiones y las pérdidas personales dejaron marcas en su carácter. Su legado está ligado al origen del Suicide Squad como un concepto de sacrificio por el bien mayor, y su influencia se mantiene viva en la historia de la organización.</p> 
+</div>
+	
+
+	<article>
+			
+			
+			
+
+	</article>
+
+	<hr>
+
+	</section>
+
+	
+
+	
+
+
+
+
+</body>
+</html>
