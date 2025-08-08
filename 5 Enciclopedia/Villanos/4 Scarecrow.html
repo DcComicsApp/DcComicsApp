@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Scarecrow</title>
+	<meta name="viewport" content="width=device-width, user-scalable=1">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
+	<style type="text/css">
+		
+		body{
+			margin: 0;
+			font-family: 'IBM Plex Sans', sans-serif;
+			min-width: 323px;
+			background-color: black;
+		}
+
+		a{text-decoration: none;}
+
+		.portadamovil{display: none;}
+
+		.botonmovil{display: none;}
+
+		aside{
+			width: 20%;
+			height: 100vh;
+			background-color: black;
+			float: left;
+			border-right: 3px solid #14659E;
+			position: fixed;
+		}
+
+		aside div img{
+			width: 45%;
+		}
+
+		.logo{
+			text-align: center;
+			padding-top: 5vh;
+		}
+
+		.logopelicula{
+			text-align: center;
+			padding-top: 40px
+		}
+
+		.logopelicula img{
+			width: 90%;
+		}
+
+		.boton{
+			width: 70%;
+			height: 60px;
+			text-align: center;
+			line-height: 60px;
+			border-radius: 30px;
+			border: 2.5px solid #14659E;
+			color:white;
+			margin: 0 auto;
+			margin-top: 6vh;
+			transition: 0.5s;
+		}
+		.boton:hover{
+			box-shadow: 0px 0px 50px #14659E;
+			background-color: #14659E;
+			color: black;
+			cursor: pointer;
+		}
+
+		section{
+			width: 80%;
+			height: 100vh;
+			background-color: black;
+			float: right;
+		}
+
+		.portada img{
+			width: 85%;
+			border-radius: 40px;
+		}
+
+		.portada{
+			text-align: center;
+			padding-top: 10vh;
+		}
+
+		#logopeliculados{
+			width: 30%;
+			margin-top: -4vh;
+		}
+
+		hr{
+			width: 80%;
+			border: 2px solid #14659E;
+			margin-top: 8vh;
+			margin-bottom: 0;
+		}
+
+		section h1{
+			font-size: 70px;
+			text-align: center;
+			color: white;
+			margin-top: 4vh;
+		}
+
+		.detalles{
+			margin-left: 5%;
+			margin-top: 4vh;
+		}
+
+		p{
+			width: 90%;
+			color: white;
+			font-size: 12px;
+		}
+
+
+
+
+
+		@media screen and (max-width: 768px){
+
+			aside{display: none;}
+
+			section{
+				width: 100%;
+			}
+			
+			.portada{
+				margin-top: -10%;
+			}
+			
+
+			#logopeliculados{
+				width: 80%;
+				margin-top: 2vh;
+
+			}
+
+			.botonmovil{
+				display: block;
+				
+				
+			}
+
+			section h1{
+				font-size: 40px;
+			}
+
+
+			.boton:hover{
+				box-shadow: none;
+				background-color: black;
+				color: white;
+				cursor: pointer;
+			}
+
+
+
+		}
+
+
+
+
+		@media screen and (max-width: 410px){
+
+			section h1{
+				font-size: 25px;
+			}
+
+			.portada{display: none;}
+
+			.portadamovil{
+				display: block;
+			}
+			.portadamovil img{width: 100%;}
+
+			#informacion{
+				font-size: 10px;
+			}
+
+			#logopeliculados{
+				width: 100%;
+				margin-top: -7vh;
+
+			}
+
+			
+
+			section div p{
+				width: 90%;
+			}
+			
+
+
+		}
+
+		
+
+		
+
+
+
+
+	</style>
+</head>
+
+	
+
+
+<body>
+
+
+	<aside>
+
+		<div class="logo">
+			<img src="https://pbs.twimg.com/media/GTlaSzCXQAA64Sj?format=jpg&name=medium">
+		</div>
+
+		<div class="logopelicula">
+			<img src="https://pbs.twimg.com/media/Gx1RaMtWYAAHdvo?format=jpg&name=900x900">
+		</div>
+
+		
+
+		
+
+	</aside>
+
+
+	<section>
+
+	<div class="portada">
+		<img src="https://pbs.twimg.com/media/Gx1RaMwWQAET7jq?format=jpg&name=large">
+	</div>
+
+	<div class="portadamovil">
+		<img src="https://pbs.twimg.com/media/Gx1RaMuWYAAL8Mw?format=jpg&name=900x900">
+	</div>
+
+	<div class="logopelicula">
+		<img id="logopeliculados" src="https://pbs.twimg.com/media/Gx1RaMtWYAAHdvo?format=jpg&name=900x900">
+	</div>
+
+
+	<div class="detalles">
+	<p>PELIGROSIDAD</p> 
+	<progress id="file" max="100" value="70" style="width: 95%"> 70% </progress>
+
+	<p>FUERZA</p> 
+	<progress id="file" max="100" value="30" style="width: 95%"> 30% </progress>
+
+	<p>INTELIGENCIA</p> 
+	<progress id="file" max="100" value="80" style="width: 95%"> 80% </progress>
+
+	<p>VELOCIDAD</p> 
+	<progress id="file" max="100" value="40" style="width: 95%"> 40% </progress>
+</div>
+
+<hr>
+
+<h1>Información básica</h1>
+<div class="detalles">
+	<p>Primera aparición: World's Finest Comics #3 (septiembre de 1941)</p> 
+
+	<p>Creadores: Bill Finger / Bob Kane</p> 
+
+	<p>Nombre original: Jonathan Crane</p> 
+
+	<p>Raza: Humano</p> 
+
+	<p>Peso y Altura: 63kg / 1,83m</p> 
+
+	<p>Residencia: Gotham City</p> 
+
+	<p>Ocupaciones: Psicólogo / Profesor de psiquiatría / Criminal</p> 
+</div>
+
+<hr>
+
+<h1>Habilidades</h1>
+
+<div class="detalles">
+	<p>Experto en psicología y psiquiatría</p> 
+	<p>Maestro en el uso del miedo como arma</p> 
+	<p>Creación de toxinas y gases alucinógenos</p> 
+	<p>Manipulación psicológica avanzada</p> 
+	<p>Conocimientos en química y farmacología</p> 
+</div>
+
+<article>
+
+<hr>
+
+<h1>Información general</h1>
+
+<div class="detalles">
+	<p>Jonathan Crane, conocido como el Espantapájaros, fue un prestigioso profesor de psicología obsesionado con el estudio del miedo. Tras ser despedido por su conducta poco ética, utilizó sus conocimientos para crear potentes toxinas y gases que provocan terrores intensos y alucinaciones en sus víctimas. Su apariencia, inspirada en un espantapájaros, refuerza su imagen intimidante. A lo largo de su carrera criminal, ha aterrorizado a Gotham y ha sido un enemigo recurrente de Batman, quien muchas veces ha debido superar su propio miedo para detenerlo.</p> 
+</div>
+
+<hr>
+
+<h1>Personalidad</h1>
+
+<div class="detalles">
+	<p>El Espantapájaros es calculador, metódico y sádicamente curioso. Considera a las personas simples sujetos de experimentación para sus teorías sobre el miedo. Su ego y narcisismo lo llevan a subestimar a sus enemigos, aunque su intelecto y su falta de remordimientos lo convierten en un adversario extremadamente peligroso. No busca el caos gratuito, sino la validación de sus teorías, sin importar el daño que cause.</p> 
+</div>
+	
+
+	<article>
+			
+			
+			
+
+	</article>
+
+	<hr>
+
+	</section>
+
+	
+
+	
+
+
+
+
+</body>
+</html>
