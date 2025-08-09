@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Supergirl</title>
+	<meta name="viewport" content="width=device-width, user-scalable=1">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
+	<style type="text/css">
+		
+		body{
+			margin: 0;
+			font-family: 'IBM Plex Sans', sans-serif;
+			min-width: 323px;
+			background-color: black;
+		}
+
+		a{text-decoration: none;}
+
+		.portadamovil{display: none;}
+
+		.botonmovil{display: none;}
+
+		aside{
+			width: 20%;
+			height: 100vh;
+			background-color: black;
+			float: left;
+			border-right: 3px solid #14659E;
+			position: fixed;
+		}
+
+		aside div img{
+			width: 45%;
+		}
+
+		.logo{
+			text-align: center;
+			padding-top: 5vh;
+		}
+
+		.logopelicula{
+			text-align: center;
+			padding-top: 40px
+		}
+
+		.logopelicula img{
+			width: 90%;
+		}
+
+		.boton{
+			width: 70%;
+			height: 60px;
+			text-align: center;
+			line-height: 60px;
+			border-radius: 30px;
+			border: 2.5px solid #14659E;
+			color:white;
+			margin: 0 auto;
+			margin-top: 6vh;
+			transition: 0.5s;
+		}
+		.boton:hover{
+			box-shadow: 0px 0px 50px #14659E;
+			background-color: #14659E;
+			color: black;
+			cursor: pointer;
+		}
+
+		section{
+			width: 80%;
+			height: 100vh;
+			background-color: black;
+			float: right;
+		}
+
+		.portada img{
+			width: 85%;
+			border-radius: 40px;
+		}
+
+		.portada{
+			text-align: center;
+			padding-top: 10vh;
+		}
+
+		#logopeliculados{
+			width: 30%;
+			margin-top: -4vh;
+		}
+
+		hr{
+			width: 80%;
+			border: 2px solid #14659E;
+			margin-top: 8vh;
+			margin-bottom: 0;
+		}
+
+		section h1{
+			font-size: 70px;
+			text-align: center;
+			color: white;
+			margin-top: 4vh;
+		}
+
+		.detalles{
+			margin-left: 5%;
+			margin-top: 4vh;
+		}
+
+		p{
+			width: 90%;
+			color: white;
+			font-size: 12px;
+		}
+
+
+
+
+
+		@media screen and (max-width: 768px){
+
+			aside{display: none;}
+
+			section{
+				width: 100%;
+			}
+			
+			.portada{
+				margin-top: -10%;
+			}
+			
+
+			#logopeliculados{
+				width: 80%;
+				margin-top: 2vh;
+
+			}
+
+			.botonmovil{
+				display: block;
+				
+				
+			}
+
+			section h1{
+				font-size: 40px;
+			}
+
+
+			.boton:hover{
+				box-shadow: none;
+				background-color: black;
+				color: white;
+				cursor: pointer;
+			}
+
+
+
+		}
+
+
+
+
+		@media screen and (max-width: 410px){
+
+			section h1{
+				font-size: 25px;
+			}
+
+			.portada{display: none;}
+
+			.portadamovil{
+				display: block;
+			}
+			.portadamovil img{width: 100%;}
+
+			#informacion{
+				font-size: 10px;
+			}
+
+			#logopeliculados{
+				width: 100%;
+				margin-top: -6vh;
+
+			}
+
+			
+
+			section div p{
+				width: 90%;
+			}
+			
+
+
+		}
+
+		
+
+		
+
+
+
+
+	</style>
+</head>
+
+	
+
+
+<body>
+
+
+	<aside>
+
+		<div class="logo">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/DC_Comics_logo.svg">
+		</div>
+
+		<div class="logopelicula">
+			<img src="https://pbs.twimg.com/media/Gx5zhCeXMAAt2rW?format=jpg&name=900x900">
+		</div>
+
+		
+
+		
+
+	</aside>
+
+
+	<section>
+
+	<div class="portada">
+		<img src="https://pbs.twimg.com/media/Gx5zhD4WkAAB8nf?format=jpg&name=large">
+	</div>
+
+	<div class="portadamovil">
+		<img src="https://pbs.twimg.com/media/Gx5zhCbXYAABhkW?format=jpg&name=medium">
+	</div>
+
+	<div class="logopelicula">
+		<img id="logopeliculados" src="https://pbs.twimg.com/media/Gx5zhCeXMAAt2rW?format=jpg&name=900x900">
+	</div>
+
+	
+
+	<div class="detalles">
+    <p>PELIGROSIDAD</p> 
+    <progress id="file" max="100" value="95" style="width: 95%"> 95% </progress>
+
+    <p>FUERZA</p> 
+    <progress id="file" max="100" value="95" style="width: 95%"> 95% </progress>
+
+    <p>INTELIGENCIA</p> 
+    <progress id="file" max="100" value="75" style="width: 95%"> 75% </progress>
+
+    <p>VELOCIDAD</p> 
+    <progress id="file" max="100" value="95" style="width: 95%"> 95% </progress>
+</div>
+
+<hr>
+
+<h1>Información basica</h1>
+<div class="detalles">
+    <p>Primera aparición: Action Comics #252 (mayo de 1959)</p> 
+
+    <p>Creadores: Otto Binder y Al Plastino</p> 
+
+    <p>Nombre original: Kara Zor-El</p> 
+
+    <p>Raza: Alienígena (Kryptoniana)</p> 
+
+    <p>Peso y Altura: 61 kg / 1,70 m</p> 
+
+    <p>Residencia: National City / Metrópolis</p> 
+
+    <p>Ocupaciones: Heroína / Reportera en algunas versiones / Miembro de la Liga de la Justicia</p> 
+</div>
+
+<hr>
+
+<h1>Habilidades</h1>
+<div class="detalles">
+    <p>Fisiología Kryptoniana</p> 
+    <p>Absorción de energía solar</p> 
+    <p>Super fuerza</p> 
+    <p>Super velocidad</p> 
+    <p>Invulnerabilidad</p> 
+    <p>Vuelo</p> 
+    <p>Super resistencia</p> 
+    <p>Super oído</p> 
+    <p>Visión de calor</p> 
+    <p>Visión de rayos X</p> 
+    <p>Visión telescópica</p> 
+    <p>Visión microscópica</p> 
+    <p>Visión infrarroja</p> 
+    <p>Visión nocturna</p> 
+    <p>Aliento congelante</p> 
+    <p>Factor curativo</p> 
+    <p>Reflejos sobrehumanos</p> 
+    <p>Entrenamiento en combate cuerpo a cuerpo</p> 
+</div>
+
+<article>
+
+<hr>
+
+<h1>Información general</h1>
+<div class="detalles">
+    <p>Kara Zor-El nació en Krypton y es la prima de Kal-El (Superman). Su misión original era proteger a su primo bebé durante el viaje a la Tierra, pero su nave fue desviada y llegó años después, encontrando a Superman ya adulto. Al igual que él, obtiene sus poderes de la radiación solar amarilla, poseyendo habilidades similares e incluso a veces demostrando un mayor control en combate. Kara ha luchado en la Tierra y en el espacio, defendiendo no solo a los humanos sino a múltiples civilizaciones alienígenas.</p> 
+</div>
+
+<hr>
+
+<h1>Personalidad</h1>
+<div class="detalles">
+    <p>Valiente y decidida, Supergirl combina un fuerte sentido de la justicia con una gran compasión por los inocentes. Puede ser impulsiva y directa, lo que a veces la lleva a actuar antes de pensar, pero su corazón siempre está en el lugar correcto. Su resiliencia la ha convertido en un símbolo de esperanza tanto como su primo Superman.</p> 
+</div>
+	
+	
+
+	<article>
+			
+			
+			
+
+	</article>
+
+	<hr>
+
+	</section>
+
+	
+
+	
+
+
+
+
+</body>
+</html>
