@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Catwoman</title>
+	<meta name="viewport" content="width=device-width, user-scalable=1">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
+	<style type="text/css">
+		
+		body{
+			margin: 0;
+			font-family: 'IBM Plex Sans', sans-serif;
+			min-width: 323px;
+			background-color: black;
+		}
+
+		a{text-decoration: none;}
+
+		.portadamovil{display: none;}
+
+		.botonmovil{display: none;}
+
+		aside{
+			width: 20%;
+			height: 100vh;
+			background-color: black;
+			float: left;
+			border-right: 3px solid #14659E;
+			position: fixed;
+		}
+
+		aside div img{
+			width: 45%;
+		}
+
+		.logo{
+			text-align: center;
+			padding-top: 5vh;
+		}
+
+		.logopelicula{
+			text-align: center;
+			padding-top: 40px
+		}
+
+		.logopelicula img{
+			width: 90%;
+		}
+
+		.boton{
+			width: 70%;
+			height: 60px;
+			text-align: center;
+			line-height: 60px;
+			border-radius: 30px;
+			border: 2.5px solid #14659E;
+			color:white;
+			margin: 0 auto;
+			margin-top: 6vh;
+			transition: 0.5s;
+		}
+		.boton:hover{
+			box-shadow: 0px 0px 50px #14659E;
+			background-color: #14659E;
+			color: black;
+			cursor: pointer;
+		}
+
+		section{
+			width: 80%;
+			height: 100vh;
+			background-color: black;
+			float: right;
+		}
+
+		.portada img{
+			width: 85%;
+			border-radius: 40px;
+		}
+
+		.portada{
+			text-align: center;
+			padding-top: 10vh;
+		}
+
+		#logopeliculados{
+			width: 30%;
+			margin-top: -4vh;
+		}
+
+		hr{
+			width: 80%;
+			border: 2px solid #14659E;
+			margin-top: 8vh;
+			margin-bottom: 0;
+		}
+
+		section h1{
+			font-size: 70px;
+			text-align: center;
+			color: white;
+			margin-top: 4vh;
+		}
+
+		.detalles{
+			margin-left: 5%;
+			margin-top: 4vh;
+		}
+
+		p{
+			width: 90%;
+			color: white;
+			font-size: 12px;
+		}
+
+
+
+
+
+		@media screen and (max-width: 768px){
+
+			aside{display: none;}
+
+			section{
+				width: 100%;
+			}
+			
+			.portada{
+				margin-top: -10%;
+			}
+			
+
+			#logopeliculados{
+				width: 80%;
+				margin-top: 2vh;
+
+			}
+
+			.botonmovil{
+				display: block;
+				
+				
+			}
+
+			section h1{
+				font-size: 40px;
+			}
+
+
+			.boton:hover{
+				box-shadow: none;
+				background-color: black;
+				color: white;
+				cursor: pointer;
+			}
+
+
+
+		}
+
+
+
+
+		@media screen and (max-width: 410px){
+
+			section h1{
+				font-size: 25px;
+			}
+
+			.portada{display: none;}
+
+			.portadamovil{
+				display: block;
+			}
+			.portadamovil img{width: 100%;}
+
+			#informacion{
+				font-size: 10px;
+			}
+
+			#logopeliculados{
+				width: 100%;
+				margin-top: -7vh;
+
+			}
+
+			
+
+			section div p{
+				width: 90%;
+			}
+			
+
+
+		}
+
+		
+
+		
+
+
+
+
+	</style>
+</head>
+
+	
+
+
+<body>
+
+
+	<aside>
+
+		<div class="logo">
+			<img src="https://pbs.twimg.com/media/GTlaSzCXQAA64Sj?format=jpg&name=medium">
+		</div>
+
+		<div class="logopelicula">
+			<img src="https://pbs.twimg.com/media/Gx5qqiWWMAAiDNZ?format=jpg&name=900x900">
+		</div>
+
+		
+
+		
+
+	</aside>
+
+
+	<section>
+
+	<div class="portada">
+		<img src="https://pbs.twimg.com/media/Gx5qqibXcAAnI8f?format=jpg&name=large">
+	</div>
+
+	<div class="portadamovil">
+		<img src="https://pbs.twimg.com/media/Gx5qqiYW0AA1fxq?format=jpg&name=large">
+	</div>
+
+	<div class="logopelicula">
+		<img id="logopeliculados" src="https://pbs.twimg.com/media/Gx5qqiWWMAAiDNZ?format=jpg&name=900x900">
+	</div>
+
+
+	<div class="detalles">
+	<p>PELIGROSIDAD</p> 
+	<progress id="file" max="100" value="50" style="width: 95%"> 50% </progress>
+
+	<p>FUERZA</p> 
+	<progress id="file" max="100" value="25" style="width: 95%"> 25% </progress>
+
+	<p>INTELIGENCIA</p> 
+	<progress id="file" max="100" value="80" style="width: 95%"> 80% </progress>
+
+	<p>VELOCIDAD</p> 
+	<progress id="file" max="100" value="65" style="width: 95%"> 65% </progress>
+</div>
+
+<hr>
+
+<h1>Información básica</h1>
+<div class="detalles">
+	<p>Primera aparición: Batman #1 (abril de 1940)</p> 
+
+	<p>Creadores: Bill Finger / Bob Kane</p> 
+
+	<p>Nombre original: Selina Kyle</p> 
+
+	<p>Raza: Humana</p> 
+
+	<p>Peso y Altura: 61kg / 1,70m</p> 
+
+	<p>Residencia: Gotham City</p> 
+
+	<p>Ocupaciones: Ladrona experta, ocasional aliada de Batman</p> 
+</div>
+
+<hr>
+
+<h1>Habilidades</h1>
+
+<div class="detalles">
+	<p>Maestra del robo y el sigilo</p> 
+	<p>Gran habilidad en combate cuerpo a cuerpo</p> 
+	<p>Agilidad y reflejos excepcionales</p> 
+	<p>Uso experto del látigo como arma</p> 
+	<p>Alta capacidad para planear y ejecutar infiltraciones</p> 
+</div>
+
+<article>
+
+<hr>
+
+<h1>Información general</h1>
+
+<div class="detalles">
+	<p>Catwoman es una de las figuras más fascinantes y complejas de Gotham. Nacida como Selina Kyle, creció en un entorno hostil que la empujó al crimen, convirtiéndose en una de las ladronas más hábiles del mundo. Aunque muchas veces ha chocado con Batman debido a sus actividades ilegales, también ha demostrado un lado altruista y ha actuado como heroína en determinadas circunstancias. Su relación con Batman es un juego constante de atracción, desafío y desconfianza, lo que añade un matiz único a sus historias.</p> 
+</div>
+
+<hr>
+
+<h1>Personalidad</h1>
+
+<div class="detalles">
+	<p>Independiente, seductora y astuta, Catwoman vive según sus propias reglas. Puede ser fría y calculadora, pero también muestra lealtad y afecto hacia quienes ganan su respeto. Su moral es flexible, y actúa según lo que considera justo, incluso si eso significa quebrantar la ley.</p> 
+</div>
+	
+
+	<article>
+			
+			
+			
+
+	</article>
+
+	<hr>
+
+	</section>
+
+	
+
+	
+
+
+
+
+</body>
+</html>
