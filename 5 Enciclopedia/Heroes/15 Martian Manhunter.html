@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Martian Manhunter</title>
+	<meta name="viewport" content="width=device-width, user-scalable=1">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
+	<style type="text/css">
+		
+		body{
+			margin: 0;
+			font-family: 'IBM Plex Sans', sans-serif;
+			min-width: 323px;
+			background-color: black;
+		}
+
+		a{text-decoration: none;}
+
+		.portadamovil{display: none;}
+
+		.botonmovil{display: none;}
+
+		aside{
+			width: 20%;
+			height: 100vh;
+			background-color: black;
+			float: left;
+			border-right: 3px solid #14659E;
+			position: fixed;
+		}
+
+		aside div img{
+			width: 45%;
+		}
+
+		.logo{
+			text-align: center;
+			padding-top: 5vh;
+		}
+
+		.logopelicula{
+			text-align: center;
+			padding-top: 40px
+		}
+
+		.logopelicula img{
+			width: 90%;
+		}
+
+		.boton{
+			width: 70%;
+			height: 60px;
+			text-align: center;
+			line-height: 60px;
+			border-radius: 30px;
+			border: 2.5px solid #14659E;
+			color:white;
+			margin: 0 auto;
+			margin-top: 6vh;
+			transition: 0.5s;
+		}
+		.boton:hover{
+			box-shadow: 0px 0px 50px #14659E;
+			background-color: #14659E;
+			color: black;
+			cursor: pointer;
+		}
+
+		section{
+			width: 80%;
+			height: 100vh;
+			background-color: black;
+			float: right;
+		}
+
+		.portada img{
+			width: 85%;
+			border-radius: 40px;
+		}
+
+		.portada{
+			text-align: center;
+			padding-top: 10vh;
+		}
+
+		#logopeliculados{
+			width: 30%;
+			margin-top: -4vh;
+		}
+
+		hr{
+			width: 80%;
+			border: 2px solid #14659E;
+			margin-top: 8vh;
+			margin-bottom: 0;
+		}
+
+		section h1{
+			font-size: 70px;
+			text-align: center;
+			color: white;
+			margin-top: 4vh;
+		}
+
+		.detalles{
+			margin-left: 5%;
+			margin-top: 4vh;
+		}
+
+		p{
+			width: 90%;
+			color: white;
+			font-size: 12px;
+		}
+
+
+
+
+
+		@media screen and (max-width: 768px){
+
+			aside{display: none;}
+
+			section{
+				width: 100%;
+			}
+			
+			.portada{
+				margin-top: -10%;
+			}
+			
+
+			#logopeliculados{
+				width: 80%;
+				margin-top: 2vh;
+
+			}
+
+			.botonmovil{
+				display: block;
+				
+				
+			}
+
+			section h1{
+				font-size: 40px;
+			}
+
+
+			.boton:hover{
+				box-shadow: none;
+				background-color: black;
+				color: white;
+				cursor: pointer;
+			}
+
+
+
+		}
+
+
+
+
+		@media screen and (max-width: 410px){
+
+			section h1{
+				font-size: 25px;
+			}
+
+			.portada{display: none;}
+
+			.portadamovil{
+				display: block;
+			}
+			.portadamovil img{width: 100%;}
+
+			#informacion{
+				font-size: 10px;
+			}
+
+			#logopeliculados{
+				width: 100%;
+				margin-top: -6vh;
+
+			}
+
+			
+
+			section div p{
+				width: 90%;
+			}
+			
+
+
+		}
+
+		
+
+		
+
+
+
+
+	</style>
+</head>
+
+	
+
+
+<body>
+
+
+	<aside>
+
+		<div class="logo">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/DC_Comics_logo.svg">
+		</div>
+
+		<div class="logopelicula">
+			<img src="https://pbs.twimg.com/media/GyAU5PrWAAEWvcL?format=jpg&name=900x900">
+		</div>
+
+		
+
+		
+
+	</aside>
+
+
+	<section>
+
+	<div class="portada">
+		<img src="https://pbs.twimg.com/media/GyAU5QAWQAILqHj?format=jpg&name=large">
+	</div>
+
+	<div class="portadamovil">
+		<img src="https://pbs.twimg.com/media/GyAU5QGXIAA03jM?format=jpg&name=medium">
+	</div>
+
+	<div class="logopelicula">
+		<img id="logopeliculados" src="https://pbs.twimg.com/media/GyAU5PrWAAEWvcL?format=jpg&name=900x900">
+	</div>
+
+	
+
+	<div class="detalles">
+    <p>PELIGROSIDAD</p> 
+    <progress id="file" max="100" value="95" style="width: 95%"> 95% </progress>
+
+    <p>FUERZA</p> 
+    <progress id="file" max="100" value="95" style="width: 95%"> 95% </progress>
+
+    <p>INTELIGENCIA</p> 
+    <progress id="file" max="100" value="92" style="width: 95%"> 92% </progress>
+
+    <p>VELOCIDAD</p> 
+    <progress id="file" max="100" value="85" style="width: 95%"> 85% </progress>
+</div>
+
+<hr>
+
+<h1>Información basica</h1>
+<div class="detalles">
+    <p>Primera aparición: Detective Comics #225 (noviembre de 1955)</p> 
+
+    <p>Creadores: Joseph Samachson y Joe Certa</p> 
+
+    <p>Nombre original: J’onn J’onzz</p> 
+
+    <p>Raza: Marciano (Marciano Verde)</p> 
+
+    <p>Peso y Altura: 135 kg / 2,01 m</p> 
+
+    <p>Residencia: Marte / Tierra</p> 
+
+    <p>Ocupaciones: Héroe / Detective / Miembro de la Liga de la Justicia</p> 
+</div>
+
+<hr>
+
+<h1>Habilidades</h1>
+<div class="detalles">
+    <p>Fuerza sobrehumana</p> 
+    <p>Vuelo</p> 
+    <p>Invulnerabilidad</p> 
+    <p>Velocidad sobrehumana</p> 
+    <p>Visión de rayos X</p> 
+    <p>Visión telescópica</p> 
+    <p>Visión microscópica</p> 
+    <p>Telepatía</p> 
+    <p>Telequinesis</p> 
+    <p>Cambio de forma</p> 
+    <p>Invisibilidad</p> 
+    <p>Intangibilidad</p> 
+    <p>Factor curativo</p> 
+    <p>Regeneración</p> 
+    <p>Sentidos agudos</p> 
+    <p>Experto detective</p> 
+    <p>Alta inteligencia</p> 
+</div>
+
+<article>
+
+<hr>
+
+<h1>Información general</h1>
+<div class="detalles">
+    <p>J’onn J’onzz fue accidentalmente transportado a la Tierra desde Marte por un científico humano, el Dr. Erdel. Incapaz de regresar a su planeta y con Marte en decadencia, decidió vivir en la Tierra, adoptando la identidad humana de John Jones, detective. Con el tiempo reveló su verdadera forma y se unió a la Liga de la Justicia, convirtiéndose en uno de sus miembros más poderosos y sabios. Como último sobreviviente de su especie (en varias versiones), J’onn ha cargado con la tristeza de la pérdida de su hogar y su pueblo.</p> 
+</div>
+
+<hr>
+
+<h1>Personalidad</h1>
+<div class="detalles">
+    <p>Martian Manhunter es compasivo, reflexivo y profundamente moral. Su sentido de la justicia se mezcla con una gran empatía hacia todas las formas de vida. Aunque suele mostrarse sereno y calmado, la pérdida de su familia y su planeta lo ha marcado con una melancolía silenciosa. Es un líder natural, consejero y amigo leal, considerado el corazón de la Liga de la Justicia.</p> 
+</div>
+	
+	
+
+	<article>
+			
+			
+			
+
+	</article>
+
+	<hr>
+
+	</section>
+
+	
+
+	
+
+
+
+
+</body>
+</html>
