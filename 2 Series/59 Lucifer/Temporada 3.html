@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Temporada 3</title>
+	<meta name="viewport" content="width=device-width, user-scalable=1">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
+	<style type="text/css">
+		
+		body{
+			margin: 0;
+			font-family: 'IBM Plex Sans', sans-serif;
+			min-width: 323px;
+			background-color: black;
+		}
+
+		a{text-decoration: none;}
+
+		.portadamovil{display: none;}
+
+		.botonmovil{display: none;}
+
+		aside{
+			width: 20%;
+			height: 100vh;
+			background-color: black;
+			float: left;
+			border-right: 3px solid #14659E;
+			position: fixed;
+		}
+
+		aside div img{
+			width: 45%;
+		}
+
+		.logo{
+			text-align: center;
+			padding-top: 5vh;
+		}
+
+		.logopelicula{
+			text-align: center;
+			padding-top: 40px
+		}
+
+		.logopelicula img{
+			width: 90%;
+		}
+
+		.boton{
+			width: 70%;
+			height: 60px;
+			text-align: center;
+			line-height: 60px;
+			border-radius: 30px;
+			border: 2.5px solid #14659E;
+			color:white;
+			margin: 0 auto;
+			margin-top: 6vh;
+			transition: 0.5s;
+		}
+		.boton:hover{
+			box-shadow: 0px 0px 50px #14659E;
+			background-color: #14659E;
+			color: black;
+			cursor: pointer;
+		}
+
+		.posteraside{
+			text-align: center;
+			margin-top: 7vh;
+		}
+		.posteraside img{border-radius: 20px;}
+
+		section{
+			width: 80%;
+			height: 100vh;
+			background-color: black;
+			float: right;
+		}
+
+		.portada img{
+			width: 85%;
+			border-radius: 40px;
+		}
+
+		.portada{
+			text-align: center;
+			padding-top: 10vh;
+		}
+
+		#logopeliculados{
+			width: 30%;
+			margin-top: -4vh;
+		}
+
+		hr{
+			width: 80%;
+			border: 2px solid #14659E;
+			margin-top: 8vh;
+			margin-bottom: 0;
+		}
+
+		section h1{
+			font-size: 70px;
+			text-align: center;
+			color: white;
+		}
+
+		.detalles{
+			margin-left: 20%;
+		}
+
+		p{
+			width: 80%;
+			color: white;
+			font-size: 20px;
+		}
+
+		
+
+		.episodios{
+			display: inline-block;
+			width: 24%;
+			margin-top: 50px;
+			margin-right: 2%;
+			margin-bottom: 0;
+			margin-left: 5.5%;
+			
+		}
+
+		.episodios img{
+			width: 35%;
+			border-radius: 40px;
+			transition: 0.5s;
+			border:0px solid #1F4A69;
+			box-shadow: 0px 0px 80px #14659E;
+			left: 20%
+		}
+		
+
+		.episodios p{
+			text-align: left;
+			color: #B3B3B3;
+			float: right;
+
+		}
+
+
+
+
+
+
+
+		@media screen and (max-width: 768px){
+
+			aside{display: none;}
+
+			section{
+				width: 100%;
+			}
+			
+			.portada{
+				margin-top: -10%;
+			}
+			
+
+			#logopeliculados{
+				width: 80%;
+				margin-top: 2vh;
+
+			}
+
+			.botonmovil{
+				display: block;
+				
+				
+			}
+
+			section h1{
+				font-size: 40px;
+			}
+
+
+			.boton:hover{
+				box-shadow: none;
+				background-color: black;
+				color: white;
+				cursor: pointer;
+			}
+
+			.episodios{
+				text-align: center;
+				width: 40%;	
+			}
+
+			.episodios img{
+				width: 40%;
+				border-radius: 30px;
+				box-shadow: 0px 0px 80px #14659E;
+			}
+			
+
+			
+
+
+
+		}
+
+
+
+
+		@media screen and (max-width: 410px){
+
+			section h1{
+				font-size: 30px;
+			}
+
+			.portada{display: none;}
+
+			.portadamovil{
+				display: block;
+			}
+			.portadamovil img{width: 100%;}
+
+			#informacion{
+				font-size: 15px;
+			}
+
+			#logopeliculados{
+				width: 85%;
+			}
+
+			.botonmovil{
+				margin-top: -10%;
+			}
+
+
+			section div p{
+				width: 90%;
+			}
+
+			.episodios{	
+				text-align: center;
+				width: 40%;
+				margin-top: 30px;	
+			}
+
+			.episodios img{
+				width: 45%;
+				border-radius: 20px;
+				transition: 0.5s;
+				border:0px solid #1F4A69;
+				box-shadow: 0px 0px 50px #14659E;
+				left: 20%
+			}
+			
+
+			.episodios p{
+				float: right;
+				font-size: 15px;
+			}
+
+
+			
+
+
+		}
+
+		
+
+		
+
+
+
+
+	</style>
+</head>
+
+	
+
+
+<body>
+
+
+	<aside>
+
+		<div class="logo">
+			<img src="https://pbs.twimg.com/media/GTlaSzCXQAA64Sj?format=jpg&name=medium">
+		</div>
+
+		<div class="logopelicula">
+			<img src="https://pbs.twimg.com/media/Gx5cRUXW8AA1pZ6?format=jpg&name=900x900">
+		</div>
+
+		<div class="posteraside">
+			<img src="https://pbs.twimg.com/media/Gx5cRYuWwAAAi_E?format=jpg&name=medium">
+		</div>
+
+		
+
+	</aside>
+
+
+	<section>
+
+	<div class="portada">
+		<img src="https://pbs.twimg.com/media/Gx5cRUiWAAA46it?format=jpg&name=medium">
+	</div>
+
+	<div class="portadamovil">
+		<img src="https://pbs.twimg.com/media/Gx5eHzcWMAATkDK?format=jpg&name=large">
+	</div>
+
+	
+
+	
+
+
+	<article>
+
+		
+			<h1>Temporada 3</h1>
+			
+			<div class="episodios">
+				<a href="https://youtu.be/3zwh3l0fH_s">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/Gx5eHzSXgAAfFhR?format=jpg&name=360x360">
+					<p>(32) Han vuelto, ¿cierto?</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/-KkdskgDwXs">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/Gx5eHzSXgAAfFhR?format=jpg&name=360x360">
+					<p>(33) Tiene la zanahoria</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/vuTFz0GBIsE">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/Gx5eHzSXgAAfFhR?format=jpg&name=360x360">
+					<p>(34) Señores Mazikeen Smith</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/UW1ZZISrHOk">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/Gx5eHzSXgAAfFhR?format=jpg&name=360x360">
+					<p>(35) ¿Qué haría Lucifer?</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/rgNNaslZonA">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/Gx5eHzSXgAAfFhR?format=jpg&name=360x360">
+					<p>(36) Bienvenida, Charlotte Richards</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/f9ur1JpEwOQ">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/Gx5eHzSXgAAfFhR?format=jpg&name=360x360">
+					<p>(37) Las Vegas con un poco de dulce</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/C1mSce-1fTw">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/Gx5eHzSXgAAfFhR?format=jpg&name=360x360">
+					<p>(38) Extraoficialmente</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/9_WXr0DX83w">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/Gx5eHzSXgAAfFhR?format=jpg&name=360x360">
+					<p>(39) Chloe se hace Lucifer</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/tZxuTJIWqiU">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/Gx5eHzSXgAAfFhR?format=jpg&name=360x360">
+					<p>(40) El hombre del pecado</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/DcUkjr7MsHc">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/Gx5eHzSXgAAfFhR?format=jpg&name=360x360">
+					<p>(41) El lugar del pecado</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/bfSxvwLad2o">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/Gx5eHzSXgAAfFhR?format=jpg&name=360x360">
+					<p>(42) ¿Ciudad de ángeles?</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/PLhmlPaE7UA">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/Gx5eHzSXgAAfFhR?format=jpg&name=360x360">
+					<p>(43) Todo por ella</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/k-HYKN2OWAY">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/Gx5eHzSXgAAfFhR?format=jpg&name=360x360">
+					<p>(44) Hasta que la muerte nos parta</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/iSHlCRg6uIc">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/Gx5eHzSXgAAfFhR?format=jpg&name=360x360">
+					<p>(45) La responsabilidad de mi hermano</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/uLjKvXgLH_c">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/Gx5eHzSXgAAfFhR?format=jpg&name=360x360">
+					<p>(46) Tonterías de preparatoria</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/qw8T1YRIUcs">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/Gx5eHzSXgAAfFhR?format=jpg&name=360x360">
+					<p>(47) Conejillo de indias del infierno</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/Ueek_FB8EOE">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/Gx5eHzSXgAAfFhR?format=jpg&name=360x360">
+					<p>(48) ¡Dejemos que la boba cante!</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/7CiI8E0Qs_s">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/Gx5eHzSXgAAfFhR?format=jpg&name=360x360">
+					<p>(49) El último corazón roto</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/-dcRCrh6nlo">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/Gx5eHzSXgAAfFhR?format=jpg&name=360x360">
+					<p>(50) Naranja es la nueva Maze</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/O1WXXL7Atq0">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/Gx5eHzSXgAAfFhR?format=jpg&name=360x360">
+					<p>(51) El ángel de San Bernardino</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/AFi2j8Mlk30">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/Gx5eHzSXgAAfFhR?format=jpg&name=360x360">
+					<p>(52) Lo que Pierce haga lo puedo mejorar</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/qkvFcRiCS9o">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/Gx5eHzSXgAAfFhR?format=jpg&name=360x360">
+					<p>(53) Manos a la obra, Decker</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/bBE9uQV6UT4">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/Gx5eHzSXgAAfFhR?format=jpg&name=360x360">
+					<p>(54) Decker por excelencia</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/1yiQm4Mj0JQ">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/Gx5eHzSXgAAfFhR?format=jpg&name=360x360">
+					<p>(55) Un diablo de palabra</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/w5RFlaF8vFc">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/Gx5eHzSXgAAfFhR?format=jpg&name=360x360">
+					<p>(56) ¡Bu! Normal</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/AP6zIAI3a5A">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/Gx5eHzSXgAAfFhR?format=jpg&name=360x360">
+					<p>(57) Érase una vez</p>
+				</a>
+			</div>
+
+			
+
+			
+		
+	
+			
+
+	</article>
+
+	<hr>
+	
+
+</body>
+</html>

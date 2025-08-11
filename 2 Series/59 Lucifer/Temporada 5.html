@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Temporada 5</title>
+	<meta name="viewport" content="width=device-width, user-scalable=1">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
+	<style type="text/css">
+		
+		body{
+			margin: 0;
+			font-family: 'IBM Plex Sans', sans-serif;
+			min-width: 323px;
+			background-color: black;
+		}
+
+		a{text-decoration: none;}
+
+		.portadamovil{display: none;}
+
+		.botonmovil{display: none;}
+
+		aside{
+			width: 20%;
+			height: 100vh;
+			background-color: black;
+			float: left;
+			border-right: 3px solid #14659E;
+			position: fixed;
+		}
+
+		aside div img{
+			width: 45%;
+		}
+
+		.logo{
+			text-align: center;
+			padding-top: 5vh;
+		}
+
+		.logopelicula{
+			text-align: center;
+			padding-top: 40px
+		}
+
+		.logopelicula img{
+			width: 90%;
+		}
+
+		.boton{
+			width: 70%;
+			height: 60px;
+			text-align: center;
+			line-height: 60px;
+			border-radius: 30px;
+			border: 2.5px solid #14659E;
+			color:white;
+			margin: 0 auto;
+			margin-top: 6vh;
+			transition: 0.5s;
+		}
+		.boton:hover{
+			box-shadow: 0px 0px 50px #14659E;
+			background-color: #14659E;
+			color: black;
+			cursor: pointer;
+		}
+
+		.posteraside{
+			text-align: center;
+			margin-top: 7vh;
+		}
+		.posteraside img{border-radius: 20px;}
+
+		section{
+			width: 80%;
+			height: 100vh;
+			background-color: black;
+			float: right;
+		}
+
+		.portada img{
+			width: 85%;
+			border-radius: 40px;
+		}
+
+		.portada{
+			text-align: center;
+			padding-top: 10vh;
+		}
+
+		#logopeliculados{
+			width: 30%;
+			margin-top: -4vh;
+		}
+
+		hr{
+			width: 80%;
+			border: 2px solid #14659E;
+			margin-top: 8vh;
+			margin-bottom: 0;
+		}
+
+		section h1{
+			font-size: 70px;
+			text-align: center;
+			color: white;
+		}
+
+		.detalles{
+			margin-left: 20%;
+		}
+
+		p{
+			width: 80%;
+			color: white;
+			font-size: 20px;
+		}
+
+		
+
+		.episodios{
+			display: inline-block;
+			width: 24%;
+			margin-top: 50px;
+			margin-right: 2%;
+			margin-bottom: 0;
+			margin-left: 5.5%;
+			
+		}
+
+		.episodios img{
+			width: 35%;
+			border-radius: 40px;
+			transition: 0.5s;
+			border:0px solid #1F4A69;
+			box-shadow: 0px 0px 80px #14659E;
+			left: 20%
+		}
+		
+
+		.episodios p{
+			text-align: left;
+			color: #B3B3B3;
+			float: right;
+
+		}
+
+
+
+
+
+
+
+		@media screen and (max-width: 768px){
+
+			aside{display: none;}
+
+			section{
+				width: 100%;
+			}
+			
+			.portada{
+				margin-top: -10%;
+			}
+			
+
+			#logopeliculados{
+				width: 80%;
+				margin-top: 2vh;
+
+			}
+
+			.botonmovil{
+				display: block;
+				
+				
+			}
+
+			section h1{
+				font-size: 40px;
+			}
+
+
+			.boton:hover{
+				box-shadow: none;
+				background-color: black;
+				color: white;
+				cursor: pointer;
+			}
+
+			.episodios{
+				text-align: center;
+				width: 40%;	
+			}
+
+			.episodios img{
+				width: 40%;
+				border-radius: 30px;
+				box-shadow: 0px 0px 80px #14659E;
+			}
+			
+
+			
+
+
+
+		}
+
+
+
+
+		@media screen and (max-width: 410px){
+
+			section h1{
+				font-size: 30px;
+			}
+
+			.portada{display: none;}
+
+			.portadamovil{
+				display: block;
+			}
+			.portadamovil img{width: 100%;}
+
+			#informacion{
+				font-size: 15px;
+			}
+
+			#logopeliculados{
+				width: 85%;
+			}
+
+			.botonmovil{
+				margin-top: -10%;
+			}
+
+
+			section div p{
+				width: 90%;
+			}
+
+			.episodios{	
+				text-align: center;
+				width: 40%;
+				margin-top: 30px;	
+			}
+
+			.episodios img{
+				width: 45%;
+				border-radius: 20px;
+				transition: 0.5s;
+				border:0px solid #1F4A69;
+				box-shadow: 0px 0px 50px #14659E;
+				left: 20%
+			}
+			
+
+			.episodios p{
+				float: right;
+				font-size: 15px;
+			}
+
+
+			
+
+
+		}
+
+		
+
+		
+
+
+
+
+	</style>
+</head>
+
+	
+
+
+<body>
+
+
+	<aside>
+
+		<div class="logo">
+			<img src="https://pbs.twimg.com/media/GTlaSzCXQAA64Sj?format=jpg&name=medium">
+		</div>
+
+		<div class="logopelicula">
+			<img src="https://pbs.twimg.com/media/Gx5cRUXW8AA1pZ6?format=jpg&name=900x900">
+		</div>
+
+		<div class="posteraside">
+			<img src="https://pbs.twimg.com/media/Gx5cRYuWwAAAi_E?format=jpg&name=medium">
+		</div>
+
+		
+
+	</aside>
+
+
+	<section>
+
+	<div class="portada">
+		<img src="https://pbs.twimg.com/media/Gx5cRUiWAAA46it?format=jpg&name=medium">
+	</div>
+
+	<div class="portadamovil">
+		<img src="https://pbs.twimg.com/media/Gx5eKQlWIAAM4ns?format=jpg&name=large">
+	</div>
+
+	
+
+	
+
+
+	<article>
+
+		
+			<h1>Temporada 5</h1>
+			
+			<div class="episodios">
+				<a href="https://youtu.be/fYOOZPIBmwo">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/Gx5eKQiXkAAoNqw?format=jpg&name=360x360">
+					<p>(68) Un pobre diablo</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/wnbG4J7uO_g">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/Gx5eKQiXkAAoNqw?format=jpg&name=360x360">
+					<p>(69) Lucifer! Lucifer! Lucifer!</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/jQk9It6WTT0">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/Gx5eKQiXkAAoNqw?format=jpg&name=360x360">
+					<p>(70) Dieblo!</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/eo_iLsv8ldQ">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/Gx5eKQiXkAAoNqw?format=jpg&name=360x360">
+					<p>(71) El pollo acaba mal</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/2t4B2x15s00">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/Gx5eKQiXkAAoNqw?format=jpg&name=360x360">
+					<p>(72) Inspector Amenadie</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/K7Lrw0v7yco">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/Gx5eKQiXkAAoNqw?format=jpg&name=360x360">
+					<p>(73) BlueBallz</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/jQr3hQNxIA0">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/Gx5eKQiXkAAoNqw?format=jpg&name=360x360">
+					<p>(74) Nuestra magia</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/jMq5TwFoDQU">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/Gx5eKQiXkAAoNqw?format=jpg&name=360x360">
+					<p>(75) Alerta de spoiler</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/ceuSsaDNMZs">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/Gx5eKQiXkAAoNqw?format=jpg&name=360x360">
+					<p>(76) Cena familiar</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/f1zb9GHkGow">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/Gx5eKQiXkAAoNqw?format=jpg&name=360x360">
+					<p>(77) Karaoke celestial</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/BwN5elprris">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/Gx5eKQiXkAAoNqw?format=jpg&name=360x360">
+					<p>(78) Cara de diablo</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/7zHeQ9TS0x0">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/Gx5eKQiXkAAoNqw?format=jpg&name=360x360">
+					<p>(79) Daniel Espinoza</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/p-Em5CnC0uM">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/Gx5eKQiXkAAoNqw?format=jpg&name=360x360">
+					<p>(80) Un poco de acoso</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/T9OBXCejk-E">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/Gx5eKQiXkAAoNqw?format=jpg&name=360x360">
+					<p>(81) No hay nada eterno</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/0_g31oKhWqI">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/Gx5eKQiXkAAoNqw?format=jpg&name=360x360">
+					<p>(82) Asi termina todo</p>
+				</a>
+			</div>
+
+			<div class="episodios">
+				<a href="https://youtu.be/bbCPgpFNpXI">
+					<img id="fotoswiki" src="https://pbs.twimg.com/media/Gx5eKQiXkAAoNqw?format=jpg&name=360x360">
+					<p>(83) La posibilidad de un final feliz</p>
+				</a>
+			</div>
+
+			
+
+			
+		
+	
+			
+
+	</article>
+
+	<hr>
+	
+
+</body>
+</html>
