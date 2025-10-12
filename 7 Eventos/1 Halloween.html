@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Eventos</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=1">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap" rel="stylesheet">
+	<style type="text/css">
+
+		body{
+			font-family: 'IBM Plex Sans', sans-serif;
+			margin: 0;
+			background-color: black;
+		}
+
+		a{text-decoration: none;}
+
+		header{display: none;}
+
+		.logodosmovil{display: none;}
+
+		.logoheadertablet{display: none;}
+		
+		aside{
+			width: 20%;
+			height: 100vh;
+			background-color: black;
+			float: left;
+			border-right: 3px solid #14659E;
+			position: fixed;
+		}
+
+		aside img{
+			width: 45%;
+		}
+
+		.logo{
+			text-align: center;
+			padding-top: 5vh;
+		}
+
+	 	.logodos{
+	 		text-align: center;
+	 		margin-top: 18vh;
+	 	}
+	 	.logodos img{
+	 		width: 80%;
+	 	}
+
+
+		section{
+			width: 80%;
+			background-color: black;
+			float: right;
+		}
+
+		hr{
+			width: 80%;
+			border: 2px solid #14659E;
+			margin-top: 8vh;
+			margin-bottom: 0;
+		}
+
+		section article h1{
+			font-size: 70px;
+			text-align: center;
+			color: white;
+		}
+
+		/* Aquí agregué la animación para el cambio de color del box-shadow */
+		@keyframes colorChange {
+			0% {
+				box-shadow: 0px 0px 20px #14659E;
+			}
+			25% {
+				box-shadow: 0px 0px 30px #14659E; /* Verde */
+			}
+			50% {
+				box-shadow: 0px 0px 20px #14659E; /* Rojo */
+			}
+			75% {
+				box-shadow: 0px 0px 30px #14659E; /* Amarillo */
+			}
+			100% {
+				box-shadow: 0px 0px 20px #14659E; /* Azul */
+			}
+		}
+
+		/* Estilo para las imágenes */
+		section article img{
+			display: inline-block;
+			text-align: center;
+			width: 40%;
+			margin-top: 50px;
+			margin-right: 2%;
+			margin-bottom: 0;
+			margin-left: 5.5%;
+			border-radius: 30px;
+			transition: 0.5s;
+			 /* Se aplica la animación */
+		}
+
+		section article img:hover{
+			cursor: pointer;
+			animation: none; /* Detenemos la animación al hacer hover para aplicar el efecto de hover */
+			box-shadow: 0px 0px 80px #14659E;
+		}
+
+		#logopelicula{
+			border:2.5px solid black;
+			margin-bottom: 6vh;
+		}
+		#logopelicula:hover{
+			box-shadow: 0px 0px 80px black;
+		}
+
+		@media screen and (max-width: 768px){
+
+			aside{
+				display: none;
+			}
+
+			header{display: block;}
+
+			.logoheader{display: none;}
+
+			.logodosmovil{
+				display: block;
+				text-align: center;
+				margin-bottom: 2vh;
+			}
+
+			.logodosmovil img{width: 60%}
+
+			.logoheadertablet{
+				display: block;
+			}
+
+			header div img{
+				width: 100%;
+			}
+
+			section{
+				width: 100%;
+			}
+
+			section article img{				
+				border-radius: 15px;
+			}
+
+			section article h1{
+				font-size: 30px;
+				text-align: center;
+				color: white;
+			}
+
+			section article img:hover{
+				cursor: pointer;
+				box-shadow: none;
+			}
+
+			#logopelicula{
+				border:2.5px solid black;
+				margin-bottom: 3vh;
+			}
+		}
+
+		@media screen and (max-width: 410px){
+			.logoheadertablet{display: none;}
+
+			.logoheader{
+				display: block;
+				text-align: center;
+			}
+
+			section article img{
+				width: 45%;
+				margin-top: 40px;
+				border-radius: 15px;
+				margin-right: 0%;
+				margin-left: 2%;
+			}
+
+			hr{
+				margin-top: 2vh;
+			}
+
+			#logopelicula{
+				border:2.5px solid black;
+				margin-bottom: 1.5vh;
+			}
+		}
+
+	</style>
+</head>
+
+<body>
+
+	<header>
+		<div class="logoheader">
+			<img src="https://pbs.twimg.com/media/F7RJLLsWgAE3mij?format=jpg&name=medium">
+		</div>
+		<div class="gif" style="padding-top: 2vh">
+			<img src="">
+		</div>
+	</header>
+
+	<aside>
+		<div class="logo">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/DC_Comics_logo.svg">
+		</div>
+	</aside>
+
+	<section style="margin-top: -4vh">
+		<article>
+
+			<img id="logopelicula" src="https://pbs.twimg.com/media/FKlsq4zWUAAk56q?format=jpg&name=900x900">
+			<a href="https://dccomicsapp.github.io/DcComicsApp/1%20Peliculas/111%20The%20Batman/The%20Batman.html">
+				<img src="https://pbs.twimg.com/media/FKlsq6wWQAAuNdu?format=jpg&name=large" style="box-shadow: 0px 0px 20px #1F4A69;">
+			</a>
+
+			<img id="logopelicula" src="https://simplydcu.files.wordpress.com/2014/02/constantine-movie-logo.png?w=529">
+			<a href="https://dccomicsapp.github.io/DcComicsApp/1%20Peliculas/16%20Constantine/Constantine.html">
+				<img src="https://image.tmdb.org/t/p/original/4RfWmYRgg7lN8Rmp45mxs9SrTDS.jpg" style="box-shadow: 0px 0px 20px #1F4A69;">
+			</a>
+
+			<img id="logopelicula" src="https://pbs.twimg.com/media/FLZuKeYXIAYDskJ?format=jpg&name=900x900">
+			<a href="https://dccomicsapp.github.io/DcComicsApp/1%20Peliculas/37%20JL%20Dark/JL%20Dark.html">
+				<img src="https://www.100hdwallpapers.com/wallpapers/1920x1080/justice_league_dark-hd_wallpapers.jpg" style="box-shadow: 0px 0px 20px #1F4A69;">
+			</a>
+
+			<img id="logopelicula" src="https://pbs.twimg.com/media/FLZxhVsX0AIl-ET?format=jpg&name=900x900">
+			<a href="https://dccomicsapp.github.io/DcComicsApp/1%20Peliculas/45%20JL%20Dark%20Apokolips%20War/JL%20Dark%20Apokolips%20War.html">
+				<img src="https://miro.medium.com/max/3840/1*3T2rKCPY9kGSMxf3PVnEIw.jpeg" style="box-shadow: 0px 0px 20px #1F4A69;">
+			</a>
+
+			<img id="logopelicula" src="https://pbs.twimg.com/media/FLZwPC-XIAI5fou?format=jpg&name=900x900">
+			<a href="https://dccomicsapp.github.io/DcComicsApp/1%20Peliculas/41%20Constantie%20City%20of%20Demons/Constantine%20City%20of%20Demons.html">
+				<img src="https://images.hdqwalls.com/wallpapers/constantine-city-of-demons-rs.jpg" style="box-shadow: 0px 0px 20px #1F4A69;">
+			</a>
+
+			<img id="logopelicula" src="https://pbs.twimg.com/media/E2aUa-MXoAg0Msi?format=png&name=900x900">
+			<a href="https://dccomicsapp.github.io/DcComicsApp/1%20Peliculas/97%20Batman%20TLH%201/Batman%20TLH%201.html">
+				<img src="https://pbs.twimg.com/media/E4ZuAYfXoAAaTBx?format=jpg&name=large" style="box-shadow: 0px 0px 20px #1F4A69;">
+			</a>
+
+			<img id="logopelicula" src="https://pbs.twimg.com/media/E7N82_PXEAEQfTE?format=jpg&name=900x900">
+			<a href="https://dccomicsapp.github.io/DcComicsApp/1%20Peliculas/99%20Batman%20TLH%202/Batman%20TLH%202.html">
+				<img src="https://image.tmdb.org/t/p/original/oSogG5fpITtg11UGz8tfRNfuMeA.jpg" style="box-shadow: 0px 0px 20px #1F4A69;">
+			</a>
+
+			<img id="logopelicula" src="https://pbs.twimg.com/media/FQx4GeBWQAAZnEY?format=jpg&name=900x900">
+			<a href="https://dccomicsapp.github.io/DcComicsApp/1%20Peliculas/115%20DCS%20Constantine%20HoM/DCS%20Constantine%20HoM.html">
+				<img src="https://pbs.twimg.com/media/FQx4GdcWUAEouJW?format=jpg&name=large" style="box-shadow: 0px 0px 20px #1F4A69;">
+			</a>
+
+			<img id="logopelicula" src="https://pbs.twimg.com/media/GiI5dqQWwAAh2FQ?format=jpg&name=900x900">
+			<a href="https://dccomicsapp.github.io/DcComicsApp/1%20Peliculas/149%20Tales%20of%20the%20black%20freighter/Tales%20of%20the%20black%20freighter.html">
+				<img src="https://pbs.twimg.com/media/GiI5dqPWcAAkNvH?format=jpg&name=large" style="box-shadow: 0px 0px 20px #1F4A69;">
+			</a>
+
+			<img id="logopelicula" src="https://pbs.twimg.com/media/FkVcc0RXgAEZ6v6?format=jpg&name=900x900">
+			<a href="https://dccomicsapp.github.io/DcComicsApp/3%20Otros/42%20Constantine%20Game/Constantine%20Game.html">
+				<img src="https://pbs.twimg.com/media/FkVcc0UWAAI6DWq?format=jpg&name=large" style="box-shadow: 0px 0px 20px #1F4A69;">
+			</a>
+
+			<img id="logopelicula" src="https://pbs.twimg.com/media/E3gU4YgXMAMY2ZP?format=jpg&name=small">
+			<a href="https://dccomicsapp.github.io/DcComicsApp/3%20Otros/14%20Batman%20Strange%20Days/Batman%20Strange%20Days.html">
+				<img src="https://image.tmdb.org/t/p/original/hBYtQYxCubheUyVEOgI3D7uciUD.jpg" style="box-shadow: 0px 0px 20px #1F4A69;">
+			</a>
+
+			<img id="logopelicula" src="https://pbs.twimg.com/media/E4ewqgDWQAIQHfT?format=jpg&name=900x900">
+			<a href="https://dccomicsapp.github.io/DcComicsApp/3%20Otros/26%20DCN%20Deadman/DCN%20Deadman.html">
+				<img src="https://pbs.twimg.com/media/E4ewqgAWUAUAKPc?format=jpg&name=large" style="box-shadow: 0px 0px 20px #1F4A69;">
+			</a>
+
+			<img id="logopelicula" src="https://pbs.twimg.com/media/G1YvOt1XkAALOd0?format=png&name=900x900">
+			<a href="https://dccomicsapp.github.io/DcComicsApp/3%20Otros/51%20Krypto%20Saves%20the%20Day/Krypto%20Saves%20the%20Day.html">
+				<img src="https://image.tmdb.org/t/p/original/5WOjb07Ac8J22wVDYpZIvgqNB1i.jpg" style="box-shadow: 0px 0px 20px #1F4A69;">
+			</a>
+
+			<img id="logopelicula" src="">
+			<a href="">
+				<img src="" style="box-shadow: 0px 0px 20px #1F4A69;">
+			</a>
+
+
+
+
+
+		</article>
+
+
+</body>
+</html>
